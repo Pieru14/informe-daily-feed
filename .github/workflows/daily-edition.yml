@@ -1,0 +1,57 @@
+name: IN/FORME · edizione quotidiana
+
+on:
+  schedule:
+    - cron: "37 7 * * *"
+      timezone: "Europe/Rome"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Riprova anche se oggi esiste già un'edizione"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: informe-daily-edition
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Recupera il radar
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Prepara Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Crea l'edizione
+        run: node scripts/update-edition.mjs
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          INFORME_FORCE_UPDATE: ${{ inputs.force }}
+
+      - name: Verifica il feed
+        run: node scripts/validate-feed.mjs data/current.json
+
+      - name: Salva il risultato
+        run: |
+          if git diff --quiet -- data; then
+            echo "Nessuna modifica al feed."
+            exit 0
+          fi
+          git config user.name "IN/FORME Editorial Agent"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "data: controlla il radar quotidiano"
+          git push

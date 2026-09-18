@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-09-18-02",
+  "updatedAt": "2026-09-18T07:33:00.000Z",
+  "sourceCoverage": {
+    "configuredBrands": 26,
+    "consultedSources": [
+      "world.dolcegabbana.com",
+      "burberryplc.com",
+      "press.givenchy.com",
+      "gucci.com",
+      "fendi.com",
+      "valentino.com",
+      "ysl.com",
+      "ferragamo.com",
+      "prada.com"
+    ],
+    "unavailable": [],
+    "caveat": "Edizione importata da fonti ufficiali. Il radar copre una watchlist ampia, non ogni maison esistente."
+  },
+  "brandPulse": {
+    "refreshedAt": "18 settembre 2026 · edizione 02",
+    "updates": [
+      {
+        "id": "dolce-gabbana-fw26-2026-09-18",
+        "brand": "Dolce&Gabbana",
+        "label": "Campagna · FW 2026",
+        "title": "Il corpo porta la scena",
+        "perspective": "La campagna FW 2026 lavora su nero, pizzo, tailoring e denim per far pesare ogni posa. Spunto: pensa al corpo come a una linea di regia, non come a un semplice supporto del capo.",
+        "source": "Fonte ufficiale Dolce&Gabbana",
+        "url": "https://world.dolcegabbana.com/news/dolce-gabbana-adv-campaign-fall-winter-2026"
+      },
+      {
+        "id": "burberry-winter-2026-2026-09-18",
+        "brand": "Burberry",
+        "label": "Campagna · Winter 2026",
+        "title": "Londra entra nell'outerwear",
+        "perspective": "Tra fiume, luci urbane e pioggia, il trench passa dalla funzione alla sera. Spunto: prendi un capo protettivo e chiediti come farlo comportare come un abito da uscita.",
+        "source": "Fonte ufficiale Burberry",
+        "url": "https://www.burberryplc.com/news/brand/2026/burberry-unveils-winter-2026-campaign-starring-fka-twigs-and-romeo-beckham"
+      },
+      {
+        "id": "givenchy-shark-pinch-2026-09-18",
+        "brand": "Givenchy",
+        "label": "Accessorio · Winter 2026",
+        "title": "La scarpa diventa struttura",
+        "perspective": "Il nuovo Shark Pinch parte da costruzione, doppio shank e stratificazione per allungarsi fino al thigh-high. Spunto: fai partire la silhouette da un dettaglio tecnico, non dal busto.",
+        "source": "Fonte ufficiale Givenchy",
+        "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng"
+      },
+      {
+        "id": "gucci-primavera-2026-2026-09-18",
+        "brand": "Gucci",
+        "label": "Campagna · Primavera",
+        "title": "Un Rinascimento appena spostato",
+        "perspective": "Gucci mette in relazione film, ritratto e un immaginario rinascimentale trasportato nel presente. Spunto: usa un riferimento storico come una tensione visiva, non come una citazione letterale.",
+        "source": "Fonte ufficiale Gucci",
+        "url": "https://www.gucci.com/th/en_gb/st/stories/advertising-campaign/article/gucci-primavera"
+      },
+      {
+        "id": "fendi-my-peekaboo-2026-09-18",
+        "brand": "Fendi",
+        "label": "Progetto · FW 2026–27",
+        "title": "Il backstage può essere il lusso",
+        "perspective": "My Peekaboo porta la personalizzazione dentro e fuori l'oggetto, tra iniziali visibili e dettagli nascosti. Spunto: lascia che un accessorio racconti la mano che lo ha scelto, non solo il logo.",
+        "source": "Fonte ufficiale Fendi",
+        "url": "https://www.fendi.com/us-en/cm/articles/my-peekaboo"
+      },
+      {
+        "id": "valentino-interferenze-fw26-2026-09-18",
+        "brand": "Valentino",
+        "label": "Collezione · FW 2026–27",
+        "title": "Trasparenze che interrompono",
+        "perspective": "Cady plissettato, tulle e un gesto metallico intorno allo sguardo fanno convivere morbidezza e attrito. Spunto: inserisci una sola interferenza dura in una costruzione che altrimenti sarebbe fluida.",
+        "source": "Fonte ufficiale Valentino",
+        "url": "https://www.valentino.com/en-us/experience/valentino-interferenze-fall-winter-2026-27-collection"
+      }
+    ]
+  },
+  "dailyEdition": {
+    "refreshedAt": "18 settembre 2026 · edizione 02",
+    "focus": {
+      "id": "focus-object-directs-look-2026-09-18-02",
+      "eyebrow": "THE DAILY FILE / 002",
+      "title": "Un oggetto può dirigere tutto il look.",
+      "body": "Una scarpa costruita come architettura, una borsa con un dettaglio nascosto, una maschera che intercetta lo sguardo: oggi non partire dal vestito. Parti da ciò che di solito arriva alla fine e lascia che apra la scena.",
+      "source": "Fonte: Givenchy Winter 2026",
+      "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng"
+    },
+    "directions": [
+      {
+        "id": "direction-start-low-2026-09-18-02",
+        "tone": "blue",
+        "category": "FORMA / PUNTO DI PARTENZA",
+        "title": "Lascia che la silhouette parta dal piede.",
+        "body": "Scegli una scarpa, una chiusura o una punta e disegna il resto come se dovesse risponderle. Il basso può essere il vero centro di gravità."
+      },
+      {
+        "id": "direction-draw-shadow-2026-09-18-02",
+        "tone": "pink",
+        "category": "LUCE / VOLUME",
+        "title": "Disegna un look con un’ombra, non con un contorno.",
+        "body": "Prima di aggiungere linee, scegli dove vuoi che il corpo sparisca e dove torni a emergere. Il contrasto può fare da modellista."
+      },
+      {
+        "id": "direction-evening-weather-2026-09-18-02",
+        "tone": "lime",
+        "category": "FUNZIONE / ATTEGGIAMENTO",
+        "title": "Tratta il capo protettivo come un abito da sera.",
+        "body": "Un materiale anti-pioggia, una patta o un collo alto possono diventare seduzione se cambiano luce, scala o contesto."
+      }
+    ],
+    "palette": [
+      { "name": "CITY AFTER DARK", "hex": "#111318", "text": "#ffffff" },
+      { "name": "RIVER COBALT", "hex": "#2458d5", "text": "#ffffff" },
+      { "name": "LACQUER RED", "hex": "#d92d2a", "text": "#ffffff" },
+      { "name": "FOGGED SILK", "hex": "#d4cfca", "text": "#111111" },
+      { "name": "MIRROR METAL", "hex": "#aeb8c2", "text": "#111111" }
+    ],
+    "notes": [
+      {
+        "id": "note-saint-laurent-shingo-2026-09-18-02",
+        "type": "ART / FIELD NOTE",
+        "title": "Una mostra può essere una soglia per lo styling.",
+        "body": "A Rive Droite Los Angeles, Saint Laurent ospita Shingo Francis. Prendi una mostra come pretesto per costruire un mondo: non copiarne le immagini, ma porta nel look la sua temperatura.",
+        "source": "Fonte: Saint Laurent Rive Droite",
+        "url": "https://www.ysl.com/en-us/rive-droite/calendar/currently"
+      },
+      {
+        "id": "note-ferragamo-object-desire-2026-09-18-02",
+        "type": "OBJECT STUDY",
+        "title": "Una scarpa può diventare una natura morta.",
+        "body": "Ferragamo mette la calzatura al centro della propria campagna FW 2026 e la fa dialogare con una scultura. Prova a isolare un accessorio finché non smette di sembrare un accessorio.",
+        "source": "Fonte: Ferragamo FW 2026",
+        "url": "https://www.ferragamo.com/shop/CoreMediaContentDisplay?catalogId=37055&externalSeoSegment=stories-fall-winter-2026-campaign&langId=-25&storeId=30650&urlRequestType=Base"
+      },
+      {
+        "id": "note-prada-timecapsule-2026-09-18-02",
+        "type": "TIME / OBJECT",
+        "title": "Tratta un capo come un appuntamento, non come merce.",
+        "body": "Timecapsule di Prada lega oggetto fisico, data e cultura visiva. Quando progetti, aggiungi una regola temporale: quando appare, quanto resta, che traccia lascia?",
+        "source": "Fonte: Prada Timecapsule",
+        "url": "https://www.prada.com/fr/fr/pradasphere/special-projects/2026/prada-timecapsule.html"
+      }
+    ],
+    "practice": [
+      {
+        "id": "practice-object-portrait-2026-09-18-02",
+        "number": "01",
+        "label": "GUARDA",
+        "title": "Fotografa una scarpa come fosse un personaggio.",
+        "body": "Non mostrarla per intero. Scegli una piega, una punta, un’ombra, un punto di appoggio. Lascia che il dettaglio costruisca il carattere."
+      },
+      {
+        "id": "practice-start-low-2026-09-18-02",
+        "number": "02",
+        "label": "PROVA",
+        "title": "Costruisci un look partendo da un solo oggetto.",
+        "body": "Può essere una scarpa, una borsa o una chiusura. Tutto il resto deve rispondere a quella scelta senza volerla spiegare."
+      },
+      {
+        "id": "practice-archive-object-question-2026-09-18-02",
+        "number": "03",
+        "label": "ANNOTA",
+        "title": "Quale oggetto, oggi, merita di diventare protagonista?",
+        "body": "Salva la domanda nel tuo archivio. Domani potrebbe diventare il primo appunto di una collezione."
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "informe-daily-feed",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Radar editoriale quotidiano di alta moda per IN/FORME",
+  "scripts": {
+    "check": "node scripts/validate-feed.mjs data/current.json",
+    "update": "node scripts/update-edition.mjs",
+    "update:dry-run": "node scripts/update-edition.mjs --dry-run"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
