@@ -373,7 +373,8 @@ function buildEdition({ draft, sourceUrls, allowedDomains, seenUrls, now, today,
   const readable = italianDate(now) + ' · edizione ' + String(nextNumber).padStart(2, '0');
   const ids = new Set();
   const updateUrls = new Set();
-  const updates = rawUpdates.map((item, index) => {
+  const updates = [];
+  rawUpdates.forEach((item, index) => {
     const update = object(item, 'updates[' + index + ']');
     const brand = compactText(update.brand, 'brand', 2, 80);
     const category = compactText(update.category, 'category', 3, 48);
@@ -381,13 +382,15 @@ function buildEdition({ draft, sourceUrls, allowedDomains, seenUrls, now, today,
     const title = compactText(update.title, 'title', 5, 180);
     const perspective = compactText(update.perspective, 'perspective', 24, 700);
     const url = requireOfficialUrl(update.url, 'update.url', allowedDomains, sourceUrls);
-    if (seenUrls.has(url)) fail('La notizia ' + url + ' è già stata pubblicata.');
-    if (updateUrls.has(url)) fail('Due notizie usano la stessa fonte.');
+    if (seenUrls.has(url) || updateUrls.has(url)) {
+      console.log('Aggiornamento scartato perché la fonte è già presente: ' + url);
+      return;
+    }
     updateUrls.add(url);
-    const id = slug(brand) + '-' + slug(title) + '-' + today + '-' + String(index + 1).padStart(2, '0');
+    const id = slug(brand) + '-' + slug(title) + '-' + today + '-' + String(updates.length + 1).padStart(2, '0');
     if (ids.has(id)) fail('ID di aggiornamento duplicato.');
     ids.add(id);
-    return {
+    updates.push({
       id,
       brand,
       label: category + ' · ' + dateOrSeason,
@@ -395,8 +398,12 @@ function buildEdition({ draft, sourceUrls, allowedDomains, seenUrls, now, today,
       perspective,
       source: compactText(update.source, 'source', 3, 180),
       url
-    };
+    });
   });
+  if (updates.length < 5) {
+    console.log('Bozza editoriale non pubblicata: dopo la deduplicazione restano meno di cinque fonti nuove e distinte.');
+    return null;
+  }
 
   const focus = object(output.focus, 'focus');
   const focusUrl = requireOfficialUrl(focus.url, 'focus.url', allowedDomains, sourceUrls);
