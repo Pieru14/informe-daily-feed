@@ -418,7 +418,7 @@ function buildEdition({ draft, sourceUrls, allowedDomains, seenUrls, now, today,
     };
   });
 
-  const consultedSources = [...new Set(sourceUrls.map((url) => new URL(url).hostname))].sort();
+  const consultedSources = [...new Set([...sourceUrls].map((url) => new URL(url).hostname))].sort();
   return {
     schemaVersion: 1,
     editionId: today + '-' + String(nextNumber).padStart(2, '0'),
