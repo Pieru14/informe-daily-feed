@@ -144,14 +144,33 @@ function collectUrls(value, found = new Set()) {
   return found;
 }
 
+function addOfficialSearchUrl(found, value, allowedDomains) {
+  const normalized = normalizeUrl(value);
+  if (normalized && hasAllowedHost(normalized, allowedDomains)) found.add(normalized);
+}
+
 function collectSearchSourceUrls(payload, allowedDomains) {
   const found = new Set();
   const output = Array.isArray(payload?.output) ? payload.output : [];
   output.forEach((item) => {
-    if (item?.type !== 'web_search_call' || !Array.isArray(item?.action?.sources)) return;
-    item.action.sources.forEach((source) => {
-      const normalized = normalizeUrl(source?.url);
-      if (normalized && hasAllowedHost(normalized, allowedDomains)) found.add(normalized);
+    if (item?.type === 'web_search_call') {
+      const action = item.action || {};
+      if (Array.isArray(action.sources)) {
+        action.sources.forEach((source) => addOfficialSearchUrl(found, source?.url, allowedDomains));
+      }
+      if (['open_page', 'find_in_page'].includes(action.type)) {
+        addOfficialSearchUrl(found, action.url, allowedDomains);
+      }
+      return;
+    }
+
+    if (item?.type !== 'message' || !Array.isArray(item?.content)) return;
+    item.content.forEach((content) => {
+      if (!Array.isArray(content?.annotations)) return;
+      content.annotations.forEach((annotation) => {
+        if (annotation?.type !== 'url_citation') return;
+        addOfficialSearchUrl(found, annotation.url || annotation.url_citation?.url, allowedDomains);
+      });
     });
   });
   return [...found];
