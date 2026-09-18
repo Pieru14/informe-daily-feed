@@ -329,8 +329,8 @@ function buildEdition({ draft, sourceUrls, allowedDomains, seenUrls, now, today,
   const updates = rawUpdates.map((item, index) => {
     const update = object(item, 'updates[' + index + ']');
     const brand = compactText(update.brand, 'brand', 2, 80);
-    const category = compactText(update.category, 'category', 3, 70);
-    const dateOrSeason = compactText(update.dateOrSeason, 'dateOrSeason', 2, 80);
+    const category = compactText(update.category, 'category', 3, 48);
+    const dateOrSeason = compactText(update.dateOrSeason, 'dateOrSeason', 2, 48);
     const title = compactText(update.title, 'title', 5, 180);
     const perspective = compactText(update.perspective, 'perspective', 24, 700);
     const url = requireOfficialUrl(update.url, 'update.url', allowedDomains, sourceUrls);
