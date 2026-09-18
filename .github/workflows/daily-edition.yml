@@ -46,12 +46,12 @@ jobs:
 
       - name: Salva il risultato
         run: |
-          if git diff --quiet -- data; then
+          if git diff --quiet -- data/current.json data/seen-urls.json; then
             echo "Nessuna modifica al feed."
             exit 0
           fi
           git config user.name "IN/FORME Editorial Agent"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data
+          git add data/current.json data/seen-urls.json data/archive
           git commit -m "data: controlla il radar quotidiano"
           git push

@@ -69,6 +69,17 @@ function normalizeUrl(value) {
   }
 }
 
+function sourceIdentity(value) {
+  const normalized = normalizeUrl(value);
+  if (!normalized) return null;
+  const parsed = new URL(normalized);
+  parsed.hostname = parsed.hostname.replace(/^www\./i, '');
+  parsed.search = '';
+  parsed.hash = '';
+  parsed.pathname = parsed.pathname.replace(/\/+$/, '') || '/';
+  return parsed.href;
+}
+
 function hasAllowedHost(url, allowedDomains) {
   const normalized = normalizeUrl(url);
   if (!normalized) return false;
@@ -131,6 +142,19 @@ function collectUrls(value, found = new Set()) {
     });
   }
   return found;
+}
+
+function collectSearchSourceUrls(payload, allowedDomains) {
+  const found = new Set();
+  const output = Array.isArray(payload?.output) ? payload.output : [];
+  output.forEach((item) => {
+    if (item?.type !== 'web_search_call' || !Array.isArray(item?.action?.sources)) return;
+    item.action.sources.forEach((source) => {
+      const normalized = normalizeUrl(source?.url);
+      if (normalized && hasAllowedHost(normalized, allowedDomains)) found.add(normalized);
+    });
+  });
+  return [...found];
 }
 
 function responseText(response) {
@@ -254,7 +278,7 @@ async function askEditor({ allowedDomains, seenUrls, today }) {
     '',
     'Restituisci solo JSON conforme allo schema.',
     'Se non trovi almeno 5 novità distinte e verificabili con una fonte ufficiale consultata, usa decision "skip", spiega il motivo in reason e restituisci liste vuote e stringhe vuote per focus.',
-    'Se pubblichi, restituisci da 5 a 10 updates. Ogni url deve essere esattamente una fonte ufficiale consultata. Non usare URL di ricerca, social, riviste o e-commerce non ufficiale.',
+    'Se pubblichi, restituisci da 5 a 10 updates. Ogni url deve corrispondere a una fonte ufficiale aperta dalla ricerca: copia l’indirizzo della fonte, non ricostruirlo. Non usare URL di ricerca, social, riviste o e-commerce non ufficiale.',
     'La parte perspective, focus, directions, palette, notes e practice è una lettura creativa italiana fondata nelle notizie; non aggiungere fatti non verificati.',
     'Focus e notes devono linkare soltanto fonti ufficiali consultate. Sono richieste esattamente 3 directions, 5 colori (name e hex nel formato #RRGGBB), 3 notes e 3 practice.'
   ].join('\n');
@@ -295,7 +319,7 @@ async function askEditor({ allowedDomains, seenUrls, today }) {
   }
 
   const payload = await apiResponse.json();
-  const sourceUrls = [...collectUrls(payload)].filter((url) => hasAllowedHost(url, allowedDomains));
+  const sourceUrls = collectSearchSourceUrls(payload, allowedDomains);
   if (sourceUrls.length === 0) fail('La ricerca non ha restituito fonti ufficiali utilizzabili.');
 
   let draft;
@@ -310,8 +334,12 @@ async function askEditor({ allowedDomains, seenUrls, today }) {
 function requireOfficialUrl(value, label, allowedDomains, sourceUrls) {
   const url = normalizeUrl(value);
   if (!url || !hasAllowedHost(url, allowedDomains)) fail(label + ' non appartiene alla watchlist ufficiale.');
-  if (!sourceUrls.has(url)) fail(label + ' non compare tra le fonti realmente consultate.');
-  return url;
+  if (sourceUrls.has(url)) return url;
+  const identity = sourceIdentity(url);
+  for (const sourceUrl of sourceUrls) {
+    if (sourceIdentity(sourceUrl) === identity) return sourceUrl;
+  }
+  fail(label + ' non compare tra le fonti realmente consultate.');
 }
 
 function buildEdition({ draft, sourceUrls, allowedDomains, seenUrls, now, today, previous }) {
