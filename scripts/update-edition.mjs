@@ -192,18 +192,23 @@ function responseText(response) {
   return text;
 }
 
-const textSchema = { type: 'string' };
+const textSchema = (maxLength = 700) => ({ type: 'string', maxLength });
+const urlSchema = {
+  type: 'string',
+  maxLength: 2048,
+  pattern: '^(|https://.+)$'
+};
 const updateSchema = {
   type: 'object',
   additionalProperties: false,
   properties: {
-    brand: textSchema,
-    category: textSchema,
-    dateOrSeason: textSchema,
-    title: textSchema,
-    perspective: textSchema,
-    source: textSchema,
-    url: textSchema
+    brand: textSchema(80),
+    category: textSchema(48),
+    dateOrSeason: textSchema(48),
+    title: textSchema(180),
+    perspective: textSchema(700),
+    source: textSchema(180),
+    url: urlSchema
   },
   required: ['brand', 'category', 'dateOrSeason', 'title', 'perspective', 'source', 'url']
 };
@@ -211,10 +216,10 @@ const focusSchema = {
   type: 'object',
   additionalProperties: false,
   properties: {
-    title: textSchema,
-    body: textSchema,
-    source: textSchema,
-    url: textSchema
+    title: textSchema(180),
+    body: textSchema(700),
+    source: textSchema(180),
+    url: urlSchema
   },
   required: ['title', 'body', 'source', 'url']
 };
@@ -223,9 +228,9 @@ const directionSchema = {
   additionalProperties: false,
   properties: {
     tone: { type: 'string', enum: ['blue', 'pink', 'lime'] },
-    category: textSchema,
-    title: textSchema,
-    body: textSchema
+    category: textSchema(100),
+    title: textSchema(180),
+    body: textSchema(700)
   },
   required: ['tone', 'category', 'title', 'body']
 };
@@ -233,8 +238,8 @@ const paletteSchema = {
   type: 'object',
   additionalProperties: false,
   properties: {
-    name: textSchema,
-    hex: textSchema
+    name: textSchema(80),
+    hex: { type: 'string', maxLength: 7, pattern: '^#[0-9A-Fa-f]{6}$' }
   },
   required: ['name', 'hex']
 };
@@ -242,11 +247,11 @@ const noteSchema = {
   type: 'object',
   additionalProperties: false,
   properties: {
-    type: textSchema,
-    title: textSchema,
-    body: textSchema,
-    source: textSchema,
-    url: textSchema
+    type: textSchema(100),
+    title: textSchema(180),
+    body: textSchema(700),
+    source: textSchema(180),
+    url: urlSchema
   },
   required: ['type', 'title', 'body', 'source', 'url']
 };
@@ -254,9 +259,9 @@ const practiceSchema = {
   type: 'object',
   additionalProperties: false,
   properties: {
-    label: textSchema,
-    title: textSchema,
-    body: textSchema
+    label: textSchema(60),
+    title: textSchema(180),
+    body: textSchema(700)
   },
   required: ['label', 'title', 'body']
 };
@@ -265,7 +270,7 @@ const editorialSchema = {
   additionalProperties: false,
   properties: {
     decision: { type: 'string', enum: ['publish', 'skip'] },
-    reason: textSchema,
+    reason: textSchema(600),
     updates: { type: 'array', items: updateSchema },
     focus: focusSchema,
     directions: { type: 'array', items: directionSchema },
@@ -297,7 +302,7 @@ async function askEditor({ allowedDomains, seenUrls, today }) {
     '',
     'Restituisci solo JSON conforme allo schema.',
     'Se non trovi almeno 5 novità distinte e verificabili con una fonte ufficiale consultata, usa decision "skip", spiega il motivo in reason e restituisci liste vuote e stringhe vuote per focus.',
-    'Se pubblichi, restituisci da 5 a 10 updates. Ogni url deve corrispondere a una fonte ufficiale aperta dalla ricerca: copia l’indirizzo della fonte, non ricostruirlo. Non usare URL di ricerca, social, riviste o e-commerce non ufficiale.',
+    'Se pubblichi, restituisci da 5 a 10 updates con fonti diverse. Ogni url deve corrispondere a una fonte ufficiale aperta dalla ricerca: copia l’indirizzo della fonte, non ricostruirlo. Non usare URL di ricerca, social, riviste o e-commerce non ufficiale.',
     'La parte perspective, focus, directions, palette, notes e practice è una lettura creativa italiana fondata nelle notizie; non aggiungere fatti non verificati.',
     'Focus e notes devono linkare soltanto fonti ufficiali consultate. Sono richieste esattamente 3 directions, 5 colori (name e hex nel formato #RRGGBB), 3 notes e 3 practice.'
   ].join('\n');
