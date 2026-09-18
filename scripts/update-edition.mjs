@@ -83,6 +83,14 @@ function compactText(value, label, minimum = 1, maximum = 700) {
   return text;
 }
 
+function readableTextColor(hex) {
+  const red = Number.parseInt(hex.slice(1, 3), 16);
+  const green = Number.parseInt(hex.slice(3, 5), 16);
+  const blue = Number.parseInt(hex.slice(5, 7), 16);
+  const brightness = (red * 299 + green * 587 + blue * 114) / 1000;
+  return brightness >= 150 ? '#111111' : '#FFFFFF';
+}
+
 function object(value, label) {
   if (!value || typeof value !== 'object' || Array.isArray(value)) fail(label + ' non è un oggetto.');
   return value;
@@ -183,10 +191,9 @@ const paletteSchema = {
   additionalProperties: false,
   properties: {
     name: textSchema,
-    hex: textSchema,
-    text: textSchema
+    hex: textSchema
   },
-  required: ['name', 'hex', 'text']
+  required: ['name', 'hex']
 };
 const noteSchema = {
   type: 'object',
@@ -249,7 +256,7 @@ async function askEditor({ allowedDomains, seenUrls, today }) {
     'Se non trovi almeno 5 novità distinte e verificabili con una fonte ufficiale consultata, usa decision "skip", spiega il motivo in reason e restituisci liste vuote e stringhe vuote per focus.',
     'Se pubblichi, restituisci da 5 a 10 updates. Ogni url deve essere esattamente una fonte ufficiale consultata. Non usare URL di ricerca, social, riviste o e-commerce non ufficiale.',
     'La parte perspective, focus, directions, palette, notes e practice è una lettura creativa italiana fondata nelle notizie; non aggiungere fatti non verificati.',
-    'Focus e notes devono linkare soltanto fonti ufficiali consultate. Sono richieste esattamente 3 directions, 5 colori, 3 notes e 3 practice.'
+    'Focus e notes devono linkare soltanto fonti ufficiali consultate. Sono richieste esattamente 3 directions, 5 colori (name e hex nel formato #RRGGBB), 3 notes e 3 practice.'
   ].join('\n');
 
   const apiResponse = await fetch('https://api.openai.com/v1/responses', {
@@ -372,12 +379,11 @@ function buildEdition({ draft, sourceUrls, allowedDomains, seenUrls, now, today,
   const palette = paletteInputs.map((item, index) => {
     const color = object(item, 'palette[' + index + ']');
     const hex = compactText(color.hex, 'palette.hex', 7, 7).toUpperCase();
-    const text = compactText(color.text, 'palette.text', 7, 7).toUpperCase();
-    if (!/^#[0-9A-F]{6}$/.test(hex) || !/^#[0-9A-F]{6}$/.test(text)) fail('Palette non valida.');
+    if (!/^#[0-9A-F]{6}$/.test(hex)) fail('Palette non valida.');
     return {
       name: compactText(color.name, 'palette.name', 3, 80),
       hex,
-      text
+      text: readableTextColor(hex)
     };
   });
 
