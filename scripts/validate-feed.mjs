@@ -1,4 +1,5 @@
 import { readFile } from 'node:fs/promises';
+import { validateDailyNote } from './daily-note.mjs';
 
 const inputPath = process.argv[2] || 'data/current.json';
 const raw = await readFile(inputPath, 'utf8');
@@ -93,6 +94,7 @@ function validatePractice(item, index) {
 }
 
 object(feed, 'feed');
+if (feed.dailyNote !== undefined) validateDailyNote(feed.dailyNote);
 if (feed.schemaVersion !== 1) fail('schemaVersion deve essere 1.');
 text(feed.editionId, 'editionId', 8, 80);
 if (Number.isNaN(Date.parse(text(feed.updatedAt, 'updatedAt', 20, 50)))) {

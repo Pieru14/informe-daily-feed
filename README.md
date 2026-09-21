@@ -9,7 +9,14 @@ Ogni mattina un flusso GitHub Actions:
 1. cerca esclusivamente nei domini ufficiali della watchlist;
 2. pubblica un'edizione solo quando trova almeno cinque novità verificabili;
 3. conserva l'ultima edizione valida quando non emergono notizie sufficienti;
-4. salva una copia datata di ogni nuova edizione.
+4. salva una copia datata di ogni nuova edizione;
+5. genera anche un breve pensiero motivazionale originale, nella stessa richiesta
+   GPT-5.5. Il campo `dailyNote` cambia una volta al giorno (Europe/Rome), anche
+   quando non ci sono abbastanza notizie: le date delle notizie restano invariate.
+
+I pensieri sono testi creativi generici, non citazioni. Nomi, firme e dediche
+personali restano esclusivamente nel sito privato, mai in questo feed pubblico.
+Se la richiesta AI fallisce si conserva l'ultimo contenuto, con la sua data reale.
 
 Il sito IN/FORME leggerà data/current.json direttamente da qui. Tutte le
 chiavi restano nei Secrets di GitHub e non devono mai essere aggiunte ai file.
