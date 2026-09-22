@@ -1,6 +1,9 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-18T07:33:00.000Z",
-  "result": "seeded",
-  "message": "Prima edizione importata; l'automazione verrà attivata dopo l'aggiunta del Secret OPENAI_API_KEY."
+  "checkedAt": "2026-09-22T17:47:08.302Z",
+  "result": "published",
+  "localDate": "2026-09-22",
+  "editionId": "2026-09-22-05",
+  "consultedOfficialSources": 24,
+  "message": "Nuova edizione verificata e pubblicata."
 }
