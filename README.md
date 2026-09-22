@@ -7,12 +7,19 @@ sito-regalo, credenziali, né le idee personali salvate nella rivista.
 Ogni mattina un flusso GitHub Actions:
 
 1. cerca esclusivamente nei domini ufficiali della watchlist;
-2. pubblica un'edizione solo quando trova almeno cinque novità verificabili;
-3. conserva l'ultima edizione valida quando non emergono notizie sufficienti;
+2. pubblica da una a dieci novità verificabili, senza riempitivi;
+3. conserva l'ultima edizione valida quando non emergono nuove notizie;
 4. salva una copia datata di ogni nuova edizione;
 5. genera anche un breve pensiero motivazionale originale, nella stessa richiesta
    GPT-5.5. Il campo `dailyNote` cambia una volta al giorno (Europe/Rome), anche
    quando non ci sono abbastanza notizie: le date delle notizie restano invariate.
+
+Il feed espone `checkedAt`, `checkStatus` e `checkedSourceCount` separatamente da
+`updatedAt`: un controllo senza novità non cambia la data dell'edizione. Anche
+gli errori vengono segnalati, conservando gli ultimi contenuti validi. Il flusso
+salva inoltre `runtime.json`, senza credenziali o dettagli sensibili.
+Se la deduplicazione elimina notizie della bozza, si pubblicano quelle nuove
+e si conserva il precedente taccuino creativo, con la propria data distinta.
 
 I pensieri sono testi creativi generici, non citazioni. Nomi, firme e dediche
 personali restano esclusivamente nel sito privato, mai in questo feed pubblico.

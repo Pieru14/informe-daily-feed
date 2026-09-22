@@ -4,7 +4,7 @@ import { mkdtemp, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { execFileSync } from 'node:child_process';
+import { execFileSync, spawnSync } from 'node:child_process';
 import { buildDailyNote, validateDailyNote, noteDate } from './daily-note.mjs';
 
 const scripts = path.dirname(fileURLToPath(import.meta.url));
@@ -24,6 +24,10 @@ test('validazione, calendario italiano e stabilità nella stessa giornata', () =
 });
 
 const fixture = JSON.parse(await readFile(path.join(root, 'data/current.json'), 'utf8'));
+delete fixture.dailyNote;
+delete fixture.checkedAt;
+delete fixture.checkStatus;
+delete fixture.checkedSourceCount;
 const pulse = fixture.brandPulse.updates;
 const edition = fixture.dailyEdition;
 const publishDraft = {
@@ -34,7 +38,7 @@ const publishDraft = {
 };
 const officialUrls = [...new Set([...pulse.map(item => item.url), edition.focus.url, ...edition.notes.map(item => item.url)])];
 
-async function simulate(draft, sources, seen = [], previous = fixture) {
+async function simulate(draft, sources, seen = [], previous = fixture, apiFailure = false) {
   const temp = await mkdtemp(path.join(tmpdir(), 'informe-note-test-'));
   for (const directory of ['config', 'data']) await mkdir(path.join(temp, directory));
   const json = (name, value) => writeFile(path.join(temp, name), JSON.stringify(value, null, 2) + '\n');
@@ -44,12 +48,13 @@ async function simulate(draft, sources, seen = [], previous = fixture) {
   await writeFile(path.join(temp, 'config/editorial-policy.md'), 'Fixture di test.');
   const response = { output_text: JSON.stringify(draft), output: [{ type: 'web_search_call', action: { sources: sources.map(url => ({ url })) } }] };
   // Replace fetch in a separate test process: no network, real key or paid requests.
-  const mock = 'globalThis.fetch = async url => { if (url !== "https://api.openai.com/v1/responses") throw Error("Unexpected network"); return {ok:true,json:async()=>(' + JSON.stringify(response) + ')}; };';
+  const mock = 'globalThis.fetch = async url => { if (url !== "https://api.openai.com/v1/responses") throw Error("Unexpected network"); return {ok:' + !apiFailure + ',status:429,text:async()=>"Test API failure",json:async()=>(' + JSON.stringify(response) + ')}; };';
   const mockPath = path.join(temp, 'mock.mjs');
   await writeFile(mockPath, mock);
-  execFileSync(process.execPath, ['--import', pathToFileURL(mockPath).href, path.join(scripts, 'update-edition.mjs')], {
+  const run = spawnSync(process.execPath, ['--import', pathToFileURL(mockPath).href, path.join(scripts, 'update-edition.mjs')], {
     cwd: temp, env: { ...process.env, OPENAI_API_KEY: 'test-only', GITHUB_EVENT_NAME: 'workflow_dispatch' }, stdio: 'pipe'
   });
+  assert.equal(run.status, apiFailure ? 1 : 0, String(run.stderr));
   execFileSync(process.execPath, [path.join(scripts, 'validate-feed.mjs'), 'data/current.json'], { cwd: temp, stdio: 'pipe' });
   return {
     next: JSON.parse(await readFile(path.join(temp, 'data/current.json'), 'utf8')),
@@ -62,21 +67,57 @@ test('skip anche senza fonti: aggiorna solo la frase, non le date delle notizie'
   const previous = { ...fixture };
   delete previous.dailyNote;
   const result = await simulate({ decision: 'skip', reason: 'Non ci sono nuove notizie verificate.', dailyNote: words }, [], officialUrls, previous);
-  const { dailyNote, ...news } = result.next;
+  const { dailyNote, checkedAt, checkStatus, checkedSourceCount, ...news } = result.next;
   assert.deepEqual(news, previous);
+  assert.equal(checkStatus, 'no_new_verified_updates');
+  assert.equal(checkedSourceCount, 0);
+  assert.ok(Date.parse(checkedAt));
   assert.equal(dailyNote.text, words);
   assert.deepEqual(result.seen, officialUrls);
   const rerun = await simulate({ decision: 'skip', reason: 'Nessuna nuova notizia.', dailyNote: 'Un altro pensiero valido che non deve sostituire la frase già scelta oggi.' }, [], officialUrls, result.next);
-  assert.deepEqual(rerun.next, result.next);
+  assert.deepEqual(rerun.next.dailyNote, result.next.dailyNote);
+  assert.equal(rerun.next.updatedAt, result.next.updatedAt);
 });
 
-test('deduplicazione sotto cinque: aggiorna solo la frase', async () => {
+test('tutte le notizie duplicate: aggiorna solo frase e controllo', async () => {
   const previous = { ...fixture };
   delete previous.dailyNote;
   const result = await simulate(publishDraft, officialUrls, officialUrls, previous);
-  const { dailyNote, ...news } = result.next;
+  const { dailyNote, checkedAt, checkStatus, checkedSourceCount, ...news } = result.next;
   assert.deepEqual(news, previous);
   assert.equal(dailyNote.date, today);
+});
+
+test('una sola notizia verificata basta per pubblicare', async () => {
+  const update = publishDraft.updates[0];
+  const draft = { ...publishDraft, updates: [update], focus: { ...publishDraft.focus, url: update.url }, notes: publishDraft.notes.map(note => ({ ...note, url: update.url })) };
+  const result = await simulate(draft, [update.url]);
+  assert.equal(result.next.brandPulse.updates.length, 1);
+  assert.equal(result.next.checkStatus, 'published');
+  assert.notEqual(result.next.dailyEdition.focus.id, fixture.dailyEdition.focus.id);
+});
+
+test('deduplicazione parziale: nuove notizie, taccuino precedente non ridatato', async () => {
+  const result = await simulate(publishDraft, officialUrls, [pulse[0].url]);
+  assert.equal(result.next.brandPulse.updates.length, pulse.length - 1);
+  assert.deepEqual(result.next.dailyEdition, fixture.dailyEdition);
+  assert.notEqual(result.next.updatedAt, fixture.updatedAt);
+});
+
+test('errore API: segnala il controllo fallito e conserva tutti i contenuti', async () => {
+  const result = await simulate(null, [], officialUrls, fixture, true);
+  const { checkedAt, checkStatus, checkedSourceCount, ...news } = result.next;
+  assert.deepEqual(news, fixture);
+  assert.equal(checkStatus, 'error');
+  assert.deepEqual(result.seen, officialUrls);
+});
+
+test('pensiero ripetuto: non impedisce nuove notizie e mantiene la data originale', async () => {
+  const oldTime = new Date(Date.now() - 86400000);
+  const previous = { ...fixture, dailyNote: { text: words, date: noteDate(oldTime), createdAt: oldTime.toISOString() } };
+  const result = await simulate(publishDraft, officialUrls, [], previous);
+  assert.equal(result.next.checkStatus, 'published');
+  assert.deepEqual(result.next.dailyNote, previous.dailyNote);
 });
 
 test('edizione completa: pubblica notizie e frase insieme', async () => {

@@ -35,6 +35,7 @@ jobs:
           node-version: 22
 
       - name: Crea l'edizione
+        id: editor
         run: node scripts/update-edition.mjs
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -42,16 +43,19 @@ jobs:
           INFORME_FORCE_UPDATE: ${{ inputs.force }}
 
       - name: Verifica il feed
+        id: verify
+        if: ${{ !cancelled() && steps.editor.outcome != 'skipped' }}
         run: node scripts/validate-feed.mjs data/current.json
 
       - name: Salva il risultato
+        if: ${{ !cancelled() && steps.verify.outcome == 'success' }}
         run: |
-          if git diff --quiet -- data/current.json data/seen-urls.json; then
+          if git diff --quiet -- data/current.json data/seen-urls.json data/runtime.json; then
             echo "Nessuna modifica al feed."
             exit 0
           fi
           git config user.name "IN/FORME Editorial Agent"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/current.json data/seen-urls.json data/archive
+          git add data/current.json data/seen-urls.json data/runtime.json data/archive
           git commit -m "data: controlla il radar quotidiano"
           git push

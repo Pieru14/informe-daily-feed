@@ -95,6 +95,11 @@ function validatePractice(item, index) {
 
 object(feed, 'feed');
 if (feed.dailyNote !== undefined) validateDailyNote(feed.dailyNote);
+if (feed.checkedAt !== undefined) {
+  if (typeof feed.checkedAt !== 'string' || Number.isNaN(Date.parse(feed.checkedAt))) fail('checkedAt non valido.');
+  if (!['published', 'no_new_verified_updates', 'error'].includes(feed.checkStatus)) fail('checkStatus non valido.');
+  if (!Number.isInteger(feed.checkedSourceCount) || feed.checkedSourceCount < 0) fail('checkedSourceCount non valido.');
+}
 if (feed.schemaVersion !== 1) fail('schemaVersion deve essere 1.');
 text(feed.editionId, 'editionId', 8, 80);
 if (Number.isNaN(Date.parse(text(feed.updatedAt, 'updatedAt', 20, 50)))) {
@@ -116,8 +121,8 @@ text(coverage.caveat, 'sourceCoverage.caveat', 20, 400);
 const pulse = object(feed.brandPulse, 'brandPulse');
 text(pulse.refreshedAt, 'brandPulse.refreshedAt', 8, 140);
 const updates = list(pulse.updates, 'brandPulse.updates');
-if (updates.length < 5 || updates.length > 10) {
-  fail('brandPulse.updates deve contenere da 5 a 10 notizie.');
+if (updates.length < 1 || updates.length > 10) {
+  fail('brandPulse.updates deve contenere da 1 a 10 notizie.');
 }
 updates.forEach(validateUpdate);
 uniqueIds(updates, 'brandPulse.updates');

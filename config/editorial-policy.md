@@ -14,9 +14,9 @@ Costruisci un'edizione breve, utile e creativa per una professionista della moda
 
 ## Selezione
 
-- Pubblica solo quando esistono da 5 a 10 aggiornamenti distinti, nuovi e realmente utili rispetto alle fonti già viste.
+- Pubblica da 1 a 10 aggiornamenti distinti, nuovi e realmente utili rispetto alle fonti già viste. Una sola novità verificata basta: non aggiungere riempitivi.
 - Non affermare di coprire ogni brand esistente: descrivi la selezione come un radar su fonti ufficiali consultate.
-- Se non emergono abbastanza novità verificabili, scegli `skip` e spiega brevemente il motivo. Non riempire l'edizione con fatti vecchi o generici.
+- Se non emerge nessuna novità verificabile, scegli `skip` e spiega brevemente il motivo. Non riempire l'edizione con fatti vecchi o generici.
 
 ## Lettura creativa
 
