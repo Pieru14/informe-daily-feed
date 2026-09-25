@@ -28,7 +28,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Cerca notizie New York e Missoni USA
+      - name: Cerca notizie competitor New York e USA
         id: editor
         run: node scripts/update-new-york.mjs
         env:

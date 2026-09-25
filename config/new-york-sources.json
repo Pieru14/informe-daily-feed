@@ -1,8 +1,11 @@
 [
-  { "brand": "Missoni", "domain": "missoni.com", "surface": "USA: campagne, aperture, eventi e comunicati", "urls": ["https://www.missoni.com/it-it/opening-events.html", "https://www.missoni.com/en-us/adv-campaigns.html", "https://www.missoni.com/it-it/press-releases.html"] },
+  { "brand": "Etro", "domain": "etro.com", "priority": true, "surface": "campagne, stampe, collaborazioni e lanci", "urls": ["https://www.etro.com/it-it/advertising-campaign.html", "https://www.etro.com/it-it/advertising-campaign-man.html"] },
+  { "brand": "Marni", "domain": "marni.com", "priority": true, "surface": "campagne, capsule, collaborazioni ed eventi", "urls": ["https://www.marni.com/it-it/cosmos-of-marni/", "https://www.marni.com/en-us/cosmos-of-marni/"] },
+  { "brand": "Pucci", "domain": "pucci.com", "priority": true, "surface": "colore, capsule, sfilate e campagne", "urls": ["https://www.pucci.com/en/pages/pucci-journey"] },
+  { "brand": "Brunello Cucinelli", "domain": "brunellocucinelli.com", "priority": true, "surface": "campagne, maglieria, materiali e racconto del lusso", "urls": ["https://www.brunellocucinelli.com/en/communication/campaigns/"] },
+  { "brand": "Loro Piana", "domain": "loropiana.com", "priority": true, "surface": "campagne, materiali, maglieria e progetti", "urls": ["https://it.loropiana.com/it/cm/campaigns/narratives", "https://us.loropiana.com/en/cm/campaigns/narratives"] },
   { "brand": "CFDA / NYFW", "domain": "cfda.com", "surface": "calendario e notizie ufficiali New York Fashion Week", "urls": ["https://cfda.com/home/nyfw/"] },
-  { "brand": "Tory Burch", "domain": "toryburch.com", "surface": "runway e comunicazione editoriale a New York", "urls": ["https://blog.toryburch.com/"] },
+  { "brand": "Tory Burch", "domain": "toryburch.com", "priority": true, "surface": "runway e comunicazione editoriale", "urls": ["https://www.toryburch.com/en-us/blog/torys-blog.html"] },
   { "brand": "Coach", "domain": "coach.com", "surface": "NYFW, campagne, ambassador e attivazioni USA", "urls": ["https://www.coach.com/shop/new/featured/shop-the-runway"] },
-  { "brand": "Tiffany & Co.", "domain": "tiffany.com", "surface": "newsroom, collaborazioni e The Landmark NYC", "urls": ["https://press.tiffany.com/news/"] },
-  { "brand": "Ralph Lauren", "domain": "ralphlauren.com", "surface": "newsroom, runway e cultura americana", "urls": ["https://corporate.ralphlauren.com/newsroom"] }
+  { "brand": "Ralph Lauren", "domain": "ralphlauren.com", "priority": true, "surface": "newsroom, runway e comunicazione", "urls": ["https://corporate.ralphlauren.com/newsroom"] }
 ]

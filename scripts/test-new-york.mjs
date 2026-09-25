@@ -7,6 +7,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import { buildNewYorkDesk, validateNewYorkDesk, failedDesk } from './new-york-desk.mjs';
 import { noteDate } from './daily-note.mjs';
+import { competitorBrief, competitorSources, isExcludedBrand } from './competitor-research.mjs';
 
 const scripts = path.dirname(fileURLToPath(import.meta.url));
 const root = path.dirname(scripts);
@@ -69,6 +70,17 @@ async function simulate(script, draft, previous, fail = false) {
   return next;
 }
 const fixture = JSON.parse(await readFile(path.join(root, 'data/current.json'), 'utf8'));
+test('stessa ricerca competitor nei due mercati, Missoni esclusa anche da una fonte terza', async () => {
+  const sources = competitorSources(JSON.parse(await readFile(path.join(root, 'config/official-domains.json'), 'utf8')), JSON.parse(await readFile(path.join(root, 'config/new-york-sources.json'), 'utf8')));
+  assert.ok(sources.some(source => source.brand === 'Etro'));
+  assert.ok(sources.some(source => source.brand === 'Marni'));
+  assert.ok(!sources.some(source => /missoni/i.test(source.brand + source.domain)));
+  assert.equal(competitorBrief('Italia', sources).replace('Italia.', 'MERCATO.'), competitorBrief('USA', sources).replace('USA.', 'MERCATO.'));
+  assert.equal(isExcludedBrand({brand:'Missoni',url:article.url}), true);
+  assert.equal(isExcludedBrand({brand:'Etro',url:'https://www.missoni.com/news'}), true);
+  const excluded = build([{...article,brand:'Missoni'}]).desk;
+  assert.equal(excluded.updates.length, 0);
+});
 for (const [label, draft, fail] of [['publish', { updates: [article] }, false], ['empty', { updates: [] }, false], ['error', null, true]]) {
   test('sera ' + label + ': il radar principale resta identico', async () => {
     const previous = { ...fixture, newYorkDesk: desk };

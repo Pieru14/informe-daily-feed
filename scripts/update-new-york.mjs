@@ -2,6 +2,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { buildNewYorkDesk, failedDesk, newYorkSchema, deskUrl } from './new-york-desk.mjs';
 import { noteDate } from './daily-note.mjs';
+import { competitorBrief, competitorSources } from './competitor-research.mjs';
 
 const file = (...parts) => path.join(process.cwd(), ...parts);
 const readJson = async (name, fallback) => {
@@ -14,7 +15,7 @@ async function writeJson(name, value) {
 }
 const previous = await readJson('data/current.json');
 const seenUrls = await readJson('data/seen-new-york-urls.json', []);
-const sources = await readJson('config/new-york-sources.json');
+const sources = competitorSources(await readJson('config/official-domains.json'), await readJson('config/new-york-sources.json'));
 const domains = sources.map(source => source.domain);
 const today = noteDate(new Date());
 
@@ -28,10 +29,10 @@ try {
   if (!key) throw Error('Manca il Secret OPENAI_API_KEY.');
   const input = [
     'Sei il desk New York / USA di IN/FORME. Scrivi in italiano. Oggi è ' + today + ' (Europe/Rome).',
-    'Esegui una ricerca dedicata a Missoni e una alla moda di New York/USA. Controlla campagne, eventi, collaborazioni, ambassador, retail, NYFW e comunicazione pubblica. Usa solo fonti ufficiali.',
+    competitorBrief('USA, con attenzione a New York', sources),
     'Watchlist e pagine di partenza: ' + JSON.stringify(sources),
     'Scegli 0-5 novità distinte pubblicate negli ultimi 30 giorni, preferibilmente negli ultimi 7. Non aggiungere riempitivi. Se non emergono aggiornamenti verificabili restituisci updates vuoto.',
-    'Per Missoni scope=missoni e fonte missoni.com; per gli altri scope=new_york. Cerca Missoni esplicitamente anche se non emerge subito. Non generare il radar generale né pensieri motivazionali.',
+    'Per tutte le schede usa scope=new_york. Non generare il radar italiano né pensieri motivazionali.',
     'Ogni articolo deve documentare un legame USA o New York nel suo contenuto. Riporta la prova in geographyEvidence. Lingua inglese, percorso en-us, prezzi in dollari e nazionalità del marchio NON sono prove. Non chiamare USA una campagna globale senza attivazione locale documentata.',
     'publishedOn è la data YYYY-MM-DD di pubblicazione o annuncio realmente leggibile nella fonte: mai oggi per default, mai la data futura di un evento, mai una stagione. Se non è verificabile usa null; sarà esclusa. dateOrSeason indica invece la data o stagione dell’evento.',
     'Copia l’URL HTTPS ufficiale specifico realmente consultato. Non ricostruire URL e non usare landing generiche al posto della notizia. Separa fact (fatti), communication (lettura editoriale di messaggio, linguaggio, pubblico e canale osservabile), relevance (spunto operativo per osservare comunicazione moda USA).',

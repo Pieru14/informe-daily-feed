@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { buildDailyNote } from './daily-note.mjs';
+import { competitorBrief, competitorSources, isExcludedBrand } from './competitor-research.mjs';
 
 const root = process.cwd();
 const file = (...parts) => path.join(root, ...parts);
@@ -289,12 +290,13 @@ async function askEditor({ allowedDomains, seenUrls, today, previousNote }) {
     fail('Manca OPENAI_API_KEY. Aggiungila nei Secrets di GitHub, non nei file.');
   }
 
-  const brands = await readJson(file('config', 'official-domains.json'));
+  const brands = sources;
   const policy = await readFile(file('config', 'editorial-policy.md'), 'utf8');
   const brandLine = brands.map((entry) => entry.brand + ' (' + entry.surface + ')').join(', ');
   const knownUrls = [...seenUrls].slice(-500).join('\n');
   const input = [
     policy,
+    competitorBrief('Italia', brands),
     '',
     'Oggi è ' + today + ' nel fuso Europe/Rome.',
     'Cerca novità degli ultimi 7 giorni su: ' + brandLine + '.',
@@ -387,6 +389,7 @@ function buildEdition({ draft, sourceUrls, allowedDomains, seenUrls, now, today,
   const updates = [];
   rawUpdates.forEach((item, index) => {
     const update = object(item, 'updates[' + index + ']');
+    if (isExcludedBrand(update)) { console.log('Notizia esclusa dal perimetro competitor.'); return; }
     const brand = compactText(update.brand, 'brand', 2, 80);
     const category = compactText(update.category, 'category', 3, 48);
     const dateOrSeason = compactText(update.dateOrSeason, 'dateOrSeason', 2, 48);
@@ -534,7 +537,7 @@ async function writeRuntime(payload) {
 
 const now = new Date();
 const clock = localClock(now);
-const sources = await readJson(file('config', 'official-domains.json'));
+const sources = competitorSources(await readJson(file('config', 'official-domains.json')), await readJson(file('config', 'new-york-sources.json'), []));
 const allowedDomains = [...new Set(list(sources, 'official-domains').map((entry) => compactText(object(entry, 'source').domain, 'domain', 3, 160).toLowerCase()))];
 const previous = await readJson(feedPath);
 const seenUrls = new Set((await readJson(seenPath, [])).map(normalizeUrl).filter(Boolean));

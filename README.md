@@ -39,7 +39,7 @@ avviare una volta il flusso “IN/FORME · edizione quotidiana”.
 
 - Radar principale: 10:30 Europe/Rome, GPT-5.5; maison, notizie e taccuino creativo.
 - Radar New York / USA: 18:30 Europe/Rome, GPT-5.5; comunicazione pubblica,
-  campagne, eventi, NYFW e un focus Missoni USA.
+  campagne, eventi, NYFW dei competitor. Missoni è esclusa dalle ricerche.
 
 Entrambi gli orari sono italiani, con cambio automatico ora legale/solare.
 GitHub Actions può partire in ritardo: questi sono orari programmati, non SLA.
@@ -52,8 +52,13 @@ il pensiero o il taccuino del mattino. Il radar mattutino conserva il desk seral
 I due flussi condividono un blocco di scrittura e recuperano il ramo aggiornato
 dopo l'attesa, evitando di sovrascriversi.
 
-La watchlist USA è in `config/new-york-sources.json`: Missoni, CFDA, Tory Burch,
-Coach, Tiffany & Co. e Ralph Lauren. Non è un monitoraggio completo di tutti i
+Entrambi i radar usano la stessa watchlist, unione di `config/official-domains.json`
+e `config/new-york-sources.json`, e lo stesso brief in `scripts/competitor-research.mjs`.
+Priorità editoriale a Etro, Marni, Pucci, Brunello Cucinelli, Loro Piana,
+Ralph Lauren e Tory Burch, insieme alle altre maison. L'appartenenza alla watchlist
+è una scelta di confronto editoriale, non una classifica certificata dei concorrenti.
+Missoni è esclusa sia dai domini di ricerca sia dagli aggiornamenti proposti.
+Il radar mattutino cerca iniziative nel mercato italiano, quello serale negli USA. Non è un monitoraggio completo di tutti i
 brand o social. Ogni notizia deve avere fonte ufficiale emersa nella ricerca,
 data di pubblicazione verificabile entro 30 giorni e un legame USA esplicito.
 Inglese, URL en-us o prezzo in dollari non bastano. Pagine senza data, vecchie

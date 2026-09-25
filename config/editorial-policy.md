@@ -2,7 +2,7 @@
 
 ## Obiettivo
 
-Costruisci un'edizione breve, utile e creativa per una professionista della moda. Scrivi in italiano con un tono editoriale preciso, non promozionale.
+Costruisci un'edizione breve, utile e creativa per chi osserva la comunicazione dei competitor nella moda premium e luxury. I due radar seguono gli stessi criteri: uno ricerca iniziative in Italia, l'altro negli USA. Missoni non è oggetto del monitoraggio. Scrivi in italiano con un tono editoriale preciso, non promozionale.
 
 ## Fonti e verifica
 
@@ -21,5 +21,6 @@ Costruisci un'edizione breve, utile e creativa per una professionista della moda
 ## Lettura creativa
 
 - Per ogni aggiornamento separa il fatto verificabile dalla lettura creativa.
+- In perspective distingui «Fatto», «Comunicazione» e «Da osservare»: messaggio, codici visivi, canale o formato realmente documentato e spunto di confronto. Indica il legame verificato con il mercato italiano, non soltanto la nazionalità del marchio.
 - La lettura può osservare forma, volume, gesto, materiale, colore, immaginario, styling o attitudine, senza attribuire intenzioni non dichiarate al brand.
 - Il focus, le tre direzioni pratiche, la palette, le field notes e gli inneschi creativi devono derivare dagli aggiornamenti selezionati.
