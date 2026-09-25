@@ -1,20 +1,15 @@
-name: IN/FORME · edizione quotidiana
+name: IN/FORME - New York e USA
 
 on:
   schedule:
-    - cron: "30 10 * * *"
+    - cron: "30 18 * * *"
       timezone: "Europe/Rome"
   workflow_dispatch:
-    inputs:
-      force:
-        description: "Riprova anche se oggi esiste già un'edizione"
-        required: false
-        default: false
-        type: boolean
 
 permissions:
   contents: write
 
+# Same lock as the morning radar: each reads the latest feed after queuing.
 concurrency:
   group: informe-daily-edition
   cancel-in-progress: false
@@ -24,39 +19,33 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - name: Recupera il radar
+      - name: Recupera il radar più recente
         uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
-
       - name: Prepara Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
-
-      - name: Crea l'edizione
+      - name: Cerca notizie New York e Missoni USA
         id: editor
-        run: node scripts/update-edition.mjs
+        run: node scripts/update-new-york.mjs
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: gpt-5.5
-          INFORME_FORCE_UPDATE: ${{ inputs.force }}
-
       - name: Verifica il feed
         id: verify
         if: ${{ !cancelled() && steps.editor.outcome != 'skipped' }}
         run: node scripts/validate-feed.mjs data/current.json
-
-      - name: Salva il risultato
+      - name: Salva il desk indipendente
         if: ${{ !cancelled() && steps.verify.outcome == 'success' }}
         run: |
-          if git diff --quiet -- data/current.json data/seen-urls.json data/seen-new-york-urls.json data/runtime.json; then
-            echo "Nessuna modifica al feed."
+          git add data/current.json data/seen-new-york-urls.json data/runtime-new-york.json data/archive
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica al desk."
             exit 0
           fi
           git config user.name "IN/FORME Editorial Agent"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/current.json data/seen-urls.json data/seen-new-york-urls.json data/runtime.json data/archive
-          git commit -m "data: controlla il radar quotidiano"
+          git commit -m "data: controlla il radar New York USA"
           git push

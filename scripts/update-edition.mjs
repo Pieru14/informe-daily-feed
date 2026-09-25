@@ -535,21 +535,18 @@ async function writeRuntime(payload) {
 const now = new Date();
 const clock = localClock(now);
 const sources = await readJson(file('config', 'official-domains.json'));
-const allowedDomains = list(sources, 'official-domains').map((entry) => compactText(object(entry, 'source').domain, 'domain', 3, 160).toLowerCase());
+const allowedDomains = [...new Set(list(sources, 'official-domains').map((entry) => compactText(object(entry, 'source').domain, 'domain', 3, 160).toLowerCase()))];
 const previous = await readJson(feedPath);
 const seenUrls = new Set((await readJson(seenPath, [])).map(normalizeUrl).filter(Boolean));
 
-if (isDryRun) {
-  console.log('Configurazione valida: ' + allowedDomains.length + ' domini ufficiali, ' + seenUrls.size + ' fonti già pubblicate.');
-  process.exit(0);
+async function writeCurrent(feed) {
+  // The morning radar never changes the independent evening desk.
+  if (previous.newYorkDesk) feed.newYorkDesk = previous.newYorkDesk;
+  await writeJson(feedPath, feed);
 }
 
-if (process.env.GITHUB_EVENT_NAME === 'schedule' && !isForced && clock.hour < 7) {
-  await writeRuntime({
-    result: 'waiting_for_rome_morning',
-    localDate: clock.date,
-    message: 'Esecuzione anticipata: nessuna ricerca avviata prima della mattina italiana.'
-  });
+if (isDryRun) {
+  console.log('Configurazione valida: ' + allowedDomains.length + ' domini ufficiali, ' + seenUrls.size + ' fonti già pubblicate.');
   process.exit(0);
 }
 
@@ -565,7 +562,7 @@ try {
   const checked = { checkedAt: new Date().toISOString(), checkedSourceCount: sourceUrls.length };
   if (draft?.decision === 'skip') {
     // A new thought is independent from an edition: keep every news timestamp intact.
-    await writeJson(feedPath, { ...previous, dailyNote, ...checked, checkStatus: 'no_new_verified_updates' });
+    await writeCurrent({ ...previous, dailyNote, ...checked, checkStatus: 'no_new_verified_updates' });
     await writeRuntime({
       result: 'no_new_verified_updates',
       localDate: clock.date,
@@ -586,7 +583,7 @@ try {
     previous
   });
   if (!feed) {
-    await writeJson(feedPath, { ...previous, dailyNote, ...checked, checkStatus: 'no_new_verified_updates' });
+    await writeCurrent({ ...previous, dailyNote, ...checked, checkStatus: 'no_new_verified_updates' });
     await writeRuntime({
       result: 'no_new_verified_updates',
       localDate: clock.date,
@@ -599,7 +596,7 @@ try {
   Object.assign(feed, checked, { checkStatus: 'published' });
   const newUrls = [...collectUrls(feed)];
   const nextSeen = [...new Set([...seenUrls, ...newUrls])].slice(-500);
-  await writeJson(feedPath, feed);
+  await writeCurrent(feed);
   await writeJson(path.join(archiveDir, feed.editionId + '.json'), feed);
   await writeJson(seenPath, nextSeen);
   await writeRuntime({
@@ -611,7 +608,7 @@ try {
   });
   console.log('Nuova edizione pronta: ' + feed.editionId);
 } catch (error) {
-  await writeJson(feedPath, { ...previous, checkedAt: new Date().toISOString(), checkStatus: 'error', checkedSourceCount: 0 });
+  await writeCurrent({ ...previous, checkedAt: new Date().toISOString(), checkStatus: 'error', checkedSourceCount: 0 });
   await writeRuntime({ result: 'error', localDate: clock.date, message: 'Controllo non completato. Ultima edizione valida conservata.' });
   console.error(error instanceof Error ? error.message : String(error));
   process.exitCode = 1;

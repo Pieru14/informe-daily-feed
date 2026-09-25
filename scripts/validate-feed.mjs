@@ -1,5 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import { validateDailyNote } from './daily-note.mjs';
+import { validateNewYorkDesk } from './new-york-desk.mjs';
 
 const inputPath = process.argv[2] || 'data/current.json';
 const raw = await readFile(inputPath, 'utf8');
@@ -95,6 +96,7 @@ function validatePractice(item, index) {
 
 object(feed, 'feed');
 if (feed.dailyNote !== undefined) validateDailyNote(feed.dailyNote);
+if (feed.newYorkDesk !== undefined) validateNewYorkDesk(feed.newYorkDesk);
 if (feed.checkedAt !== undefined) {
   if (typeof feed.checkedAt !== 'string' || Number.isNaN(Date.parse(feed.checkedAt))) fail('checkedAt non valido.');
   if (!['published', 'no_new_verified_updates', 'error'].includes(feed.checkStatus)) fail('checkStatus non valido.');

@@ -98,8 +98,9 @@ test('una sola notizia verificata basta per pubblicare', async () => {
 });
 
 test('deduplicazione parziale: nuove notizie, taccuino precedente non ridatato', async () => {
-  const result = await simulate(publishDraft, officialUrls, [pulse[0].url]);
-  assert.equal(result.next.brandPulse.updates.length, pulse.length - 1);
+  const second = { ...publishDraft.updates[0], url: new URL('/test-fixture-second-story', pulse[0].url).href };
+  const result = await simulate({ ...publishDraft, updates: [publishDraft.updates[0], second] }, [...officialUrls, second.url], [pulse[0].url]);
+  assert.equal(result.next.brandPulse.updates.length, 1);
   assert.deepEqual(result.next.dailyEdition, fixture.dailyEdition);
   assert.notEqual(result.next.updatedAt, fixture.updatedAt);
 });
