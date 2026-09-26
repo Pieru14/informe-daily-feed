@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-26T08:38:47.221Z",
-  "result": "published",
+  "checkedAt": "2026-09-26T11:22:21.250Z",
+  "result": "no_new_verified_updates",
   "localDate": "2026-09-26",
-  "editionId": "2026-09-26-11",
-  "consultedOfficialSources": 18,
-  "message": "Nuova edizione verificata e pubblicata."
+  "consultedOfficialSources": 61,
+  "message": "Nella finestra 2026-09-26T08:38:47.215Z — 2026-09-26T11:22:05.867Z sono emerse pagine ufficiali consultabili sui domini ammessi, ma senza una data di pubblicazione verificabile al giorno 2026-09-26, oppure con sole date di evento/stagione/crawl non utilizzabili come publishedOn. Nessun aggiornamento distinto soddisfa insieme freschezza, fonte ufficiale, data di pubblicazione documentata e legame italiano verificato."
 }
