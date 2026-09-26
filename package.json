@@ -6,7 +6,7 @@
   "description": "Radar editoriale quotidiano di alta moda per IN/FORME",
   "scripts": {
     "check": "node scripts/validate-feed.mjs data/current.json",
-    "test": "node --test scripts/test-daily-note.mjs scripts/test-new-york.mjs",
+    "test": "node --test scripts/test-daily-note.mjs scripts/test-new-york.mjs scripts/test-freshness.mjs",
     "update:new-york": "node scripts/update-new-york.mjs",
     "update": "node scripts/update-edition.mjs",
     "update:dry-run": "node scripts/update-edition.mjs --dry-run"

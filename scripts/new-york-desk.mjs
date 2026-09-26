@@ -1,20 +1,22 @@
 import { createHash } from 'node:crypto';
-import { isExcludedBrand } from './competitor-research.mjs';
+import { isExcludedBrand, matchesCompetitor, competitorCoverage } from './competitor-research.mjs';
+import { researchWindow, verifyPublication } from './freshness.mjs';
 
 const text = maxLength => ({ type: 'string', maxLength });
 export const newYorkSchema = {
   type: 'object', additionalProperties: false,
   properties: {
-    updates: { type: 'array', maxItems: 5, items: {
+    updates: { type: 'array', maxItems: 10, items: {
       type: 'object', additionalProperties: false,
       properties: {
         scope: { type: 'string', enum: ['new_york'] },
         brand: text(80), category: text(60), publishedOn: { type: ['string', 'null'] },
+        publishedAt: { type: ['string', 'null'] }, publicationEvidence: text(180),
         dateOrSeason: text(100), geography: { type: 'string', enum: ['New York', 'USA'] },
         geographyEvidence: text(320), title: text(160), fact: text(500),
         communication: text(420), relevance: text(320), source: text(140), url: text(1800)
       },
-      required: ['scope', 'brand', 'category', 'publishedOn', 'dateOrSeason', 'geography',
+      required: ['scope', 'brand', 'category', 'publishedOn', 'publishedAt', 'publicationEvidence', 'dateOrSeason', 'geography',
         'geographyEvidence', 'title', 'fact', 'communication', 'relevance', 'source', 'url']
     } }
   }, required: ['updates']
@@ -50,13 +52,13 @@ function validDay(value) {
 }
 
 export function failedDesk(previous, now = new Date()) {
-  return { checkedAt: now.toISOString(), updatedAt: previous?.updatedAt || null,
+  return { ...previous, checkedAt: now.toISOString(), updatedAt: previous?.updatedAt || null,
     status: 'error', consultedSources: [],
     updates: (previous?.updates || []).filter(item => !isExcludedBrand(item)) };
 }
 
-export function buildNewYorkDesk({ draft, sourceUrls, domains, seenUrls, previous, now, today }) {
-  if (!draft || !Array.isArray(draft.updates) || draft.updates.length > 5) throw Error('Bozza New York non valida.');
+export function buildNewYorkDesk({ draft, sourceUrls, domains, competitors, seenUrls, previous, now, today, window = researchWindow(now, previous) }) {
+  if (!draft || !Array.isArray(draft.updates) || draft.updates.length > 10) throw Error('Bozza New York non valida.');
   const sources = [...new Set(sourceUrls)].filter(url => allowed(url, domains) && !isExcludedBrand({url}));
   const consulted = new Map(sources.map(url => [deskUrl(url), url]));
   const seen = new Set([...seenUrls].map(deskUrl).filter(Boolean));
@@ -64,20 +66,18 @@ export function buildNewYorkDesk({ draft, sourceUrls, domains, seenUrls, previou
   let rejected = 0;
   for (const item of draft.updates) {
     try {
-      if (isExcludedBrand(item)) throw Error('Notizia esclusa dal perimetro competitor.');
+      if (!matchesCompetitor(item, competitors)) throw Error('Brand o fonte fuori dalla watchlist.');
       const identity = deskUrl(item.url);
       if (!identity || !consulted.has(identity)) throw Error('Fonte non consultata o fuori watchlist.');
       if (seen.has(identity)) continue;
       // Undated pages, homepages and old openings are reference material, not news.
-      if (!validDay(item.publishedOn)) throw Error('Data della fonte non verificata.');
-      const age = (Date.parse(today) - Date.parse(item.publishedOn)) / 86400000;
-      if (age < 0 || age > 30) throw Error('Fonte non recente.');
+      const publication = verifyPublication(item, window);
       if (item.scope !== 'new_york' || !['New York', 'USA'].includes(item.geography)) throw Error('Ambito non valido.');
       const next = {
         id: 'ny-' + today + '-' + createHash('sha256').update(identity).digest('hex').slice(0, 12),
         addedAt: now.toISOString(), scope: item.scope,
         brand: content(item.brand, 2, 80), category: content(item.category, 3, 60),
-        publishedOn: item.publishedOn, dateOrSeason: content(item.dateOrSeason, 3, 100),
+        ...publication, dateOrSeason: content(item.dateOrSeason, 3, 100),
         geography: item.geography, geographyEvidence: content(item.geographyEvidence, 12, 320),
         title: content(item.title, 5, 160), fact: content(item.fact, 24, 500),
         communication: content(item.communication, 24, 420), relevance: content(item.relevance, 24, 320),
@@ -89,11 +89,15 @@ export function buildNewYorkDesk({ draft, sourceUrls, domains, seenUrls, previou
       console.warn('Scheda New York esclusa: ' + error.message);
     }
   }
-  const updates = [...accepted, ...(previous?.updates || []).filter(item => !isExcludedBrand(item) && !accepted.some(next => deskUrl(next.url) === deskUrl(item.url)))]
-    .sort((a, b) => b.publishedOn.localeCompare(a.publishedOn) || b.addedAt.localeCompare(a.addedAt)).slice(0, 6);
+  // New selections contain only fresh results, never a mixture with weeks-old cards.
+  const updates = (accepted.length ? accepted : (previous?.updates || []).filter(item => !isExcludedBrand(item)))
+    .sort((a, b) => b.publishedOn.localeCompare(a.publishedOn) || String(b.publishedAt || '').localeCompare(String(a.publishedAt || ''))).slice(0, 10);
   const desk = {
     checkedAt: now.toISOString(), updatedAt: accepted.length ? now.toISOString() : previous?.updatedAt || null,
     status: accepted.length ? 'updated' : rejected ? 'not_verified' : sources.length ? 'no_new_verified_updates' : 'not_verified',
+    freshnessPolicy: 'incremental-v1', researchWindow: window,
+    lastSuccessfulSearchAt: sources.length && !rejected ? window.until : (previous?.lastSuccessfulSearchAt || window.since),
+    radarCoverage: competitorCoverage(competitors, sources),
     consultedSources: sources.slice(0, 120), updates
   };
   validateNewYorkDesk(desk);
@@ -105,7 +109,7 @@ export function validateNewYorkDesk(desk) {
   if (!desk || Number.isNaN(Date.parse(desk.checkedAt)) || typeof desk.checkedAt !== 'string'
     || !statuses.includes(desk.status)
     || (desk.updatedAt !== null && (typeof desk.updatedAt !== 'string' || Number.isNaN(Date.parse(desk.updatedAt))))
-    || !Array.isArray(desk.updates) || desk.updates.length > 6 || !Array.isArray(desk.consultedSources)) throw Error('Stato New York non valido.');
+    || !Array.isArray(desk.updates) || desk.updates.length > 10 || !Array.isArray(desk.consultedSources)) throw Error('Stato New York non valido.');
   desk.consultedSources.forEach(url => { if (!deskUrl(url)) throw Error('Fonte New York non sicura.'); });
   if (desk.updatedAt && Date.parse(desk.updatedAt) > Date.parse(desk.checkedAt)) throw Error('Cronologia New York non valida.');
   const ids = new Set();

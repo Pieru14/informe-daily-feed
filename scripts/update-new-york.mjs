@@ -2,7 +2,8 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { buildNewYorkDesk, failedDesk, newYorkSchema, deskUrl } from './new-york-desk.mjs';
 import { noteDate } from './daily-note.mjs';
-import { competitorBrief, competitorSources } from './competitor-research.mjs';
+import { competitorBrief } from './competitor-research.mjs';
+import { researchWindow, freshnessBrief } from './freshness.mjs';
 
 const file = (...parts) => path.join(process.cwd(), ...parts);
 const readJson = async (name, fallback) => {
@@ -15,9 +16,11 @@ async function writeJson(name, value) {
 }
 const previous = await readJson('data/current.json');
 const seenUrls = await readJson('data/seen-new-york-urls.json', []);
-const sources = competitorSources(await readJson('config/official-domains.json'), await readJson('config/new-york-sources.json'));
+const sources = await readJson('config/competitors.json');
 const domains = sources.map(source => source.domain);
-const today = noteDate(new Date());
+const searchStartedAt = new Date();
+const today = noteDate(searchStartedAt);
+const window = researchWindow(searchStartedAt, previous.newYorkDesk);
 
 if (process.argv.includes('--dry-run')) {
   console.log('Desk New York: ' + domains.length + ' fonti ufficiali, GPT-5.5, 18:30 Europe/Rome.');
@@ -31,7 +34,8 @@ try {
     'Sei il desk New York / USA di IN/FORME. Scrivi in italiano. Oggi è ' + today + ' (Europe/Rome).',
     competitorBrief('USA, con attenzione a New York', sources),
     'Watchlist e pagine di partenza: ' + JSON.stringify(sources),
-    'Scegli 0-5 novità distinte pubblicate negli ultimi 30 giorni, preferibilmente negli ultimi 7. Non aggiungere riempitivi. Se non emergono aggiornamenti verificabili restituisci updates vuoto.',
+    freshnessBrief(window),
+    'Cerca ogni brand della watchlist. Scegli 0-10 novità distinte, dalla più recente, senza privilegiare il numero dei risultati. Non aggiungere riempitivi. Se non emergono aggiornamenti verificabili restituisci updates vuoto.',
     'Per tutte le schede usa scope=new_york. Non generare il radar italiano né pensieri motivazionali.',
     'Ogni articolo deve documentare un legame USA o New York nel suo contenuto. Riporta la prova in geographyEvidence. Lingua inglese, percorso en-us, prezzi in dollari e nazionalità del marchio NON sono prove. Non chiamare USA una campagna globale senza attivazione locale documentata.',
     'publishedOn è la data YYYY-MM-DD di pubblicazione o annuncio realmente leggibile nella fonte: mai oggi per default, mai la data futura di un evento, mai una stagione. Se non è verificabile usa null; sarà esclusa. dateOrSeason indica invece la data o stagione dell’evento.',
@@ -68,7 +72,7 @@ try {
   const draft = JSON.parse(payload.output_text || chunks.join('\n'));
   const now = new Date();
   const result = buildNewYorkDesk({ draft, sourceUrls: [...consulted], domains, seenUrls,
-    previous: previous.newYorkDesk, now, today });
+    competitors: sources, previous: previous.newYorkDesk, now, today, window });
   // Only this field belongs to the evening radar. All morning fields stay intact.
   await writeJson('data/current.json', { ...previous, newYorkDesk: result.desk });
   await writeJson('data/seen-new-york-urls.json', result.seenUrls);

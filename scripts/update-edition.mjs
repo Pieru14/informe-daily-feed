@@ -1,7 +1,8 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { buildDailyNote } from './daily-note.mjs';
-import { competitorBrief, competitorSources, isExcludedBrand } from './competitor-research.mjs';
+import { competitorBrief, matchesCompetitor, competitorCoverage } from './competitor-research.mjs';
+import { researchWindow, verifyPublication, freshnessBrief } from './freshness.mjs';
 
 const root = process.cwd();
 const file = (...parts) => path.join(root, ...parts);
@@ -207,12 +208,17 @@ const updateSchema = {
     brand: textSchema(80),
     category: textSchema(48),
     dateOrSeason: textSchema(48),
+    publishedOn: { type: ['string', 'null'] },
+    publishedAt: { type: ['string', 'null'] },
+    publicationEvidence: textSchema(180),
+    geography: { type: 'string', enum: ['Italia'] },
+    geographyEvidence: textSchema(320),
     title: textSchema(180),
     perspective: textSchema(700),
     source: textSchema(180),
     url: urlSchema
   },
-  required: ['brand', 'category', 'dateOrSeason', 'title', 'perspective', 'source', 'url']
+  required: ['brand', 'category', 'dateOrSeason', 'publishedOn', 'publishedAt', 'publicationEvidence', 'geography', 'geographyEvidence', 'title', 'perspective', 'source', 'url']
 };
 const focusSchema = {
   type: 'object',
@@ -284,7 +290,7 @@ const editorialSchema = {
   required: ['decision', 'reason', 'dailyNote', 'updates', 'focus', 'directions', 'palette', 'notes', 'practice']
 };
 
-async function askEditor({ allowedDomains, seenUrls, today, previousNote }) {
+async function askEditor({ allowedDomains, seenUrls, today, previousNote, window }) {
   const key = String(process.env.OPENAI_API_KEY || '').trim();
   if (!key) {
     fail('Manca OPENAI_API_KEY. Aggiungila nei Secrets di GitHub, non nei file.');
@@ -299,7 +305,10 @@ async function askEditor({ allowedDomains, seenUrls, today, previousNote }) {
     competitorBrief('Italia', brands),
     '',
     'Oggi è ' + today + ' nel fuso Europe/Rome.',
-    'Cerca novità degli ultimi 7 giorni su: ' + brandLine + '.',
+    freshnessBrief(window),
+    'Cerca ciascuno di questi brand: ' + brandLine + '.',
+    'Pagine ufficiali di partenza, non date di pubblicazione: ' + JSON.stringify(brands),
+    'geography deve essere Italia e geographyEvidence deve riportare il legame documentato con il mercato italiano. Non confondere sede del brand e mercato della notizia.',
     'La ricerca web è filtrata ai soli domini ufficiali. Devi usare la ricerca prima di decidere.',
     'Le fonti già pubblicate qui sotto non possono essere riproposte come nuove:',
     knownUrls || '(nessuna)',
@@ -371,7 +380,7 @@ function requireOfficialUrl(value, label, allowedDomains, sourceUrls) {
   fail(label + ' non compare tra le fonti realmente consultate.');
 }
 
-function buildEdition({ draft, sourceUrls, allowedDomains, seenUrls, now, today, previous }) {
+function buildEdition({ draft, sourceUrls, allowedDomains, seenUrls, now, today, previous, window, audit }) {
   const output = object(draft, 'Bozza editoriale');
   if (output.decision === 'skip') return null;
   if (output.decision !== 'publish') fail('La decisione editoriale non è valida.');
@@ -389,7 +398,13 @@ function buildEdition({ draft, sourceUrls, allowedDomains, seenUrls, now, today,
   const updates = [];
   rawUpdates.forEach((item, index) => {
     const update = object(item, 'updates[' + index + ']');
-    if (isExcludedBrand(update)) { console.log('Notizia esclusa dal perimetro competitor.'); return; }
+    if (!matchesCompetitor(update, sources)) { audit.rejected++; console.log('Notizia esclusa: brand o fonte fuori dalla watchlist.'); return; }
+    let publication;
+    try {
+      publication = verifyPublication(update, window);
+      if (update.geography !== 'Italia') throw Error('Mercato non valido.');
+      compactText(update.geographyEvidence, 'geographyEvidence', 12, 320);
+    } catch (error) { audit.rejected++; console.log('Notizia esclusa: ' + error.message); return; }
     const brand = compactText(update.brand, 'brand', 2, 80);
     const category = compactText(update.category, 'category', 3, 48);
     const dateOrSeason = compactText(update.dateOrSeason, 'dateOrSeason', 2, 48);
@@ -409,6 +424,10 @@ function buildEdition({ draft, sourceUrls, allowedDomains, seenUrls, now, today,
     updates.push({
       id,
       brand,
+      ...publication,
+      addedAt: now.toISOString(),
+      geography: update.geography,
+      geographyEvidence: update.geographyEvidence,
       label: category + ' · ' + dateOrSeason,
       title,
       perspective,
@@ -417,9 +436,11 @@ function buildEdition({ draft, sourceUrls, allowedDomains, seenUrls, now, today,
     });
   });
   if (updates.length === 0) {
-    console.log('Nessuna nuova notizia: tutte le fonti proposte sono già presenti.');
+    console.log('Nessuna nuova notizia dopo verifica di data, brand, fonte e duplicati.');
     return null;
   }
+  updates.sort((a, b) => b.publishedOn.localeCompare(a.publishedOn)
+    || String(b.publishedAt || '').localeCompare(String(a.publishedAt || '')));
 
   const consultedSources = [...new Set([...sourceUrls].map((url) => new URL(url).hostname))].sort();
   const newsFeed = {
@@ -427,8 +448,9 @@ function buildEdition({ draft, sourceUrls, allowedDomains, seenUrls, now, today,
     editionId: today + '-' + String(nextNumber).padStart(2, '0'),
     updatedAt: now.toISOString(),
     sourceCoverage: {
-      configuredBrands: allowedDomains.length, consultedSources, unavailable: [],
-      caveat: 'Selezione editoriale da fonti ufficiali: il radar copre una watchlist ampia, non ogni maison esistente.'
+      configuredBrands: sources.length, consultedSources, unavailable: [],
+      ...competitorCoverage(sources, [...sourceUrls]),
+      caveat: 'Watchlist ampia di maison: fonti ufficiali emerse nella ricerca, non copertura garantita di ogni pubblicazione. Le date sono quelle delle fonti.'
     },
     brandPulse: { refreshedAt: readable, updates }
   };
@@ -537,9 +559,10 @@ async function writeRuntime(payload) {
 
 const now = new Date();
 const clock = localClock(now);
-const sources = competitorSources(await readJson(file('config', 'official-domains.json')), await readJson(file('config', 'new-york-sources.json'), []));
+const sources = await readJson(file('config', 'competitors.json'));
 const allowedDomains = [...new Set(list(sources, 'official-domains').map((entry) => compactText(object(entry, 'source').domain, 'domain', 3, 160).toLowerCase()))];
 const previous = await readJson(feedPath);
+const window = researchWindow(now, previous);
 const seenUrls = new Set((await readJson(seenPath, [])).map(normalizeUrl).filter(Boolean));
 
 async function writeCurrent(feed) {
@@ -554,7 +577,7 @@ if (isDryRun) {
 }
 
 try {
-  const { draft, sourceUrls } = await askEditor({ allowedDomains, seenUrls, today: clock.date, previousNote: previous.dailyNote });
+  const { draft, sourceUrls } = await askEditor({ allowedDomains, seenUrls, today: clock.date, previousNote: previous.dailyNote, window });
   let dailyNote = previous.dailyNote;
   try {
     dailyNote = buildDailyNote({ text: draft?.dailyNote, today: clock.date, now, previous: previous.dailyNote });
@@ -562,7 +585,10 @@ try {
     // A repeated/invalid thought must not prevent verified news from publishing.
     console.warn('Pensiero non aggiornato: ' + error.message);
   }
-  const checked = { checkedAt: new Date().toISOString(), checkedSourceCount: sourceUrls.length };
+  const checked = { checkedAt: new Date().toISOString(), checkedSourceCount: sourceUrls.length,
+    freshnessPolicy: 'incremental-v1', researchWindow: window,
+    lastSuccessfulSearchAt: sourceUrls.length ? window.until : (previous.lastSuccessfulSearchAt || window.since),
+    radarCoverage: competitorCoverage(sources, sourceUrls) };
   if (draft?.decision === 'skip') {
     // A new thought is independent from an edition: keep every news timestamp intact.
     await writeCurrent({ ...previous, dailyNote, ...checked, checkStatus: 'no_new_verified_updates' });
@@ -576,6 +602,7 @@ try {
     process.exit(0);
   }
 
+  const audit = { rejected: 0 };
   const feed = buildEdition({
     draft,
     sourceUrls: new Set(sourceUrls),
@@ -583,14 +610,17 @@ try {
     seenUrls,
     now,
     today: clock.date,
-    previous
+    previous,
+    window,
+    audit
   });
+  if (audit.rejected) checked.lastSuccessfulSearchAt = previous.lastSuccessfulSearchAt || window.since;
   if (!feed) {
     await writeCurrent({ ...previous, dailyNote, ...checked, checkStatus: 'no_new_verified_updates' });
     await writeRuntime({
       result: 'no_new_verified_updates',
       localDate: clock.date,
-      message: 'Nessuna nuova notizia dopo la deduplicazione.'
+      message: audit.rejected ? 'Nessuna nuova notizia con data, fonte e mercato verificabili.' : 'Nessuna nuova notizia dopo la deduplicazione.'
     });
     process.exit(0);
   }

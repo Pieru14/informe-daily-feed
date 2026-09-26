@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import { validateDailyNote } from './daily-note.mjs';
 import { validateNewYorkDesk } from './new-york-desk.mjs';
+import { validInstant, validatePublicationMetadata, freshnessBrief } from './freshness.mjs';
 
 const inputPath = process.argv[2] || 'data/current.json';
 const raw = await readFile(inputPath, 'utf8');
@@ -64,6 +65,36 @@ function validateUpdate(item, index) {
   text(value.perspective, 'update.perspective', 24, 700);
   text(value.source, 'update.source', 3, 180);
   secureUrl(value.url, 'update.url');
+  // Pre-migration Italy cards have no publication metadata. Preserve them, but
+  // never accept a partly populated or invalid new metadata record.
+  if (['publishedOn', 'publishedAt', 'publicationEvidence', 'addedAt'].some(name => value[name] !== undefined)) {
+    validateStoredPublication(value, feed.updatedAt, 'update');
+  }
+}
+
+function validateStoredPublication(value, parentUpdatedAt, label) {
+  if (!validInstant(value.addedAt) || !validInstant(parentUpdatedAt) || Date.parse(value.addedAt) > Date.parse(parentUpdatedAt)) {
+    fail(label + '.addedAt non valido o successivo all’edizione.');
+  }
+  try { validatePublicationMetadata(value, value.addedAt); }
+  catch (error) { fail(label + ': ' + error.message); }
+}
+
+function validateResearchState(state, label) {
+  if (state.freshnessPolicy !== undefined && state.freshnessPolicy !== 'incremental-v1') fail(label + '.freshnessPolicy non valida.');
+  if (state.researchWindow !== undefined || state.freshnessPolicy !== undefined) {
+    try { freshnessBrief(state.researchWindow); }
+    catch (error) { fail(label + '.researchWindow: ' + error.message); }
+    if (!validInstant(state.checkedAt) || Date.parse(state.researchWindow.until) > Date.parse(state.checkedAt)) {
+      fail(label + '.researchWindow termina dopo il controllo.');
+    }
+  }
+  if (state.lastSuccessfulSearchAt !== undefined) {
+    if (!validInstant(state.lastSuccessfulSearchAt) || !validInstant(state.checkedAt)
+      || Date.parse(state.lastSuccessfulSearchAt) > Date.parse(state.checkedAt)) {
+      fail(label + '.lastSuccessfulSearchAt non valido.');
+    }
+  }
 }
 
 function validateDirection(item, index) {
@@ -96,7 +127,18 @@ function validatePractice(item, index) {
 
 object(feed, 'feed');
 if (feed.dailyNote !== undefined) validateDailyNote(feed.dailyNote);
-if (feed.newYorkDesk !== undefined) validateNewYorkDesk(feed.newYorkDesk);
+if (feed.newYorkDesk !== undefined) {
+  validateNewYorkDesk(feed.newYorkDesk);
+  validateResearchState(feed.newYorkDesk, 'newYorkDesk');
+  feed.newYorkDesk.updates.forEach((item, index) => {
+    // Legacy USA cards already carry publishedOn and addedAt, but not the new
+    // source-date evidence or optional publication instant.
+    if (item.publishedAt !== undefined || item.publicationEvidence !== undefined) {
+      validateStoredPublication(item, feed.newYorkDesk.updatedAt, 'newYorkDesk.updates[' + index + ']');
+    }
+  });
+}
+validateResearchState(feed, 'feed');
 if (feed.checkedAt !== undefined) {
   if (typeof feed.checkedAt !== 'string' || Number.isNaN(Date.parse(feed.checkedAt))) fail('checkedAt non valido.');
   if (!['published', 'no_new_verified_updates', 'error'].includes(feed.checkStatus)) fail('checkStatus non valido.');

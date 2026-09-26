@@ -28,15 +28,26 @@ delete fixture.dailyNote;
 delete fixture.checkedAt;
 delete fixture.checkStatus;
 delete fixture.checkedSourceCount;
-const pulse = fixture.brandPulse.updates;
+for (const key of ['freshnessPolicy', 'researchWindow', 'lastSuccessfulSearchAt', 'radarCoverage']) delete fixture[key];
+const pulse = fixture.brandPulse.updates.map((item, index) => ({ ...item, brand: 'Etro',
+  category: 'collezione', dateOrSeason: '2026', publishedOn: today, publishedAt: null,
+  publicationEvidence: 'Data di pubblicazione riportata nel comunicato: ' + today,
+  geography: 'Italia', geographyEvidence: 'Il comunicato documenta il lancio e la presentazione a Milano.',
+  url: 'https://www.etro.com/test-fixture-' + index }));
 const edition = fixture.dailyEdition;
 const publishDraft = {
   decision: 'publish', reason: 'Fixture senza richieste API.', dailyNote: words,
-  updates: pulse.map(item => ({ ...item, category: 'collezione', dateOrSeason: '2026' })),
-  focus: edition.focus, directions: edition.directions, palette: edition.palette,
-  notes: edition.notes, practice: edition.practice
+  updates: pulse,
+  focus: { ...edition.focus, url: pulse[0].url }, directions: edition.directions, palette: edition.palette,
+  notes: edition.notes.map(note => ({ ...note, url: pulse[0].url })), practice: edition.practice
 };
-const officialUrls = [...new Set([...pulse.map(item => item.url), edition.focus.url, ...edition.notes.map(item => item.url)])];
+const officialUrls = pulse.map(item => item.url);
+
+function newsOnly(feed) {
+  const { dailyNote, checkedAt, checkStatus, checkedSourceCount, freshnessPolicy, researchWindow,
+    lastSuccessfulSearchAt, radarCoverage, ...news } = feed;
+  return news;
+}
 
 async function simulate(draft, sources, seen = [], previous = fixture, apiFailure = false) {
   const temp = await mkdtemp(path.join(tmpdir(), 'informe-note-test-'));
@@ -44,7 +55,7 @@ async function simulate(draft, sources, seen = [], previous = fixture, apiFailur
   const json = (name, value) => writeFile(path.join(temp, name), JSON.stringify(value, null, 2) + '\n');
   await json('data/current.json', previous);
   await json('data/seen-urls.json', seen);
-  await json('config/official-domains.json', JSON.parse(await readFile(path.join(root, 'config/official-domains.json'), 'utf8')));
+  await json('config/competitors.json', JSON.parse(await readFile(path.join(root, 'config/competitors.json'), 'utf8')));
   await writeFile(path.join(temp, 'config/editorial-policy.md'), 'Fixture di test.');
   const response = { output_text: JSON.stringify(draft), output: [{ type: 'web_search_call', action: { sources: sources.map(url => ({ url })) } }] };
   // Replace fetch in a separate test process: no network, real key or paid requests.
@@ -67,10 +78,11 @@ test('skip anche senza fonti: aggiorna solo la frase, non le date delle notizie'
   const previous = { ...fixture };
   delete previous.dailyNote;
   const result = await simulate({ decision: 'skip', reason: 'Non ci sono nuove notizie verificate.', dailyNote: words }, [], officialUrls, previous);
-  const { dailyNote, checkedAt, checkStatus, checkedSourceCount, ...news } = result.next;
-  assert.deepEqual(news, previous);
+  const { dailyNote, checkedAt, checkStatus, checkedSourceCount } = result.next;
+  assert.deepEqual(newsOnly(result.next), newsOnly(previous));
   assert.equal(checkStatus, 'no_new_verified_updates');
   assert.equal(checkedSourceCount, 0);
+  assert.equal(result.next.lastSuccessfulSearchAt, result.next.researchWindow.since);
   assert.ok(Date.parse(checkedAt));
   assert.equal(dailyNote.text, words);
   assert.deepEqual(result.seen, officialUrls);
@@ -83,9 +95,11 @@ test('tutte le notizie duplicate: aggiorna solo frase e controllo', async () => 
   const previous = { ...fixture };
   delete previous.dailyNote;
   const result = await simulate(publishDraft, officialUrls, officialUrls, previous);
-  const { dailyNote, checkedAt, checkStatus, checkedSourceCount, ...news } = result.next;
-  assert.deepEqual(news, previous);
+  const { dailyNote } = result.next;
+  assert.deepEqual(newsOnly(result.next), newsOnly(previous));
   assert.equal(dailyNote.date, today);
+  assert.ok(Date.parse(result.next.lastSuccessfulSearchAt));
+  assert.equal(result.next.freshnessPolicy, 'incremental-v1');
 });
 
 test('una sola notizia verificata basta per pubblicare', async () => {
@@ -94,6 +108,10 @@ test('una sola notizia verificata basta per pubblicare', async () => {
   const result = await simulate(draft, [update.url]);
   assert.equal(result.next.brandPulse.updates.length, 1);
   assert.equal(result.next.checkStatus, 'published');
+  assert.equal(result.next.brandPulse.updates[0].publishedOn, today);
+  assert.equal(result.next.freshnessPolicy, 'incremental-v1');
+  assert.ok(Date.parse(result.next.lastSuccessfulSearchAt));
+  assert.deepEqual(result.next.radarCoverage.consultedBrands, ['Etro']);
   assert.notEqual(result.next.dailyEdition.focus.id, fixture.dailyEdition.focus.id);
 });
 
@@ -107,8 +125,9 @@ test('deduplicazione parziale: nuove notizie, taccuino precedente non ridatato',
 
 test('errore API: segnala il controllo fallito e conserva tutti i contenuti', async () => {
   const result = await simulate(null, [], officialUrls, fixture, true);
-  const { checkedAt, checkStatus, checkedSourceCount, ...news } = result.next;
-  assert.deepEqual(news, fixture);
+  const { checkStatus } = result.next;
+  assert.deepEqual(newsOnly(result.next), newsOnly(fixture));
+  assert.equal(result.next.dailyNote, fixture.dailyNote);
   assert.equal(checkStatus, 'error');
   assert.deepEqual(result.seen, officialUrls);
 });
@@ -127,4 +146,46 @@ test('edizione completa: pubblica notizie e frase insieme', async () => {
   assert.equal(result.next.dailyNote.date, today);
   const archived = JSON.parse(await readFile(path.join(result.temp, 'data/archive', result.next.editionId + '.json'), 'utf8'));
   assert.deepEqual(archived, result.next);
+});
+
+test('mattina: date non verificate e fonti di altri brand non diventano nuove notizie', async () => {
+  const source = publishDraft.updates[0];
+  for (const patch of [
+    { publishedOn: null }, { publishedOn: '2020-01-01' }, { publicationEvidence: '' },
+    { publishedOn: '2099-01-01' }, { brand: 'Marni' }, { brand: 'CFDA', url: 'https://cfda.com/test-fixture' },
+    { geographyEvidence: '' }
+  ]) {
+    const rejected = { ...source, ...patch };
+    const valid = { ...source, title: 'Seconda notizia valida per il test', url: 'https://www.etro.com/valid-fixture' };
+    const result = await simulate({ ...publishDraft, updates: [rejected, valid] }, [rejected.url, valid.url]);
+    assert.equal(result.next.brandPulse.updates.length, 1, JSON.stringify(patch));
+    assert.equal(result.next.brandPulse.updates[0].url, valid.url, JSON.stringify(patch));
+    assert.deepEqual(result.next.dailyEdition, fixture.dailyEdition);
+  }
+});
+
+test('mattina: ordina le notizie per pubblicazione, non per ordine della risposta', async () => {
+  const prior = new Date(now.getTime() - 86400000);
+  const older = { ...pulse[0], publishedOn: noteDate(prior), publishedAt: prior.toISOString(),
+    publicationEvidence: 'Il comunicato mostra la pubblicazione del ' + noteDate(prior), url: 'https://www.etro.com/older-fixture' };
+  const newer = { ...pulse[0], url: 'https://www.etro.com/newer-fixture' };
+  const result = await simulate({ ...publishDraft, updates: [older, newer] }, [older.url, newer.url]);
+  assert.deepEqual(result.next.brandPulse.updates.map(item => item.url), [newer.url, older.url]);
+});
+
+test('un controllo senza fonti non sposta l’ultimo successo, un errore non perde il checkpoint', async () => {
+  const previous = { ...fixture, lastSuccessfulSearchAt: new Date(now.getTime() - 86400000).toISOString() };
+  const noSources = await simulate({ decision: 'skip', reason: 'Nessuna fonte verificata.', dailyNote: words }, [], [], previous);
+  assert.equal(noSources.next.lastSuccessfulSearchAt, previous.lastSuccessfulSearchAt);
+  const failure = await simulate(null, [], [], previous, true);
+  assert.equal(failure.next.lastSuccessfulSearchAt, previous.lastSuccessfulSearchAt);
+});
+
+test('bozza scartata: conserva il checkpoint precedente oppure l’inizio della prima finestra', async () => {
+  const rejected = { ...pulse[0], publishedOn: null };
+  for (const previous of [fixture, { ...fixture, lastSuccessfulSearchAt: new Date(now.getTime() - 86400000).toISOString() }]) {
+    const result = await simulate({ ...publishDraft, updates: [rejected] }, [rejected.url], [], previous);
+    assert.deepEqual(newsOnly(result.next), newsOnly(previous));
+    assert.equal(result.next.lastSuccessfulSearchAt, previous.lastSuccessfulSearchAt || result.next.researchWindow.since);
+  }
 });

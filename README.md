@@ -39,7 +39,7 @@ avviare una volta il flusso “IN/FORME · edizione quotidiana”.
 
 - Radar principale: 10:30 Europe/Rome, GPT-5.5; maison, notizie e taccuino creativo.
 - Radar New York / USA: 18:30 Europe/Rome, GPT-5.5; comunicazione pubblica,
-  campagne, eventi, NYFW dei competitor. Missoni è esclusa dalle ricerche.
+  campagne, eventi, NYFW delle maison. Missoni è esclusa dalle ricerche.
 
 Entrambi gli orari sono italiani, con cambio automatico ora legale/solare.
 GitHub Actions può partire in ritardo: questi sono orari programmati, non SLA.
@@ -52,17 +52,35 @@ il pensiero o il taccuino del mattino. Il radar mattutino conserva il desk seral
 I due flussi condividono un blocco di scrittura e recuperano il ramo aggiornato
 dopo l'attesa, evitando di sovrascriversi.
 
-Entrambi i radar usano la stessa watchlist, unione di `config/official-domains.json`
-e `config/new-york-sources.json`, e lo stesso brief in `scripts/competitor-research.mjs`.
-Priorità editoriale a Etro, Marni, Pucci, Brunello Cucinelli, Loro Piana,
-Ralph Lauren e Tory Burch, insieme alle altre maison. L'appartenenza alla watchlist
-è una scelta di confronto editoriale, non una classifica certificata dei concorrenti.
+Entrambi i radar usano la stessa watchlist ampia in `config/competitors.json`
+e lo stesso brief in `scripts/competitor-research.mjs`: 33 brand, fra cui Prada,
+Gucci, Dior, Chanel, Louis Vuitton, Fendi e le altre maison internazionali.
+Il nome tecnico del file è storico: la selezione non è limitata ai concorrenti
+di una singola azienda. Non è un elenco esaustivo di tutti i brand esistenti.
 Missoni è esclusa sia dai domini di ricerca sia dagli aggiornamenti proposti.
 Il radar mattutino cerca iniziative nel mercato italiano, quello serale negli USA. Non è un monitoraggio completo di tutti i
 brand o social. Ogni notizia deve avere fonte ufficiale emersa nella ricerca,
-data di pubblicazione verificabile entro 30 giorni e un legame USA esplicito.
+data originale di pubblicazione verificabile e un legame con il mercato osservato.
 Inglese, URL en-us o prezzo in dollari non bastano. Pagine senza data, vecchie
 aperture e store locator sono riferimenti, non nuove notizie.
+
+## Freschezza e copertura
+
+Priorità alle pubblicazioni di oggi; si recuperano anche quelle uscite dopo
+l'ultimo controllo riuscito del rispettivo radar. La ricerca termina all'istante
+di avvio: una pubblicazione successiva verrà cercata al controllo seguente.
+All'avvio senza storico si usano 48 ore; dopo interruzioni il recupero è limitato
+a sette giorni, senza ampliare la finestra per riempire un'edizione vuota.
+Quando la fonte indica soltanto il giorno, si include l'intero giorno iniziale
+e si dichiara che l'ora non è disponibile. Non si inventa precisione al minuto.
+
+Ogni nuova scheda contiene `publishedOn`, `publishedAt` (null se non documentato)
+e `publicationEvidence`. Data dell'evento, stagione, scansione e copyright non
+valgono come data di pubblicazione. Le nuove schede sono ordinate per pubblicazione.
+Le edizioni precedenti rimangono conservate senza essere ridatate.
+`radarCoverage` distingue la lista configurata dalle maison con fonti emerse
+nella ricerca e dalle lacune. Una fonte emersa non garantisce che tutto il sito
+o ogni notizia del brand sia stato controllato.
 
 Il desk distingue fatti, lettura editoriale della comunicazione e spunti
 operativi. Non contiene dati interni, intenzioni dei brand o metriche inventate.
