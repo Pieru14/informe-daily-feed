@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-27T08:38:19.558Z",
+  "checkedAt": "2026-09-28T08:40:29.151Z",
   "result": "no_new_verified_updates",
-  "localDate": "2026-09-27",
-  "consultedOfficialSources": 15,
-  "message": "Nella finestra 2026-09-26 — 2026-09-27, dalle ricerche sui domini ufficiali consentiti non sono emerse nuove pubblicazioni verificabili con vera data di pubblicazione, URL ufficiale diretto e legame documentato con il mercato italiano. I risultati utili individuati erano pagine prodotto, pagine evergreen, fonti già note o contenuti senza data di pubblicazione verificabile."
+  "localDate": "2026-09-28",
+  "consultedOfficialSources": 26,
+  "message": "Nella finestra 2026-09-27 — 2026-09-28 non sono emerse, dalle fonti ufficiali consultate nei domini ammessi, nuove pubblicazioni verificabili con data di pubblicazione e legame documentato con il mercato Italia. I risultati utili individuati erano pagine già note, pagine retail/evergreen senza vera data di pubblicazione, oppure fonti prive di prova temporale sufficiente."
 }
