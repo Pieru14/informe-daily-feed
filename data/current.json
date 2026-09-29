@@ -152,12 +152,12 @@
     ]
   },
   "dailyNote": {
-    "date": "2026-09-28",
-    "createdAt": "2026-09-28T08:40:11.687Z",
-    "text": "Segui una traccia piccola, anche se sembra incompleta: un bordo, un’ombra, una cucitura. Il tuo sguardo cresce quando gli concedi respiro."
+    "date": "2026-09-29",
+    "createdAt": "2026-09-29T08:40:45.480Z",
+    "text": "Lascia che oggi basti una prova silenziosa: una piega, un colore, una pausa. Il tuo sguardo trova forza anche quando procede piano."
   },
-  "checkedAt": "2026-09-28T08:40:29.150Z",
-  "checkedSourceCount": 26,
+  "checkedAt": "2026-09-29T08:41:05.462Z",
+  "checkedSourceCount": 80,
   "checkStatus": "no_new_verified_updates",
   "newYorkDesk": {
     "checkedAt": "2026-09-28T16:39:55.585Z",
@@ -409,13 +409,13 @@
   },
   "freshnessPolicy": "incremental-v1",
   "researchWindow": {
-    "since": "2026-09-27T08:38:09.993Z",
-    "until": "2026-09-28T08:40:11.687Z",
-    "fromDate": "2026-09-27",
-    "toDate": "2026-09-28",
+    "since": "2026-09-28T08:40:11.687Z",
+    "until": "2026-09-29T08:40:45.480Z",
+    "fromDate": "2026-09-28",
+    "toDate": "2026-09-29",
     "timezone": "Europe/Rome"
   },
-  "lastSuccessfulSearchAt": "2026-09-28T08:40:11.687Z",
+  "lastSuccessfulSearchAt": "2026-09-29T08:40:45.480Z",
   "radarCoverage": {
     "watchlist": [
       "Prada",
@@ -454,12 +454,10 @@
     ],
     "consultedBrands": [
       "Prada",
-      "Louis Vuitton"
-    ],
-    "unverifiedBrands": [
       "Gucci",
       "Dior",
       "Chanel",
+      "Louis Vuitton",
       "Fendi",
       "Valentino",
       "Saint Laurent",
@@ -468,16 +466,18 @@
       "Balenciaga",
       "Bottega Veneta",
       "Hermès",
-      "Armani",
       "Versace",
       "Dolce&Gabbana",
+      "Moncler",
+      "Max Mara",
+      "Marni"
+    ],
+    "unverifiedBrands": [
+      "Armani",
       "Givenchy",
       "Ferragamo",
       "Burberry",
-      "Moncler",
-      "Max Mara",
       "Etro",
-      "Marni",
       "Pucci",
       "Dries Van Noten",
       "Alanui",
