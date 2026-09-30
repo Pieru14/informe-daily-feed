@@ -152,12 +152,12 @@
     ]
   },
   "dailyNote": {
-    "date": "2026-09-29",
-    "createdAt": "2026-09-29T08:40:45.480Z",
-    "text": "Lascia che oggi basti una prova silenziosa: una piega, un colore, una pausa. Il tuo sguardo trova forza anche quando procede piano."
+    "date": "2026-09-30",
+    "createdAt": "2026-09-30T08:41:20.424Z",
+    "text": "Oggi concediti una piccola esplorazione senza giudizio: una linea, una stoffa, un vuoto. Anche il riposo affina il tuo modo di vedere."
   },
-  "checkedAt": "2026-09-29T08:41:05.462Z",
-  "checkedSourceCount": 80,
+  "checkedAt": "2026-09-30T08:42:05.527Z",
+  "checkedSourceCount": 147,
   "checkStatus": "no_new_verified_updates",
   "newYorkDesk": {
     "checkedAt": "2026-09-29T16:41:24.153Z",
@@ -391,13 +391,13 @@
   },
   "freshnessPolicy": "incremental-v1",
   "researchWindow": {
-    "since": "2026-09-28T08:40:11.687Z",
-    "until": "2026-09-29T08:40:45.480Z",
-    "fromDate": "2026-09-28",
-    "toDate": "2026-09-29",
+    "since": "2026-09-29T08:40:45.480Z",
+    "until": "2026-09-30T08:41:20.424Z",
+    "fromDate": "2026-09-29",
+    "toDate": "2026-09-30",
     "timezone": "Europe/Rome"
   },
-  "lastSuccessfulSearchAt": "2026-09-29T08:40:45.480Z",
+  "lastSuccessfulSearchAt": "2026-09-30T08:41:20.424Z",
   "radarCoverage": {
     "watchlist": [
       "Prada",
@@ -444,25 +444,21 @@
       "Valentino",
       "Saint Laurent",
       "Miu Miu",
-      "Loewe",
       "Balenciaga",
       "Bottega Veneta",
       "Hermès",
+      "Armani",
       "Versace",
       "Dolce&Gabbana",
-      "Moncler",
-      "Max Mara",
-      "Marni"
-    ],
-    "unverifiedBrands": [
-      "Armani",
       "Givenchy",
       "Ferragamo",
       "Burberry",
+      "Moncler",
+      "Max Mara",
       "Etro",
+      "Marni",
       "Pucci",
       "Dries Van Noten",
-      "Alanui",
       "La DoubleJ",
       "Zimmermann",
       "Brunello Cucinelli",
@@ -470,6 +466,10 @@
       "Ralph Lauren",
       "Tory Burch",
       "Coach"
+    ],
+    "unverifiedBrands": [
+      "Loewe",
+      "Alanui"
     ]
   }
 }

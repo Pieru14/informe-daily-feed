@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-29T08:41:05.465Z",
+  "checkedAt": "2026-09-30T08:42:05.529Z",
   "result": "no_new_verified_updates",
-  "localDate": "2026-09-29",
-  "consultedOfficialSources": 80,
-  "message": "Nella finestra 2026-09-28T08:40:11.687Z — 2026-09-29T08:40:45.480Z non sono emerse, dai domini ufficiali consultati della watchlist, nuove pubblicazioni verificabili con publishedOn 2026-09-28 o 2026-09-29, data di pubblicazione documentata e legame documentato con il mercato italiano. I risultati utili individuati erano pagine store locator, pagine prodotto, contenuti evergreen, notizie già note oppure fonti prive di una data di pubblicazione verificabile."
+  "localDate": "2026-09-30",
+  "consultedOfficialSources": 147,
+  "message": "Nelle fonti ufficiali consultate della watchlist non è emersa alcuna nuova pubblicazione verificabile tra 2026-09-29 e 2026-09-30 con data di pubblicazione documentata e legame specifico con il mercato italiano. I risultati emersi erano principalmente store locator, pagine prodotto/evergreen, campagne già note o fonti prive di data di pubblicazione verificabile."
 }
