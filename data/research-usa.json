@@ -1,0 +1,742 @@
+{
+  "checkedAt": "2026-09-30T19:29:19.513Z",
+  "coverage": {
+    "watchlist": [
+      "Prada",
+      "Gucci",
+      "Dior",
+      "Chanel",
+      "Louis Vuitton",
+      "Fendi",
+      "Valentino",
+      "Saint Laurent",
+      "Miu Miu",
+      "Loewe",
+      "Balenciaga",
+      "Bottega Veneta",
+      "Hermès",
+      "Armani",
+      "Versace",
+      "Dolce&Gabbana",
+      "Givenchy",
+      "Ferragamo",
+      "Burberry",
+      "Moncler",
+      "Max Mara",
+      "Etro",
+      "Marni",
+      "Pucci",
+      "Dries Van Noten",
+      "Alanui",
+      "La DoubleJ",
+      "Zimmermann",
+      "Brunello Cucinelli",
+      "Loro Piana",
+      "Ralph Lauren",
+      "Tory Burch",
+      "Coach"
+    ],
+    "consultedBrands": [
+      "Prada",
+      "Gucci",
+      "Dior",
+      "Chanel",
+      "Louis Vuitton",
+      "Fendi",
+      "Valentino",
+      "Saint Laurent",
+      "Miu Miu",
+      "Balenciaga",
+      "Bottega Veneta",
+      "Hermès",
+      "Armani",
+      "Versace",
+      "Dolce&Gabbana",
+      "Givenchy",
+      "Ferragamo",
+      "Burberry",
+      "Moncler",
+      "Max Mara",
+      "Etro",
+      "Marni",
+      "Dries Van Noten",
+      "Alanui",
+      "Zimmermann",
+      "Loro Piana",
+      "Ralph Lauren",
+      "Coach"
+    ],
+    "unverifiedBrands": [
+      "Loewe",
+      "Pucci",
+      "La DoubleJ",
+      "Brunello Cucinelli",
+      "Tory Burch"
+    ],
+    "attemptedBrands": [
+      "Prada",
+      "Gucci",
+      "Dior",
+      "Chanel",
+      "Louis Vuitton",
+      "Fendi",
+      "Valentino",
+      "Saint Laurent",
+      "Miu Miu",
+      "Loewe",
+      "Balenciaga",
+      "Bottega Veneta",
+      "Hermès",
+      "Armani",
+      "Versace",
+      "Dolce&Gabbana",
+      "Givenchy",
+      "Ferragamo",
+      "Burberry",
+      "Moncler",
+      "Max Mara",
+      "Etro",
+      "Marni",
+      "Pucci",
+      "Dries Van Noten",
+      "Alanui",
+      "La DoubleJ",
+      "Zimmermann",
+      "Brunello Cucinelli",
+      "Loro Piana",
+      "Ralph Lauren",
+      "Tory Burch",
+      "Coach"
+    ],
+    "scan": [
+      {
+        "brand": "Prada",
+        "status": "editorial_pages_read",
+        "pagesRead": 3,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://www.prada.com/us/en/pradasphere.html",
+            "status": "unusable"
+          },
+          {
+            "url": "https://www.pradagroup.com/en/news-media/news-section-archive.html",
+            "status": "read"
+          },
+          {
+            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
+            "status": "read"
+          },
+          {
+            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Gucci",
+        "status": "editorial_pages_read",
+        "pagesRead": 4,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://www.gucci.com/us/en/st/stories",
+            "status": "read"
+          },
+          {
+            "url": "https://www.kering.com/en/press/",
+            "status": "read"
+          },
+          {
+            "url": "https://www.gucci.com/us/en/st/stories/people-events",
+            "status": "read"
+          },
+          {
+            "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Dior",
+        "status": "editorial_pages_read",
+        "pagesRead": 3,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://www.dior.com/en_us/fashion/news-fashion-shows/folder-news-and-events",
+            "status": "read"
+          },
+          {
+            "url": "https://www.lvmh.com/en/news-lvmh/",
+            "status": "read"
+          },
+          {
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
+            "status": "read"
+          },
+          {
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Chanel",
+        "status": "editorial_pages_read",
+        "pagesRead": 3,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://www.chanel.com/us/fashion/",
+            "status": "read"
+          },
+          {
+            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-pre-collection-2026/",
+            "status": "read"
+          },
+          {
+            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Louis Vuitton",
+        "status": "editorial_pages_read",
+        "pagesRead": 1,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://us.louisvuitton.com/eng-us/magazine",
+            "status": "read"
+          },
+          {
+            "url": "https://www.lvmh.com/en/news-lvmh/",
+            "status": "read"
+          },
+          {
+            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
+            "status": "http_403"
+          },
+          {
+            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/cruise-2027-show",
+            "status": "http_403"
+          }
+        ]
+      },
+      {
+        "brand": "Fendi",
+        "status": "editorial_pages_read",
+        "pagesRead": 3,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://www.fendi.com/us-en/inside-fendi",
+            "status": "read"
+          },
+          {
+            "url": "https://www.lvmh.com/en/news-lvmh/",
+            "status": "read"
+          },
+          {
+            "url": "https://www.fendi.com/us-en/cm/fashion-shows/fendi-couture-fall-winter-2026-2027-collection",
+            "status": "read"
+          },
+          {
+            "url": "https://www.lvmh.com/en/undefined/a-fusion-of-bodies-designs-and-emotion-for-fendi-spring-summer-2027-collection",
+            "status": "http_404"
+          }
+        ]
+      },
+      {
+        "brand": "Valentino",
+        "status": "editorial_pages_read",
+        "pagesRead": 2,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://www.valentino.com/en-us/v-universe/valentino-diary/news",
+            "status": "read"
+          },
+          {
+            "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
+            "status": "unusable"
+          },
+          {
+            "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Saint Laurent",
+        "status": "editorial_pages_read",
+        "pagesRead": 2,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/yearly",
+            "status": "read"
+          },
+          {
+            "url": "https://www.kering.com/en/press/",
+            "status": "read"
+          },
+          {
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/charlotte-gainsbourg-5-bis",
+            "status": "unusable"
+          },
+          {
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/andy-warhol-banal-objects-exhibition",
+            "status": "unusable"
+          }
+        ]
+      },
+      {
+        "brand": "Miu Miu",
+        "status": "editorial_pages_read",
+        "pagesRead": 4,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://www.miumiu.com/us/en/miumiu-club.html",
+            "status": "read"
+          },
+          {
+            "url": "https://www.pradagroup.com/en/news-media/news-section-archive.html",
+            "status": "read"
+          },
+          {
+            "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/new-balance-x-miu-miu-with-coco-gauff-2026.html",
+            "status": "read"
+          },
+          {
+            "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Loewe",
+        "status": "unavailable",
+        "pagesRead": 0,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://www.loewe.com/usa/en/ct/stories",
+            "status": "unusable"
+          },
+          {
+            "url": "https://www.lvmh.com/en/news-lvmh/",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Balenciaga",
+        "status": "editorial_pages_read",
+        "pagesRead": 1,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://www.balenciaga.com/en-us/discover",
+            "status": "unusable"
+          },
+          {
+            "url": "https://www.kering.com/en/press/",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Bottega Veneta",
+        "status": "editorial_pages_read",
+        "pagesRead": 2,
+        "pagesWithPublicationMetadata": 1,
+        "receipts": [
+          {
+            "url": "https://www.bottegaveneta.com/it-it/inside-bottega/storie",
+            "status": "unusable"
+          },
+          {
+            "url": "https://www.kering.com/en/press/",
+            "status": "read"
+          },
+          {
+            "url": "https://www.kering.com/en/news/romain-spitzer-appointed-chief-executive-officer-of-bottega-veneta/",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Hermès",
+        "status": "editorial_pages_read",
+        "pagesRead": 1,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://finance.hermes.com/en/press-releases-and-news/",
+            "status": "read"
+          },
+          {
+            "url": "https://finance.hermes.com/en/publications/hermes-unveils-its-expanded-store-chengdu-taikoo-li-mall-china-contemporary-expression",
+            "status": "unusable"
+          },
+          {
+            "url": "https://finance.hermes.com/en/publications/hermes-opens-new-maison-london-166-new-bond-street-reaffirming-its-presence-united",
+            "status": "unusable"
+          }
+        ]
+      },
+      {
+        "brand": "Armani",
+        "status": "editorial_pages_read",
+        "pagesRead": 1,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://armanivalues.com/news-archive/",
+            "status": "read"
+          },
+          {
+            "url": "https://www.armani.com/en-us/announcement/",
+            "status": "unusable"
+          }
+        ]
+      },
+      {
+        "brand": "Versace",
+        "status": "editorial_pages_read",
+        "pagesRead": 4,
+        "pagesWithPublicationMetadata": 1,
+        "receipts": [
+          {
+            "url": "https://www.versace.com/us/en/stories/",
+            "status": "read"
+          },
+          {
+            "url": "https://www.pradagroup.com/en/news-media/news-section-archive.html",
+            "status": "read"
+          },
+          {
+            "url": "https://www.versace.com/us/en/stories/?year=2026",
+            "status": "read"
+          },
+          {
+            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-fw-2026.html",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Dolce&Gabbana",
+        "status": "editorial_pages_read",
+        "pagesRead": 3,
+        "pagesWithPublicationMetadata": 1,
+        "receipts": [
+          {
+            "url": "https://world.dolcegabbana.com/",
+            "status": "read"
+          },
+          {
+            "url": "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
+            "status": "read"
+          },
+          {
+            "url": "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Givenchy",
+        "status": "editorial_pages_read",
+        "pagesRead": 3,
+        "pagesWithPublicationMetadata": 2,
+        "receipts": [
+          {
+            "url": "https://press.givenchy.com/en/?lang=eng",
+            "status": "read"
+          },
+          {
+            "url": "https://www.lvmh.com/en/news-lvmh/",
+            "status": "read"
+          },
+          {
+            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
+            "status": "read"
+          },
+          {
+            "url": "https://press.givenchy.com/givenchy-spring-summer-2027-menswear-campaign-489973/?lang=eng",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Ferragamo",
+        "status": "editorial_pages_read",
+        "pagesRead": 1,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://museo.ferragamo.com/en/news",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Burberry",
+        "status": "editorial_pages_read",
+        "pagesRead": 1,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://www.burberryplc.com/news",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Moncler",
+        "status": "editorial_pages_read",
+        "pagesRead": 1,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://www.monclergroup.com/en/media/press-releases?sub_category_document_type=moncler",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Max Mara",
+        "status": "editorial_pages_read",
+        "pagesRead": 2,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://us.maxmara.com/mm-world",
+            "status": "read"
+          },
+          {
+            "url": "https://us.maxmara.com/editorial/campaign",
+            "status": "unusable"
+          },
+          {
+            "url": "https://us.maxmara.com/editorial/runway-fall-winter",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Etro",
+        "status": "editorial_pages_read",
+        "pagesRead": 2,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://www.etro.com/us-en/world-of-etro/",
+            "status": "unusable"
+          },
+          {
+            "url": "https://www.etro.com/it-it/advertising-campaign.html",
+            "status": "read"
+          },
+          {
+            "url": "https://www.etro.com/it-it/donna/collezione-speciale/collezione-sfilata/",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Marni",
+        "status": "editorial_pages_read",
+        "pagesRead": 3,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://www.marni.com/wx/cosmos-of-marni/",
+            "status": "read"
+          },
+          {
+            "url": "https://www.marni.com/wx/marni-fw24-campaign.html",
+            "status": "read"
+          },
+          {
+            "url": "https://www.marni.com/wx/erykah-badu-collection.html",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Pucci",
+        "status": "unavailable",
+        "pagesRead": 0,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://www.pucci.com/en/pages/pucci-journey",
+            "status": "unusable"
+          }
+        ]
+      },
+      {
+        "brand": "Dries Van Noten",
+        "status": "editorial_pages_read",
+        "pagesRead": 3,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://www.driesvannoten.com/pages/projects",
+            "status": "read"
+          },
+          {
+            "url": "https://www.driesvannoten.com/pages/stories-raqib-shaw",
+            "status": "read"
+          },
+          {
+            "url": "https://www.driesvannoten.com/pages/summer-stories",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Alanui",
+        "status": "editorial_pages_read",
+        "pagesRead": 3,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://alanui.it/en-it",
+            "status": "read"
+          },
+          {
+            "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
+            "status": "read"
+          },
+          {
+            "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "La DoubleJ",
+        "status": "unavailable",
+        "pagesRead": 0,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://www.ladoublej.com/en/",
+            "status": "unusable"
+          }
+        ]
+      },
+      {
+        "brand": "Zimmermann",
+        "status": "editorial_pages_read",
+        "pagesRead": 4,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://www.zimmermann.com/collections",
+            "status": "read"
+          },
+          {
+            "url": "https://www.zimmermann.com/immerse",
+            "status": "read"
+          },
+          {
+            "url": "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
+            "status": "read"
+          },
+          {
+            "url": "https://www.zimmermann.com/us/collections-archive",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Brunello Cucinelli",
+        "status": "unavailable",
+        "pagesRead": 0,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://shop.brunellocucinelli.com/en-us/secret-adventures.html",
+            "status": "http_403"
+          }
+        ]
+      },
+      {
+        "brand": "Loro Piana",
+        "status": "editorial_pages_read",
+        "pagesRead": 1,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://us.loropiana.com/en/cm/campaigns/narratives",
+            "status": "read"
+          },
+          {
+            "url": "https://us.loropiana.com/en/campaign/landing",
+            "status": "unusable"
+          }
+        ]
+      },
+      {
+        "brand": "Ralph Lauren",
+        "status": "editorial_pages_read",
+        "pagesRead": 1,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://corporate.ralphlauren.com/s/RalphLauren_Corporate/newsroom",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "brand": "Tory Burch",
+        "status": "unavailable",
+        "pagesRead": 0,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://www.toryburch.com/en-us/new/runway/fall-winter-2026/",
+            "status": "unusable"
+          }
+        ]
+      },
+      {
+        "brand": "Coach",
+        "status": "editorial_pages_read",
+        "pagesRead": 2,
+        "pagesWithPublicationMetadata": 0,
+        "receipts": [
+          {
+            "url": "https://www.coach.com/content/courage-to-be-real",
+            "status": "read"
+          },
+          {
+            "url": "https://www.tapestry.com/newsroom/",
+            "status": "read"
+          },
+          {
+            "url": "https://www.coach.com/shop/shop-the-campaign",
+            "status": "redirect_limit"
+          }
+        ]
+      }
+    ],
+    "method": "official-editorial-scan-v2",
+    "partial": true
+  },
+  "usage": {
+    "model": "gpt-5.5",
+    "inputTokens": 42990,
+    "outputTokens": 1578,
+    "searchCalls": 8
+  }
+}
