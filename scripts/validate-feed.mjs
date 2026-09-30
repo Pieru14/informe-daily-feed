@@ -81,7 +81,7 @@ function validateStoredPublication(value, parentUpdatedAt, label) {
 }
 
 function validateResearchState(state, label) {
-  if (state.freshnessPolicy !== undefined && state.freshnessPolicy !== 'incremental-v1') fail(label + '.freshnessPolicy non valida.');
+  if (state.freshnessPolicy !== undefined && !['incremental-v1', 'rolling-48h-v2'].includes(state.freshnessPolicy)) fail(label + '.freshnessPolicy non valida.');
   if (state.researchWindow !== undefined || state.freshnessPolicy !== undefined) {
     try { freshnessBrief(state.researchWindow); }
     catch (error) { fail(label + '.researchWindow: ' + error.message); }
@@ -141,7 +141,7 @@ if (feed.newYorkDesk !== undefined) {
 validateResearchState(feed, 'feed');
 if (feed.checkedAt !== undefined) {
   if (typeof feed.checkedAt !== 'string' || Number.isNaN(Date.parse(feed.checkedAt))) fail('checkedAt non valido.');
-  if (!['published', 'no_new_verified_updates', 'error'].includes(feed.checkStatus)) fail('checkStatus non valido.');
+  if (!['published', 'no_new_verified_updates', 'partial', 'error'].includes(feed.checkStatus)) fail('checkStatus non valido.');
   if (!Number.isInteger(feed.checkedSourceCount) || feed.checkedSourceCount < 0) fail('checkedSourceCount non valido.');
 }
 if (feed.schemaVersion !== 1) fail('schemaVersion deve essere 1.');

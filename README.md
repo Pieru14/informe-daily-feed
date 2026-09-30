@@ -58,19 +58,20 @@ Gucci, Dior, Chanel, Louis Vuitton, Fendi e le altre maison internazionali.
 Il nome tecnico del file è storico: la selezione non è limitata ai concorrenti
 di una singola azienda. Non è un elenco esaustivo di tutti i brand esistenti.
 Missoni è esclusa sia dai domini di ricerca sia dagli aggiornamenti proposti.
-Il radar mattutino cerca iniziative nel mercato italiano, quello serale negli USA. Non è un monitoraggio completo di tutti i
-brand o social. Ogni notizia deve avere fonte ufficiale emersa nella ricerca,
-data originale di pubblicazione verificabile e un legame con il mercato osservato.
-Inglese, URL en-us o prezzo in dollari non bastano. Pagine senza data, vecchie
-aperture e store locator sono riferimenti, non nuove notizie.
+Entrambi includono novità internazionali con etichetta `Globale`, senza richiedere
+un'attivazione locale né affermare una distribuzione mondiale. Mattina: priorità
+all'Italia; sera: priorità a USA/New York. Per le etichette locali resta necessaria
+una prova: inglese, URL en-us e valuta non bastano. Pagine senza data, vecchie
+aperture e store locator non sono notizie nuove. Le press room di gruppo sono
+autorizzate singolarmente per brand in `publisherDomains`, non per tutti i marchi.
 
 ## Freschezza e copertura
 
-Priorità alle pubblicazioni di oggi; si recuperano anche quelle uscite dopo
-l'ultimo controllo riuscito del rispettivo radar. La ricerca termina all'istante
-di avvio: una pubblicazione successiva verrà cercata al controllo seguente.
-All'avvio senza storico si usano 48 ore; dopo interruzioni il recupero è limitato
-a sette giorni, senza ampliare la finestra per riempire un'edizione vuota.
+Priorità alle pubblicazioni di oggi; ogni esecuzione ricontrolla una finestra
+mobile di 48 ore (`rolling-48h-v2`) per recuperare indicizzazione tardiva o ricerche
+parziali. I recuperi hanno sempre la vera data e non sono presentati come notizie
+di oggi. La finestra termina all'avvio: una pubblicazione successiva verrà cercata
+al controllo seguente. Non si amplia la finestra per riempire un'edizione vuota.
 Quando la fonte indica soltanto il giorno, si include l'intero giorno iniziale
 e si dichiara che l'ora non è disponibile. Non si inventa precisione al minuto.
 
@@ -87,3 +88,33 @@ operativi. Non contiene dati interni, intenzioni dei brand o metriche inventate.
 `checkedAt` indica il controllo; `updatedAt` l'ultimo inserimento. Nei giorni
 senza novità, le schede precedenti conservano le date reali. Le lacune di
 copertura e gli errori vengono mostrati senza cancellare contenuti validi.
+
+## Controllo sistematico delle fonti
+
+Prima dell'unica richiesta GPT-5.5, `source-scan.mjs` tenta le pagine editoriali
+configurate per ciascuna delle 33 maison. Prima tutti gli indici principali,
+poi i secondari, infine fino a due articoli per brand: massimo sei richieste
+HTTP simultanee, timeout 8 secondi, budget complessivo 120 secondi, 3 MB per pagina.
+I redirect sono ammessi soltanto verso HTTPS dei domini autorizzati per quel brand.
+Pagine bloccate, bot challenge, shell vuote e contenuti non editoriali non sono
+considerati letti. Non vengono aggirati login o protezioni dei siti.
+
+Gli estratti sono dati non attendibili come istruzioni. Il contesto diretto ha
+un budget ripartito fra tutti i brand, non troncato a danno degli ultimi. L'AI
+completa la verifica con ricerca web ufficiale (massimo 8 chiamate di ricerca),
+senza richieste AI aggiuntive o cambio modello. Costi effettivi dipendono dai
+token e dalle ricerche; il limite di fatturazione dell'account non viene modificato.
+
+`data/research-italy.json` e `data/research-usa.json` registrano esiti per maison,
+URL tentati, lacune e token/ricerche usati, senza chiavi né dati personali.
+`radarCoverage.partial` espone le lacune anche quando sono pubblicate alcune notizie;
+uno stato `partial` senza nuovi articoli non equivale a dire che non esistono notizie.
+Un indice raggiungibile non garantisce una scansione esaustiva del brand.
+Gli URL delle fonti controllate non entrano nella deduplicazione: solo gli
+articoli effettivamente pubblicati sono aggiunti a `seen-urls`.
+
+I controlli offline si eseguono con `npm test` e `npm run check`. Per verificare
+il percorso autonomo, avviare una sola esecuzione manuale di ciascun workflow,
+controllare log, report e `data/current.json`; non basta l'esito verde del job.
+Se l'API fallisce si conserva l'edizione e si segnala errore, senza retry a pagamento.
+La normale esecuzione successiva ricontrolla le fonti nella stessa finestra mobile.

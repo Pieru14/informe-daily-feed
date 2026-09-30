@@ -91,7 +91,7 @@ async function simulate(script, draft, previous, fail = false) {
   await writeFile(path.join(temp, 'data/current.json'), JSON.stringify(previous));
   await writeFile(path.join(temp, 'data/seen-urls.json'), JSON.stringify(['https://www.dior.com/test-previous']));
   const response = { status: 'completed', output_text: JSON.stringify(draft), output: [{ type: 'web_search_call', action: { sources: [{ url: article.url }] } }] };
-  const mock = 'globalThis.fetch = async (url, options) => { const body=JSON.parse(options.body); if(url!=="https://api.openai.com/v1/responses" || body.model!=="gpt-5.5" || body.store!==false) throw Error("Unexpected API request"); return {ok:' + !fail + ',status:429,text:async()=>"Test failure",json:async()=>(' + JSON.stringify(response) + ')}; };';
+  const mock = 'let calls=0; process.on("exit",()=>{if(calls!==1)throw Error("Expected one AI request");}); globalThis.fetch = async (url, options) => { if(url!=="https://api.openai.com/v1/responses")return new Response("Blocked fixture",{status:403}); calls++; const body=JSON.parse(options.body); if(body.model!=="gpt-5.5" || body.store!==false) throw Error("Unexpected API request"); return {ok:' + !fail + ',status:429,text:async()=>"Test failure",json:async()=>(' + JSON.stringify(response) + ')}; };';
   const mockPath = path.join(temp, 'mock.mjs');
   await writeFile(mockPath, mock);
   const run = spawnSync(process.execPath, ['--import', pathToFileURL(mockPath).href, path.join(scripts, script)], {

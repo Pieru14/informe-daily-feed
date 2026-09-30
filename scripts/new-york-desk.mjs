@@ -12,7 +12,7 @@ export const newYorkSchema = {
         scope: { type: 'string', enum: ['new_york'] },
         brand: text(80), category: text(60), publishedOn: { type: ['string', 'null'] },
         publishedAt: { type: ['string', 'null'] }, publicationEvidence: text(180),
-        dateOrSeason: text(100), geography: { type: 'string', enum: ['New York', 'USA'] },
+        dateOrSeason: text(100), geography: { type: 'string', enum: ['New York', 'USA', 'Globale'] },
         geographyEvidence: text(320), title: text(160), fact: text(500),
         communication: text(420), relevance: text(320), source: text(140), url: text(1800)
       },
@@ -57,7 +57,7 @@ export function failedDesk(previous, now = new Date()) {
     updates: (previous?.updates || []).filter(item => !isExcludedBrand(item)) };
 }
 
-export function buildNewYorkDesk({ draft, sourceUrls, domains, competitors, seenUrls, previous, now, today, window = researchWindow(now, previous) }) {
+export function buildNewYorkDesk({ draft, sourceUrls, domains, competitors, seenUrls, previous, now, today, window = researchWindow(now, previous), coverage }) {
   if (!draft || !Array.isArray(draft.updates) || draft.updates.length > 10) throw Error('Bozza New York non valida.');
   const sources = [...new Set(sourceUrls)].filter(url => allowed(url, domains) && !isExcludedBrand({url}));
   const consulted = new Map(sources.map(url => [deskUrl(url), url]));
@@ -72,7 +72,7 @@ export function buildNewYorkDesk({ draft, sourceUrls, domains, competitors, seen
       if (seen.has(identity)) continue;
       // Undated pages, homepages and old openings are reference material, not news.
       const publication = verifyPublication(item, window);
-      if (item.scope !== 'new_york' || !['New York', 'USA'].includes(item.geography)) throw Error('Ambito non valido.');
+      if (item.scope !== 'new_york' || !['New York', 'USA', 'Globale'].includes(item.geography)) throw Error('Ambito non valido.');
       const next = {
         id: 'ny-' + today + '-' + createHash('sha256').update(identity).digest('hex').slice(0, 12),
         addedAt: now.toISOString(), scope: item.scope,
@@ -94,10 +94,10 @@ export function buildNewYorkDesk({ draft, sourceUrls, domains, competitors, seen
     .sort((a, b) => b.publishedOn.localeCompare(a.publishedOn) || String(b.publishedAt || '').localeCompare(String(a.publishedAt || ''))).slice(0, 10);
   const desk = {
     checkedAt: now.toISOString(), updatedAt: accepted.length ? now.toISOString() : previous?.updatedAt || null,
-    status: accepted.length ? 'updated' : rejected ? 'not_verified' : sources.length ? 'no_new_verified_updates' : 'not_verified',
-    freshnessPolicy: 'incremental-v1', researchWindow: window,
-    lastSuccessfulSearchAt: sources.length && !rejected ? window.until : (previous?.lastSuccessfulSearchAt || window.since),
-    radarCoverage: competitorCoverage(competitors, sources),
+    status: accepted.length ? 'updated' : coverage?.partial ? 'partial' : rejected ? 'not_verified' : sources.length ? 'no_new_verified_updates' : 'not_verified',
+    freshnessPolicy: coverage ? 'rolling-48h-v2' : 'incremental-v1', researchWindow: window,
+    lastSuccessfulSearchAt: sources.length && !rejected && !coverage?.partial ? window.until : (previous?.lastSuccessfulSearchAt || window.since),
+    radarCoverage: coverage || competitorCoverage(competitors, sources),
     consultedSources: sources.slice(0, 120), updates
   };
   validateNewYorkDesk(desk);
@@ -105,7 +105,7 @@ export function buildNewYorkDesk({ draft, sourceUrls, domains, competitors, seen
 }
 
 export function validateNewYorkDesk(desk) {
-  const statuses = ['updated', 'no_new_verified_updates', 'not_verified', 'error'];
+  const statuses = ['updated', 'no_new_verified_updates', 'not_verified', 'partial', 'error'];
   if (!desk || Number.isNaN(Date.parse(desk.checkedAt)) || typeof desk.checkedAt !== 'string'
     || !statuses.includes(desk.status)
     || (desk.updatedAt !== null && (typeof desk.updatedAt !== 'string' || Number.isNaN(Date.parse(desk.updatedAt))))
@@ -116,7 +116,7 @@ export function validateNewYorkDesk(desk) {
   for (const item of desk.updates) {
     if (!/^ny-\d{4}-\d{2}-\d{2}-[a-f0-9]{12}$/.test(item.id) || ids.has(item.id)
       || !validDay(item.publishedOn) || Number.isNaN(Date.parse(item.addedAt)) || !deskUrl(item.url)
-      || item.scope !== 'new_york' || !['New York', 'USA'].includes(item.geography)) throw Error('Scheda New York non valida.');
+      || item.scope !== 'new_york' || !['New York', 'USA', 'Globale'].includes(item.geography)) throw Error('Scheda New York non valida.');
     if (!desk.updatedAt || Date.parse(item.addedAt) > Date.parse(desk.updatedAt)
       || Date.parse(item.publishedOn) > Date.parse(item.addedAt) + 86400000
       || isExcludedBrand(item)) throw Error('Fonte o cronologia della scheda non valida.');

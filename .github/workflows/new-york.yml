@@ -28,7 +28,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Cerca notizie competitor New York e USA
+      - name: Cerca notizie maison internazionali e USA
         id: editor
         run: node scripts/update-new-york.mjs
         env:
@@ -41,6 +41,7 @@ jobs:
         if: ${{ !cancelled() && steps.verify.outcome == 'success' }}
         run: |
           git add data/current.json data/seen-new-york-urls.json data/runtime-new-york.json data/archive
+          if [ -f data/research-usa.json ]; then git add data/research-usa.json; fi
           if git diff --cached --quiet; then
             echo "Nessuna modifica al desk."
             exit 0

@@ -33,7 +33,7 @@ const pulse = fixture.brandPulse.updates.map((item, index) => ({ ...item, brand:
   category: 'collezione', dateOrSeason: '2026', publishedOn: today, publishedAt: null,
   publicationEvidence: 'Data di pubblicazione riportata nel comunicato: ' + today,
   geography: 'Italia', geographyEvidence: 'Il comunicato documenta il lancio e la presentazione a Milano.',
-  url: 'https://www.etro.com/test-fixture-' + index }));
+  url: 'https://www.etro.com/news/test-fixture-' + index }));
 const edition = fixture.dailyEdition;
 const publishDraft = {
   decision: 'publish', reason: 'Fixture senza richieste API.', dailyNote: words,
@@ -59,7 +59,7 @@ async function simulate(draft, sources, seen = [], previous = fixture, apiFailur
   await writeFile(path.join(temp, 'config/editorial-policy.md'), 'Fixture di test.');
   const response = { output_text: JSON.stringify(draft), output: [{ type: 'web_search_call', action: { sources: sources.map(url => ({ url })) } }] };
   // Replace fetch in a separate test process: no network, real key or paid requests.
-  const mock = 'globalThis.fetch = async url => { if (url !== "https://api.openai.com/v1/responses") throw Error("Unexpected network"); return {ok:' + !apiFailure + ',status:429,text:async()=>"Test API failure",json:async()=>(' + JSON.stringify(response) + ')}; };';
+  const mock = 'let calls=0; process.on("exit",()=>{if(calls!==1)throw Error("Expected one AI request");}); globalThis.fetch = async url => { if (url !== "https://api.openai.com/v1/responses") return new Response("Blocked fixture",{status:403}); calls++; return {ok:' + !apiFailure + ',status:429,text:async()=>"Test API failure",json:async()=>(' + JSON.stringify(response) + ')}; };';
   const mockPath = path.join(temp, 'mock.mjs');
   await writeFile(mockPath, mock);
   const run = spawnSync(process.execPath, ['--import', pathToFileURL(mockPath).href, path.join(scripts, 'update-edition.mjs')], {
@@ -80,7 +80,7 @@ test('skip anche senza fonti: aggiorna solo la frase, non le date delle notizie'
   const result = await simulate({ decision: 'skip', reason: 'Non ci sono nuove notizie verificate.', dailyNote: words }, [], officialUrls, previous);
   const { dailyNote, checkedAt, checkStatus, checkedSourceCount } = result.next;
   assert.deepEqual(newsOnly(result.next), newsOnly(previous));
-  assert.equal(checkStatus, 'no_new_verified_updates');
+  assert.equal(checkStatus, 'partial');
   assert.equal(checkedSourceCount, 0);
   assert.equal(result.next.lastSuccessfulSearchAt, result.next.researchWindow.since);
   assert.ok(Date.parse(checkedAt));
@@ -99,7 +99,7 @@ test('tutte le notizie duplicate: aggiorna solo frase e controllo', async () => 
   assert.deepEqual(newsOnly(result.next), newsOnly(previous));
   assert.equal(dailyNote.date, today);
   assert.ok(Date.parse(result.next.lastSuccessfulSearchAt));
-  assert.equal(result.next.freshnessPolicy, 'incremental-v1');
+  assert.equal(result.next.freshnessPolicy, 'rolling-48h-v2');
 });
 
 test('una sola notizia verificata basta per pubblicare', async () => {
@@ -109,10 +109,18 @@ test('una sola notizia verificata basta per pubblicare', async () => {
   assert.equal(result.next.brandPulse.updates.length, 1);
   assert.equal(result.next.checkStatus, 'published');
   assert.equal(result.next.brandPulse.updates[0].publishedOn, today);
-  assert.equal(result.next.freshnessPolicy, 'incremental-v1');
+  assert.equal(result.next.freshnessPolicy, 'rolling-48h-v2');
   assert.ok(Date.parse(result.next.lastSuccessfulSearchAt));
   assert.deepEqual(result.next.radarCoverage.consultedBrands, ['Etro']);
   assert.notEqual(result.next.dailyEdition.focus.id, fixture.dailyEdition.focus.id);
+});
+
+test('una campagna Globale viene pubblicata anche senza attivazione italiana', async () => {
+  const item = { ...publishDraft.updates[0], geography: 'Globale', geographyEvidence: 'La fonte presenta una campagna internazionale senza attivazione italiana dichiarata.' };
+  const result = await simulate({ ...publishDraft, updates: [item] }, [item.url]);
+  assert.equal(result.next.checkStatus, 'published');
+  assert.equal(result.next.brandPulse.updates[0].geography, 'Globale');
+  assert.deepEqual(result.seen, [item.url]);
 });
 
 test('deduplicazione parziale: nuove notizie, taccuino precedente non ridatato', async () => {
