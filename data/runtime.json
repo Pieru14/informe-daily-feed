@@ -1,8 +1,15 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-30T08:42:05.529Z",
-  "result": "no_new_verified_updates",
+  "checkedAt": "2026-09-30T19:28:34.797Z",
+  "result": "published",
+  "usage": {
+    "model": "gpt-5.5",
+    "inputTokens": 35858,
+    "outputTokens": 1964,
+    "searchCalls": 5
+  },
   "localDate": "2026-09-30",
-  "consultedOfficialSources": 147,
-  "message": "Nelle fonti ufficiali consultate della watchlist non è emersa alcuna nuova pubblicazione verificabile tra 2026-09-29 e 2026-09-30 con data di pubblicazione documentata e legame specifico con il mercato italiano. I risultati emersi erano principalmente store locator, pagine prodotto/evergreen, campagne già note o fonti prive di data di pubblicazione verificabile."
+  "editionId": "2026-09-30-12",
+  "consultedOfficialSources": 30,
+  "message": "Nuova edizione verificata e pubblicata."
 }
