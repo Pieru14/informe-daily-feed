@@ -993,13 +993,13 @@
   },
   "checkStatus": "published",
   "newYorkDesk": {
-    "checkedAt": "2026-10-01T16:40:12.073Z",
-    "updatedAt": "2026-09-25T09:05:11.488Z",
-    "status": "partial",
+    "checkedAt": "2026-10-01T19:21:53.607Z",
+    "updatedAt": "2026-10-01T19:21:53.607Z",
+    "status": "updated",
     "freshnessPolicy": "rolling-48h-v2",
     "researchWindow": {
-      "since": "2026-09-29T16:39:34.402Z",
-      "until": "2026-10-01T16:39:34.402Z",
+      "since": "2026-09-29T19:21:05.273Z",
+      "until": "2026-10-01T19:21:05.273Z",
       "fromDate": "2026-09-29",
       "toDate": "2026-10-01",
       "timezone": "Europe/Rome"
@@ -1153,11 +1153,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.gucci.com/us/en/st/stories/people-events",
+              "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
               "status": "read"
             },
             {
-              "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
+              "url": "https://www.gucci.com/us/en/st/stories/people-events",
               "status": "read"
             }
           ]
@@ -1177,11 +1177,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
+              "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
               "status": "read"
             },
             {
-              "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
+              "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
               "status": "read"
             }
           ]
@@ -1250,7 +1250,7 @@
             },
             {
               "url": "https://www.lvmh.com/en/undefined/a-fusion-of-bodies-designs-and-emotion-for-fendi-spring-summer-2027-collection",
-              "status": "timeout"
+              "status": "http_404"
             }
           ]
         },
@@ -1265,12 +1265,12 @@
               "status": "read"
             },
             {
-              "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
-              "status": "read"
-            },
-            {
               "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
               "status": "unusable"
+            },
+            {
+              "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
+              "status": "read"
             }
           ]
         },
@@ -1289,11 +1289,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.ysl.com/en-us/rive-droite/calendar/charlotte-gainsbourg-5-bis",
+              "url": "https://www.ysl.com/en-us/rive-droite/calendar/andy-warhol-banal-objects-exhibition",
               "status": "unusable"
             },
             {
-              "url": "https://www.ysl.com/en-us/rive-droite/calendar/andy-warhol-banal-objects-exhibition",
+              "url": "https://www.ysl.com/en-us/rive-droite/calendar/charlotte-gainsbourg-5-bis",
               "status": "unusable"
             }
           ]
@@ -1525,12 +1525,12 @@
               "status": "read"
             },
             {
-              "url": "https://us.maxmara.com/editorial/runway-fall-winter",
-              "status": "read"
-            },
-            {
               "url": "https://us.maxmara.com/editorial/campaign",
               "status": "unusable"
+            },
+            {
+              "url": "https://us.maxmara.com/editorial/runway-fall-winter",
+              "status": "read"
             }
           ]
         },
@@ -1583,6 +1583,10 @@
             {
               "url": "https://www.pucci.com/en/pages/pucci-journey",
               "status": "unusable"
+            },
+            {
+              "url": "https://www.lvmh.com/en/news-lvmh/",
+              "status": "read"
             }
           ]
         },
@@ -1653,11 +1657,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.zimmermann.com/us/collections-archive",
+              "url": "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
               "status": "read"
             },
             {
-              "url": "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
+              "url": "https://www.zimmermann.com/us/collections-archive",
               "status": "read"
             }
           ]
@@ -1677,7 +1681,7 @@
         {
           "brand": "Loro Piana",
           "status": "editorial_pages_read",
-          "pagesRead": 1,
+          "pagesRead": 2,
           "pagesWithPublicationMetadata": 0,
           "receipts": [
             {
@@ -1685,8 +1689,16 @@
               "status": "read"
             },
             {
+              "url": "https://www.lvmh.com/en/news-lvmh/",
+              "status": "read"
+            },
+            {
               "url": "https://us.loropiana.com/en/campaign/landing",
               "status": "unusable"
+            },
+            {
+              "url": "https://www.lvmh.com/en/undefined/loro-piana-presents-springsummer-2027-collection-at-palazzo-di-brera",
+              "status": "http_404"
             }
           ]
         },
@@ -1739,49 +1751,78 @@
       "partial": true
     },
     "consultedSources": [
-      "https://investor.ralphlauren.com/investor-overview?c=65933&mobile=1&order=field_nir_news_title&p=irol-irhome&sort=desc",
-      "https://urd.lvmh.com/en/2025",
-      "https://corporate.ralphlauren.com/pr_251009_Q2FY26_EarningsRelease.html",
-      "https://investor.ralphlauren.com/node/21956",
-      "https://corporate.ralphlauren.com/citizenship-and-sustainability?ab=en_US_Sustainability_Slot_4_S1_L1_SHOP",
-      "https://corporate.ralphlauren.com/citizenship-create-with-intent",
-      "https://investor.ralphlauren.com/investor-overview?c=65933&mobile=1&order=field_nir_news_title&p=irol-irhome&sort=asc",
-      "https://corporate.ralphlauren.com/citizenship-and-sustainability?location=korea",
-      "https://corporate.ralphlauren.com/citizenship-and-sustainability?ab=+EU_Purpose_Slot_8_S1_L1_SHOP",
-      "https://corporate.ralphlauren.com/pr_211208_Roblox.html",
-      "https://corporate.ralphlauren.com/pr_251002_GCSReport.html?q=lauren+polo+ralph+lauren",
-      "https://corporate.ralphlauren.com/citizenship-and-sustainability?ab=TW_EarthPolo_Slot_9_S1_L1_SHOP",
-      "https://investor.ralphlauren.com/node/21956/pdf",
-      "https://investor.ralphlauren.com/node/19261/pdf",
-      "https://www.burberryplc.com/content/dam/burberryplc/corporate/documents/investors/results-reports/2025/prelims-/Burberry%20FY25%20Preliminary%20Results%20Press%20Release.pdf.downloadasset.pdf",
-      "https://www.burberryplc.com/content/dam/burberryplc/corporate/documents/investors/results-reports/2025/interims-november-2025/Burberry%20FY26%20Interim%20Results%20Press%20Release%20November%202025.pdf.downloadasset.pdf",
-      "https://www.burberryplc.com/content/dam/burberryplc/corporate/oar/oar-2024-2025/financial-statements.pdf.downloadasset.pdf",
-      "https://www.burberryplc.com/content/dam/burberryplc/corporate/oar/oar-2024-2025/burberry_annual_report_and_accounts_2024_25_accessibility.pdf",
-      "https://corporate.ralphlauren.com/s/RalphLauren_Corporate/newsroom",
-      "https://www.prada.com/us/es/pradasphere/special-projects/2026/prada-timecapsule.html",
-      "https://www.prada.com/us/en/info/terms-conditions.html",
-      "https://www.prada.com/us/en/info/terms-conditions-lifetime-repair.html",
-      "https://www.prada.com/es/en/pradasphere/special-projects/2026/prada-timecapsule.html",
-      "https://www.prada.com/de/de/pradasphere/special-projects/2026/prada-timecapsule.html",
-      "https://www.prada.com/au/en/pradasphere/special-projects/2026/prada-essence-popup.html",
-      "https://www.prada.com/ww/en.html?cc=AP",
-      "https://www.prada.com/ca/fr/pradasphere/special-projects/2026/prada-timecapsule.html",
-      "https://www.prada.com/tr/tr/pradasphere/special-projects/2026/prada-timecapsule.html",
-      "https://www.prada.com/it/it/pradasphere/special-projects/2026/prada-timecapsule.html",
-      "https://www.prada.com/br/pt/pradasphere/special-projects/2026/prada-timecapsule.html",
-      "https://www.prada.com/us/es/pradasphere/special-projects/2025/a-kind-of-language-prada-rong-zhai.html",
-      "https://videos.prada.com/csr-video/e-Prada_Group_2022_Sustainability_Report.pdf",
-      "https://videos.prada.com/csr-video/e-Prada_Group_2023_Sustainability_Report.pdf",
+      "https://corporate.ralphlauren.com/pr_260930_PoloFest.html?q=lauren+ralph",
+      "https://corporate.ralphlauren.com/newsroom",
+      "https://corporate.ralphlauren.com/",
+      "https://www.ralphlauren.com/discover",
+      "https://www.ralphlauren.com/keyword_fallcampaign/keyword_fallcampaign.html",
+      "https://www.monclergroup.com/wp-content/uploads/2025/10/moncler_eng_financial-calendar-2026.pdf",
+      "https://investors.tapestry.com/",
+      "https://www.ralphlauren.com/runway",
+      "https://www.ralphlauren.com/brands-prl-men-heritage-icons-cg",
+      "https://investors.tapestry.com/news-releases/news-release-details/tapestry-inc-reports-fiscal-2026-fourth-quarter-and-full-year",
+      "https://investor.ralphlauren.com/news-releases/news-release-details/ralph-lauren-presents-its-updated-strategic-growth-plan-next-0",
+      "https://www.ralphlauren.com/men-clothing-polo-shirts?msockid=3643cafc100b677c3e01dc3211c56647",
+      "https://corporate.ralphlauren.com/contact",
+      "https://www.monclergroup.com/v3/assets/blt61bda6b71f29a239/bltf918207c92bab566/690b64c396cc598759a0dd60/Moncler-Group-Press-Release-9M-2025.pdf",
+      "https://www.ralphlauren.com/on/demandware.static/-/Sites-RalphLauren_US-Library/default/dwe07b70ee/hbcu/PoloRLExclusivelyforMorehouseAndSpelmanColleges.pdf",
+      "https://www.ralphlauren.com/on/demandware.static/-/Library-Sites-RalphLauren_NA_Library/en_US/v1719915296419/img/202307/20230718-timeless-by-design-hub/2023-RL-GCSReport.pdf",
+      "https://www.ralphlauren.com/on/demandware.static/-/Library-Sites-RalphLauren_NA_Library/default/dw5da867b1/img/202305/20230509-home-trade-lp/RL_FBTY_6x8_SingleCards_V7_GM_R2.pdf",
+      "https://corporate.ralphlauren.com/on/demandware.static/-/Sites-RalphLauren_Corporate-Library/default/dw20e62662/assets/images/PRESS_RELEASES/PoloRalphLaurenForMorehouseSpelmanColleges_PressRelease.pdf",
+      "https://www.prada.com/us/en/pradasphere/campaigns/2026/fw-woman-man.html",
+      "https://www.prada.com/us/en/pradasphere/special-projects.html",
+      "https://www.prada.com/us/en/pradasphere/campaigns.html",
+      "https://www.pradagroup.com/en/news-media/highlights.html",
+      "https://www.prada.com/ww/en/pradasphere.html",
+      "https://www.prada.com/us/en.html",
+      "https://www.pradagroup.com/en/news-media/news-section/26-07-21-prada-fw-26-campaign.html",
+      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-04-22-prada-days-of-summer-26.html",
+      "https://www.prada.com/us/es/pradasphere/special-projects.html",
+      "https://www.prada.com/us/en.html?site=pc7",
+      "https://www.pradagroup.com/en/news-media/news-section/26-04-22-prada-days-of-summer-2026.html",
+      "https://www.prada.com/us/es/pradasphere.html",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Gennaio/Inglese/Prada-SS26-campaign-PR.pdf",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Marzo/Inglese/PRADA-RE-NYLON-2026-CAMPAIGN-PR.pdf",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Gennaio/Inglese/Prada-Fall-Winter-2026-Menswear-show-PR.pdf",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Febbraio/Inglese/Prada-Fall-Winter-2026-Womenswears-show-PR.pdf",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/investors/Q1-2026/Prada-Group-Q1-26-Results-Presentation.pdf",
+      "https://www.kering.com/en/press/",
+      "https://www.lvmh.com/en/news-lvmh",
+      "https://www.lvmh.com/en/news-lvmh/get-ready-reservations-for-les-journees-particulieres-open-today-at-200-pm-paris-time",
+      "https://www.kering.com/en/news/romain-spitzer-appointed-chief-executive-officer-of-bottega-veneta/",
+      "https://www.kering.com/en/news/revenue-for-the-third-quarter-of-2025/",
+      "https://www.kering.com/en/press/contacts/",
+      "https://www.kering.com/en/news/kering-and-l-oreal-complete-their-strategic-alliance/",
+      "https://www.lvmh.com/en/our-maisons/fashion-leather-good",
+      "https://www.lvmh.com/static/lettre-aux-actionnaires-juillet-2026/mode-et-maroquinerie.html",
+      "https://www.lvmh.com/fr/les-actualites-lvmh/prets-les-reservations-pour-les-journees-particulieres-ouvrent-aujourdhui-a-14h-heure-de-paris",
+      "https://www.kering.com/en/press/resources/",
+      "https://www.lvmh.com/en/publications/accelerating-growth-in-the-second-quarter---solid-first-half-results",
+      "https://urd.lvmh.com/en/urd-2023-va_vdef.pdf",
+      "https://www.kering.com/api/download-file/?path=Kering_Press_Release_2026_First_Quarter_Revenue_04_14_26_5c1c87ab5f.pdf",
+      "https://www.kering.com/api/download-file/?path=Kering_Press_Release_2026_First_Quarter_Revenue_04_14_26_71ec2db5b6.pdf",
+      "https://www.kering.com/api/download-file/?path=Kering_Press_Release_Capital_Markets_Day_EN_16_04_2026_893f4f2e65.pdf",
+      "https://www.lvmh.com/en/news-lvmh/loro-piana-opens-a-new-center-for-knitwear-excellence-in-ghemme",
+      "https://www.lvmh.com/en/news-lvmh?tag=Watches+%26+Jewelry",
+      "https://www.lvmh.com/fr/les-actualites-lvmh/loro-piana-inaugure-a-ghemme-un-nouveau-centre-dedie-a-lexcellence-de-la-maille",
+      "https://www.lvmh.com/en/news-lvmh/annual-loro-piana-knit-design-award-celebrates-talented-young-designers",
+      "https://www.lvmh.com/en/news-lvmh/loro-piana-announces-winners-of-knit-design-award-2025-in-milan/",
+      "https://www.lvmh.com/en/news-lvmh/loro-piana-announces-winners-of-knit-design-award-2024/",
+      "https://www.lvmh.com/en/news-lvmh/loro-piana-showcases-next-generation-talent-with-knit-design-award-2025/",
+      "https://www.lvmh.com/en/les-journees-particulieres-2026",
+      "https://www.lvmh.com/en/publications/lvmh-unveils-les-journees-particulieres-2026-program-65-venues-open-across-11-countries-and-exclusive-experiences",
+      "https://www.lvmh.com/en/news-lvmh/loro-piana-presents-springsummer-2027-collection-at-palazzo-di-brera",
+      "https://www.lvmh.com/en/news-lvmh/loro-piana-celebrates-centenary-with-stunning-exhibition-in-shanghai",
+      "https://lamaisondesstartups.lvmh.com/wp-content/uploads/2023/09/Book-2023-version-digitale.pdf",
       "https://www.pradagroup.com/en/news-media/news-section-archive.html",
       "https://www.pradagroup.com/en/sustainability/news-csr.html",
       "https://www.pradagroup.com/en/perspectives/special-projects.html",
       "https://www.gucci.com/us/en/st/stories",
-      "https://www.kering.com/en/press/",
-      "https://www.gucci.com/us/en/st/stories/people-events",
       "https://www.gucci.com/us/en/st/stories/advertising-campaign",
+      "https://www.gucci.com/us/en/st/stories/people-events",
       "https://www.dior.com/en_us/fashion/news-fashion-shows/folder-news-and-events",
-      "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
       "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
+      "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
       "https://www.chanel.com/us/fashion/",
       "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
       "https://www.chanel.com/us/fashion/collection/fall-winter-pre-collection-2026/",
@@ -1795,7 +1836,6 @@
       "https://www.miumiu.com/us/en/miumiu-club.html",
       "https://www.miumiu.com/us/en/miumiu-club/special-projects/new-balance-x-miu-miu-with-coco-gauff-2026.html",
       "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
-      "https://www.kering.com/en/news/romain-spitzer-appointed-chief-executive-officer-of-bottega-veneta/",
       "https://finance.hermes.com/en/press-releases-and-news/",
       "https://armanivalues.com/news-archive/",
       "https://www.versace.com/us/en/stories/",
@@ -1825,97 +1865,51 @@
       "https://alanui.it/en-it/collections/mens-clothing-view-all",
       "https://www.zimmermann.com/us/collections",
       "https://www.zimmermann.com/us/immerse",
-      "https://www.zimmermann.com/us/collections-archive",
       "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
+      "https://www.zimmermann.com/us/collections-archive",
       "https://us.loropiana.com/en/cm/campaigns/narratives",
+      "https://corporate.ralphlauren.com/s/RalphLauren_Corporate/newsroom",
       "https://www.coach.com/content/courage-to-be-real",
       "https://www.tapestry.com/newsroom/"
     ],
     "updates": [
       {
-        "id": "ny-2026-09-25-76bb592bb4a2",
-        "addedAt": "2026-09-25T09:05:11.488Z",
+        "id": "ny-2026-10-01-1a29ea17f2f6",
+        "addedAt": "2026-10-01T19:21:53.607Z",
         "scope": "new_york",
-        "brand": "Coach",
-        "category": "evento / runway / anniversario",
-        "publishedOn": "2026-09-22",
-        "dateOrSeason": "New York Fashion Week, settembre 2026; Spring 2027",
-        "geography": "New York",
-        "geographyEvidence": "La fonte è una scheda CFDA nella sezione New York Fashion Week e descrive la presentazione Coach durante la settimana moda newyorkese.",
-        "title": "Coach at 85: Love is the Message",
-        "fact": "CFDA documenta la presentazione Coach per l’85° anniversario: show con orchestra dal vivo, atmosfera club one-night-only, parete di schermi vintage con clip storiche e formato hospitality pre-show.",
-        "communication": "Il messaggio osservabile sposta l’anniversario dal patrimonio prodotto a un codice esperienziale e pop: archivio, entertainment, nightlife e comunità. Canale/formato: articolo ufficiale CFDA con racconto evento e immagini. Pubblico: fashion week audience e, per estensione editoriale, consumatore urbano interessato a heritage accessibile.",
-        "relevance": "Da monitorare come uso dell’heritage in chiave spettacolare: Coach trasforma memoria di marca e New York Fashion Week in un ambiente immersivo, più vicino all’intrattenimento che al solo runway recap.",
-        "source": "CFDA",
-        "url": "https://cfda.com/news/coach-at-85-love-is-the-message/"
+        "brand": "Ralph Lauren",
+        "category": "evento / iniziativa culturale",
+        "publishedOn": "2026-09-30",
+        "publishedAt": null,
+        "publicationEvidence": "Pagina newsroom: “Published Sep 30, 2026”",
+        "dateOrSeason": "23–25 ottobre 2026",
+        "geography": "Globale",
+        "geographyEvidence": "Comunicato ufficiale da Tokyo; l’evento è descritto come primo capitolo di una serie di gathering globali, senza prova di attivazione USA in questa pagina.",
+        "title": "Ralph Lauren debutta PoloFest a Tokyo",
+        "fact": "Ralph Lauren annuncia PoloFest, esperienza di tre giorni a Jing Harajuku, con mostra d’archivio, conversazioni, marketplace vintage e merchandise esclusivo/upcycled legato a Polo.",
+        "communication": "Il racconto costruisce Polo come cultura partecipativa: heritage, community, collezionismo e lifestyle diventano contenuto esperienziale. Canale documentato: comunicato newsroom ufficiale con pagina informativa collegata.",
+        "relevance": "Da osservare per il mercato USA: codici Americana e community dei collector vengono attivati fuori dagli Stati Uniti, mostrando come un brand USA possa internazionalizzare il proprio heritage senza perdere riconoscibilità.",
+        "source": "Ralph Lauren Newsroom",
+        "url": "https://corporate.ralphlauren.com/pr_260930_PoloFest.html?q=lauren+ralph"
       },
       {
-        "id": "ny-2026-09-25-5a059f7db13e",
-        "addedAt": "2026-09-25T09:05:11.488Z",
+        "id": "ny-2026-10-01-ec6045a09a64",
+        "addedAt": "2026-10-01T19:21:53.607Z",
         "scope": "new_york",
-        "brand": "CFDA",
-        "category": "iniziativa culturale / industry activation",
-        "publishedOn": "2026-09-10",
-        "dateOrSeason": "9-11 settembre 2026",
-        "geography": "New York",
-        "geographyEvidence": "La fonte indica il debutto alla New York Marketplace presso il Javits Center e cita produttori locali newyorkesi curati da CFDA.",
-        "title": "Inside the CFDA’s First SOURCING Sessions",
-        "fact": "CFDA racconta le prime SOURCING Sessions con FASHION by Informa al Javits Center: conversazioni su produzione e valore del prodotto, più una selezione di manifatture locali newyorkesi in fiera.",
-        "communication": "Il codice comunicativo è didattico e di filiera: meno glamour di passerella, più trasparenza su making, competenze locali e infrastruttura produttiva. Canale/formato: news ufficiale CFDA con taglio reportage. Pubblico: brand, buyer e operatori; ipotesi editoriale, anche osservatori interessati al made-in-New-York.",
-        "relevance": "Segnale utile per confrontare come i brand possono agganciare la comunicazione moda USA a craft, prossimità produttiva e responsabilità di filiera senza trasformarla in pura cronaca corporate.",
-        "source": "CFDA",
-        "url": "https://cfda.com/news-and-insights/industry-insights/inside-the-cfdas-first-sourcing-sessions/"
-      },
-      {
-        "id": "ny-2026-09-25-53254e1d34db",
-        "addedAt": "2026-09-25T08:47:47.873Z",
-        "scope": "new_york",
-        "brand": "CFDA / NYFW",
-        "category": "event",
-        "publishedOn": "2026-09-10",
-        "dateOrSeason": "Settembre 2026",
-        "geography": "New York",
-        "geographyEvidence": "La fonte colloca il kickoff di New York Fashion Week a Le Rock, ristorante a Rockefeller Center, e richiama lo schermo su Rockefeller Center Plaza per sei giorni di streaming degli show.",
-        "title": "Kickoff NYFW a Le Rock, Rockefeller Center",
-        "fact": "CFDA ha documentato il cocktail di apertura NYFW a Le Rock con host Thom Browne, Steven Kolb, Joseph Altuzarra, Stacey Bendet e Sabyasachi Mukherjee; presenti anche gli ambassador NYFW Becky G, Honey Dijon e Sebastian Yatra.",
-        "communication": "Il racconto privilegia socialità, community industriale e visibilità urbana, usando nomi della moda e immagini evento per rafforzare l’idea di NYFW come momento collettivo newyorkese.",
-        "relevance": "Utile per monitorare il ruolo degli eventi serali ufficiali come dispositivo di relazione e amplificazione della settimana moda USA.",
-        "source": "CFDA",
-        "url": "https://cfda.com/news/kicking-off-nyfw-in-style-at-le-rock/"
-      },
-      {
-        "id": "ny-2026-09-25-3e24587409a4",
-        "addedAt": "2026-09-25T08:47:47.873Z",
-        "scope": "new_york",
-        "brand": "CFDA / NYFW",
-        "category": "NYFW / public activation",
-        "publishedOn": "2026-09-09",
-        "dateOrSeason": "10-15 settembre 2026",
-        "geography": "New York",
-        "geographyEvidence": "La fonte indica Rockefeller Center e il Rink at Rockefeller Center come destinazione fisica e digitale per vedere gli show NYFW dal 10 al 15 settembre; cita anche il kickoff cocktail a Le Rock at Rockefeller Center.",
-        "title": "NYFW Live at Rockefeller Center torna con Genesys",
-        "fact": "CFDA e Rockefeller Center hanno annunciato la terza edizione di NYFW Live, con streaming pubblico degli show su maxi-schermo al Rink; tra i brand confermati compaiono Coach, Ralph Lauren e Tory Burch, con ambassador Becky G, Honey Dijon e Sebastián Yatra.",
-        "communication": "La comunicazione presenta NYFW come esperienza pubblica e cittadina, trasformando il front row in un formato accessibile tra luogo fisico iconico e streaming.",
-        "relevance": "Osservare come la moda USA usa landmark urbani e partner tecnologici per ampliare il racconto della fashion week oltre gli addetti ai lavori.",
-        "source": "CFDA",
-        "url": "https://cfda.com/news/nyfw-live-at-rockefeller-center-returns-with-partner-genesys/"
-      },
-      {
-        "id": "ny-2026-09-25-ee8386d91f5b",
-        "addedAt": "2026-09-25T08:47:47.873Z",
-        "scope": "new_york",
-        "brand": "CFDA / NYFW",
-        "category": "awards",
-        "publishedOn": "2026-09-09",
-        "dateOrSeason": "2 novembre 2026",
-        "geography": "New York",
-        "geographyEvidence": "La fonte afferma che i 2026 CFDA Fashion Awards si terranno lunedì 2 novembre 2026 all’American Museum of Natural History, per il quarto anno.",
-        "title": "Nominee e honoree dei CFDA Fashion Awards 2026",
-        "fact": "CFDA ha annunciato nominee e honoree 2026: tra gli altri, Tory Burch riceverà il Positive Change Award; Coach, Ralph Lauren e Tory Burch compaiono nelle categorie designer americani.",
-        "communication": "L’annuncio costruisce gli Awards come piattaforma di legittimazione della creatività americana, combinando categorie prodotto, riconoscimenti culturali e partner corporate.",
-        "relevance": "Da seguire come indice ufficiale dei brand e dei temi che CFDA porta al centro della conversazione moda USA.",
-        "source": "CFDA",
-        "url": "https://cfda.com/news/the-nominees-honorees-of-the-2026-cfda-fashion-awards-presented-by-amazon-fashion/"
+        "brand": "Loro Piana",
+        "category": "artigianato / produzione / cultura del savoir-faire",
+        "publishedOn": "2026-09-29",
+        "publishedAt": null,
+        "publicationEvidence": "Articolo LVMH: “Published on 09.29.2026”",
+        "dateOrSeason": "2026",
+        "geography": "Globale",
+        "geographyEvidence": "Fonte LVMH su un’apertura a Ghemme, Piemonte; nessuna prova locale USA o New York nella pagina.",
+        "title": "Loro Piana apre a Ghemme un centro dedicato alla maglieria",
+        "fact": "Loro Piana presenta un nuovo centro di 8.000 metri quadrati dedicato alla maglieria, che riunisce ricerca, programmazione, lavorazione, assemblaggio e finissaggio; include Accademia dei Mestieri, spazio educativo ed esposizione del Knit Design Award.",
+        "communication": "La comunicazione mette in scena la filiera come contenuto: materiali nobili, trasmissione artigianale, architettura luminosa e sostenibilità operativa diventano codici di marca. Canale documentato: news ufficiale LVMH con testo e gallery immagini.",
+        "relevance": "Spunto per il radar USA: il lusso soft e tessile rafforza la credibilità attraverso luoghi produttivi narrabili, non solo attraverso campagne prodotto; utile confrontarlo con brand che puntano su eventi community o runway spectacle.",
+        "source": "LVMH News",
+        "url": "https://www.lvmh.com/en/news-lvmh/loro-piana-opens-a-new-center-for-knitwear-excellence-in-ghemme"
       }
     ]
   }
