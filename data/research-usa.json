@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-30T19:29:19.513Z",
+  "checkedAt": "2026-10-01T16:40:12.072Z",
   "coverage": {
     "watchlist": [
       "Prada",
@@ -172,11 +172,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
             "status": "read"
           },
           {
-            "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
             "status": "read"
           }
         ]
@@ -192,11 +192,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-pre-collection-2026/",
+            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
             "status": "read"
           },
           {
-            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
+            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-pre-collection-2026/",
             "status": "read"
           }
         ]
@@ -245,7 +245,7 @@
           },
           {
             "url": "https://www.lvmh.com/en/undefined/a-fusion-of-bodies-designs-and-emotion-for-fendi-spring-summer-2027-collection",
-            "status": "http_404"
+            "status": "timeout"
           }
         ]
       },
@@ -260,12 +260,12 @@
             "status": "read"
           },
           {
-            "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
-            "status": "unusable"
-          },
-          {
             "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
             "status": "read"
+          },
+          {
+            "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
+            "status": "unusable"
           }
         ]
       },
@@ -424,7 +424,7 @@
             "status": "read"
           },
           {
-            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-fw-2026.html",
+            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-eyewear-fw-2026.html",
             "status": "read"
           }
         ]
@@ -520,12 +520,12 @@
             "status": "read"
           },
           {
-            "url": "https://us.maxmara.com/editorial/campaign",
-            "status": "unusable"
-          },
-          {
             "url": "https://us.maxmara.com/editorial/runway-fall-winter",
             "status": "read"
+          },
+          {
+            "url": "https://us.maxmara.com/editorial/campaign",
+            "status": "unusable"
           }
         ]
       },
@@ -612,11 +612,11 @@
             "status": "read"
           },
           {
-            "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
+            "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
             "status": "read"
           },
           {
-            "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
+            "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
             "status": "read"
           }
         ]
@@ -648,11 +648,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
+            "url": "https://www.zimmermann.com/us/collections-archive",
             "status": "read"
           },
           {
-            "url": "https://www.zimmermann.com/us/collections-archive",
+            "url": "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
             "status": "read"
           }
         ]
@@ -735,8 +735,8 @@
   },
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 42990,
-    "outputTokens": 1578,
-    "searchCalls": 8
+    "inputTokens": 33150,
+    "outputTokens": 1005,
+    "searchCalls": 5
   }
 }

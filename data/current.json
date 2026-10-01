@@ -993,15 +993,15 @@
   },
   "checkStatus": "published",
   "newYorkDesk": {
-    "checkedAt": "2026-09-30T19:29:19.515Z",
+    "checkedAt": "2026-10-01T16:40:12.073Z",
     "updatedAt": "2026-09-25T09:05:11.488Z",
     "status": "partial",
     "freshnessPolicy": "rolling-48h-v2",
     "researchWindow": {
-      "since": "2026-09-28T19:28:42.922Z",
-      "until": "2026-09-30T19:28:42.922Z",
-      "fromDate": "2026-09-28",
-      "toDate": "2026-09-30",
+      "since": "2026-09-29T16:39:34.402Z",
+      "until": "2026-10-01T16:39:34.402Z",
+      "fromDate": "2026-09-29",
+      "toDate": "2026-10-01",
       "timezone": "Europe/Rome"
     },
     "lastSuccessfulSearchAt": "2026-09-30T16:40:15.303Z",
@@ -1177,11 +1177,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
+              "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
               "status": "read"
             },
             {
-              "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
+              "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
               "status": "read"
             }
           ]
@@ -1197,11 +1197,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.chanel.com/us/fashion/collection/fall-winter-pre-collection-2026/",
+              "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
               "status": "read"
             },
             {
-              "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
+              "url": "https://www.chanel.com/us/fashion/collection/fall-winter-pre-collection-2026/",
               "status": "read"
             }
           ]
@@ -1250,7 +1250,7 @@
             },
             {
               "url": "https://www.lvmh.com/en/undefined/a-fusion-of-bodies-designs-and-emotion-for-fendi-spring-summer-2027-collection",
-              "status": "http_404"
+              "status": "timeout"
             }
           ]
         },
@@ -1265,12 +1265,12 @@
               "status": "read"
             },
             {
-              "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
-              "status": "unusable"
-            },
-            {
               "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
               "status": "read"
+            },
+            {
+              "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
+              "status": "unusable"
             }
           ]
         },
@@ -1429,7 +1429,7 @@
               "status": "read"
             },
             {
-              "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-fw-2026.html",
+              "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-eyewear-fw-2026.html",
               "status": "read"
             }
           ]
@@ -1525,12 +1525,12 @@
               "status": "read"
             },
             {
-              "url": "https://us.maxmara.com/editorial/campaign",
-              "status": "unusable"
-            },
-            {
               "url": "https://us.maxmara.com/editorial/runway-fall-winter",
               "status": "read"
+            },
+            {
+              "url": "https://us.maxmara.com/editorial/campaign",
+              "status": "unusable"
             }
           ]
         },
@@ -1617,11 +1617,11 @@
               "status": "read"
             },
             {
-              "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
+              "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
               "status": "read"
             },
             {
-              "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
+              "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
               "status": "read"
             }
           ]
@@ -1653,11 +1653,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
+              "url": "https://www.zimmermann.com/us/collections-archive",
               "status": "read"
             },
             {
-              "url": "https://www.zimmermann.com/us/collections-archive",
+              "url": "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
               "status": "read"
             }
           ]
@@ -1739,38 +1739,39 @@
       "partial": true
     },
     "consultedSources": [
-      "https://www.prada.com/us/en/pradasphere/campaigns/2026/fw-woman-man.html",
-      "https://www.dior.com/en_us/fashion/news-fashion-shows",
-      "https://www.dior.com/en_us/fashion/news-fashion-shows/folder-news-and-events/fall-2026-womens-campaign",
-      "https://www.prada.com/us/en/pradasphere/campaigns.html",
-      "https://www.pradagroup.com/en/news-media/highlights.html",
-      "https://www.dior.com/en_us/fashion?animate=true",
-      "https://www.dior.com/en_int/fashion/news-savoir-faire/folder-news-and-events/winter-2026-2027-campaign",
-      "https://www.dior.com/en_int/fashion/womens-fashion/autumn-winter-collection",
-      "https://www.dior.com/en_int/fashion/womens-fashion/dior-or",
-      "https://www.gucci.com/us/en/st/stories/inspirations-and-codes",
-      "https://www.prada.com/fr/fr/pradasphere/campaigns.html",
-      "https://www.gucci.com/us/en/st/stories/article/luminous-moments",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Gennaio/Inglese/Prada-SS26-campaign-PR.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Febbraio/Inglese/Prada-Fall-Winter-2026-Womenswears-show-PR.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/Shareholderinformation/2026/inglese/e_Annual_Report_2025.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/2024/Gennaio/inglese/Press%20Release_Prada%20SS24%20campaign.pdf",
-      "https://www.dior.com/couture/var/dior/storage/original/application/2b49dda79b8472a7fb2bc012bd29f566.pdf",
-      "https://www.dior.com/couture/var/dior/storage/original/application/c839d0381a70b2f8cfc7117c71b0b6c2.pdf",
-      "https://www.lvmh.com/en/news-lvmh/get-ready-reservations-for-les-journees-particulieres-open-today-at-200-pm-paris-time",
-      "https://www.lvmh.com/en/les-journees-particulieres-2026",
-      "https://ca.coach.com/en/products/collier-pierre-ronde-ouverte/F54514.html",
-      "https://ca.coach.com/fr/products/portefeuille-pour-tlphone-en-toile-signature-avec-imprim-floral/CS441%20IMCHK.html",
-      "https://ca.coach.com/en/products/open-circle-stone-necklace/F54514-SLV.html?frp=F54514SLV++ONE&scrollToReview=true",
-      "https://ca.coach.com/fr/products/portefeuille-telephonique/CS441.html",
+      "https://investor.ralphlauren.com/investor-overview?c=65933&mobile=1&order=field_nir_news_title&p=irol-irhome&sort=desc",
+      "https://urd.lvmh.com/en/2025",
+      "https://corporate.ralphlauren.com/pr_251009_Q2FY26_EarningsRelease.html",
+      "https://investor.ralphlauren.com/node/21956",
+      "https://corporate.ralphlauren.com/citizenship-and-sustainability?ab=en_US_Sustainability_Slot_4_S1_L1_SHOP",
+      "https://corporate.ralphlauren.com/citizenship-create-with-intent",
+      "https://investor.ralphlauren.com/investor-overview?c=65933&mobile=1&order=field_nir_news_title&p=irol-irhome&sort=asc",
+      "https://corporate.ralphlauren.com/citizenship-and-sustainability?location=korea",
+      "https://corporate.ralphlauren.com/citizenship-and-sustainability?ab=+EU_Purpose_Slot_8_S1_L1_SHOP",
+      "https://corporate.ralphlauren.com/pr_211208_Roblox.html",
+      "https://corporate.ralphlauren.com/pr_251002_GCSReport.html?q=lauren+polo+ralph+lauren",
+      "https://corporate.ralphlauren.com/citizenship-and-sustainability?ab=TW_EarthPolo_Slot_9_S1_L1_SHOP",
+      "https://investor.ralphlauren.com/node/21956/pdf",
+      "https://investor.ralphlauren.com/node/19261/pdf",
+      "https://www.burberryplc.com/content/dam/burberryplc/corporate/documents/investors/results-reports/2025/prelims-/Burberry%20FY25%20Preliminary%20Results%20Press%20Release.pdf.downloadasset.pdf",
+      "https://www.burberryplc.com/content/dam/burberryplc/corporate/documents/investors/results-reports/2025/interims-november-2025/Burberry%20FY26%20Interim%20Results%20Press%20Release%20November%202025.pdf.downloadasset.pdf",
+      "https://www.burberryplc.com/content/dam/burberryplc/corporate/oar/oar-2024-2025/financial-statements.pdf.downloadasset.pdf",
+      "https://www.burberryplc.com/content/dam/burberryplc/corporate/oar/oar-2024-2025/burberry_annual_report_and_accounts_2024_25_accessibility.pdf",
       "https://corporate.ralphlauren.com/s/RalphLauren_Corporate/newsroom",
-      "https://www.lvmh.com/en/news-lvmh",
-      "https://www.lvmh.com/en/news-lvmh?tag=Talents",
-      "https://www.lvmh.com/en/join-us/our-job-offers/LBM03190",
-      "https://www.lvmh.com/en/join-us/our-job-offers/LORP03749",
-      "https://www.lvmh.com/en/news-lvmh/loro-piana-presents-springsummer-2027-collection-at-palazzo-di-brera",
-      "https://www.lvmh.com/en/news-lvmh/loro-piana-opens-a-new-center-for-knitwear-excellence-in-ghemme",
-      "https://www.lvmh.com/our-maisons/fashion-leather-good/moynat",
+      "https://www.prada.com/us/es/pradasphere/special-projects/2026/prada-timecapsule.html",
+      "https://www.prada.com/us/en/info/terms-conditions.html",
+      "https://www.prada.com/us/en/info/terms-conditions-lifetime-repair.html",
+      "https://www.prada.com/es/en/pradasphere/special-projects/2026/prada-timecapsule.html",
+      "https://www.prada.com/de/de/pradasphere/special-projects/2026/prada-timecapsule.html",
+      "https://www.prada.com/au/en/pradasphere/special-projects/2026/prada-essence-popup.html",
+      "https://www.prada.com/ww/en.html?cc=AP",
+      "https://www.prada.com/ca/fr/pradasphere/special-projects/2026/prada-timecapsule.html",
+      "https://www.prada.com/tr/tr/pradasphere/special-projects/2026/prada-timecapsule.html",
+      "https://www.prada.com/it/it/pradasphere/special-projects/2026/prada-timecapsule.html",
+      "https://www.prada.com/br/pt/pradasphere/special-projects/2026/prada-timecapsule.html",
+      "https://www.prada.com/us/es/pradasphere/special-projects/2025/a-kind-of-language-prada-rong-zhai.html",
+      "https://videos.prada.com/csr-video/e-Prada_Group_2022_Sustainability_Report.pdf",
+      "https://videos.prada.com/csr-video/e-Prada_Group_2023_Sustainability_Report.pdf",
       "https://www.pradagroup.com/en/news-media/news-section-archive.html",
       "https://www.pradagroup.com/en/sustainability/news-csr.html",
       "https://www.pradagroup.com/en/perspectives/special-projects.html",
@@ -1779,11 +1780,11 @@
       "https://www.gucci.com/us/en/st/stories/people-events",
       "https://www.gucci.com/us/en/st/stories/advertising-campaign",
       "https://www.dior.com/en_us/fashion/news-fashion-shows/folder-news-and-events",
-      "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
       "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
+      "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
       "https://www.chanel.com/us/fashion/",
-      "https://www.chanel.com/us/fashion/collection/fall-winter-pre-collection-2026/",
       "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
+      "https://www.chanel.com/us/fashion/collection/fall-winter-pre-collection-2026/",
       "https://us.louisvuitton.com/eng-us/magazine",
       "https://www.fendi.com/us-en/inside-fendi",
       "https://www.lvmh.com/en/news-lvmh/",
@@ -1799,7 +1800,7 @@
       "https://armanivalues.com/news-archive/",
       "https://www.versace.com/us/en/stories/",
       "https://www.versace.com/us/en/stories/?year=2026",
-      "https://www.versace.com/us/en/stories/advertising-campaigns/versace-fw-2026.html",
+      "https://www.versace.com/us/en/stories/advertising-campaigns/versace-eyewear-fw-2026.html",
       "https://world.dolcegabbana.com/",
       "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
       "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
@@ -1820,12 +1821,12 @@
       "https://www.driesvannoten.com/pages/stories-raqib-shaw",
       "https://www.driesvannoten.com/pages/summer-stories",
       "https://alanui.it/en-it",
-      "https://alanui.it/en-it/collections/mens-clothing-view-all",
       "https://alanui.it/en-it/collections/womens-clothing-view-all",
+      "https://alanui.it/en-it/collections/mens-clothing-view-all",
       "https://www.zimmermann.com/us/collections",
       "https://www.zimmermann.com/us/immerse",
-      "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
       "https://www.zimmermann.com/us/collections-archive",
+      "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
       "https://us.loropiana.com/en/cm/campaigns/narratives",
       "https://www.coach.com/content/courage-to-be-real",
       "https://www.tapestry.com/newsroom/"
