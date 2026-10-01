@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-30T19:28:34.797Z",
+  "checkedAt": "2026-10-01T08:42:36.791Z",
   "result": "published",
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 35858,
-    "outputTokens": 1964,
-    "searchCalls": 5
+    "inputTokens": 29640,
+    "outputTokens": 1999,
+    "searchCalls": 3
   },
-  "localDate": "2026-09-30",
-  "editionId": "2026-09-30-12",
-  "consultedOfficialSources": 30,
+  "localDate": "2026-10-01",
+  "editionId": "2026-10-01-13",
+  "consultedOfficialSources": 31,
   "message": "Nuova edizione verificata e pubblicata."
 }

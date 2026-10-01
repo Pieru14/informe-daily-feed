@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-30T19:28:34.779Z",
+  "checkedAt": "2026-10-01T08:42:36.781Z",
   "coverage": {
     "watchlist": [
       "Prada",
@@ -124,11 +124,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
+            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
+            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
             "status": "read"
           }
         ]
@@ -172,7 +172,7 @@
             "status": "read"
           },
           {
-            "url": "https://www.dior.com/en_us/fashion/news-fashion-shows/folder-news-and-events/campaign-men-winter-2026-2027",
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
             "status": "read"
           },
           {
@@ -245,7 +245,7 @@
           },
           {
             "url": "https://www.lvmh.com/en/undefined/a-fusion-of-bodies-designs-and-emotion-for-fendi-spring-summer-2027-collection",
-            "status": "timeout"
+            "status": "http_404"
           }
         ]
       },
@@ -260,12 +260,12 @@
             "status": "read"
           },
           {
-            "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
-            "status": "unusable"
-          },
-          {
             "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
             "status": "read"
+          },
+          {
+            "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
+            "status": "unusable"
           }
         ]
       },
@@ -284,11 +284,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.ysl.com/en-us/rive-droite/calendar/andy-warhol-banal-objects-exhibition",
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/charlotte-gainsbourg-5-bis",
             "status": "unusable"
           },
           {
-            "url": "https://www.ysl.com/en-us/rive-droite/calendar/charlotte-gainsbourg-5-bis",
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/andy-warhol-banal-objects-exhibition",
             "status": "unusable"
           }
         ]
@@ -424,7 +424,7 @@
             "status": "read"
           },
           {
-            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-fw-2026.html",
+            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-eyewear-fw-2026.html",
             "status": "read"
           }
         ]
@@ -440,11 +440,11 @@
             "status": "read"
           },
           {
-            "url": "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
+            "url": "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
             "status": "read"
           },
           {
-            "url": "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
+            "url": "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
             "status": "read"
           }
         ]
@@ -592,11 +592,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.driesvannoten.com/pages/stories-raqib-shaw",
+            "url": "https://www.driesvannoten.com/pages/summer-stories",
             "status": "read"
           },
           {
-            "url": "https://www.driesvannoten.com/pages/summer-stories",
+            "url": "https://www.driesvannoten.com/pages/stories-raqib-shaw",
             "status": "read"
           }
         ]
@@ -648,11 +648,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.zimmermann.com/us/collections-archive",
+            "url": "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
             "status": "read"
           },
           {
-            "url": "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
+            "url": "https://www.zimmermann.com/us/collections-archive",
             "status": "read"
           }
         ]
@@ -735,8 +735,8 @@
   },
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 35858,
-    "outputTokens": 1964,
-    "searchCalls": 5
+    "inputTokens": 29640,
+    "outputTokens": 1999,
+    "searchCalls": 3
   }
 }
