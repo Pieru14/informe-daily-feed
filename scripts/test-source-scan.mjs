@@ -2,13 +2,43 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { readFile } from 'node:fs/promises';
 import { scanSources, scanBrief, scanCoverage, publishedMetadata, officialUrl, extractPage, radarWindow } from './source-scan.mjs';
-import { matchesCompetitor } from './competitor-research.mjs';
+import { matchesCompetitor, recentRadarLeads } from './competitor-research.mjs';
 import { buildNewYorkDesk } from './new-york-desk.mjs';
 import { verifyPublication } from './freshness.mjs';
 
 const source = { brand: 'Prada', domain: 'prada.com', publisherDomains: ['pradagroup.com'], urls: ['https://www.prada.com/editorial'] };
 const body = '<main><h1>Una nuova campagna</h1><p>' + 'Contenuto editoriale verificabile e distinto dai prodotti. '.repeat(10) + '</p><a href="/news/campaign">Scopri la campagna</a></main>';
 const html = value => new Response(value, { headers: { 'content-type': 'text/html' } });
+
+test('piste tra radar: solo recenti, ufficiali, non duplicate e da riaprire', () => {
+  const window = radarWindow(new Date('2026-10-01T16:30:00Z'));
+  const item = { brand: 'Prada', title: 'Notizia di test', url: 'https://www.prada.com/news/fresh', publishedOn: '2026-09-30', publicationEvidence: 'Pubblicato il 30 settembre 2026' };
+  const prompt = recentRadarLeads([item, { ...item, url: 'https://www.prada.com/news/old', publishedOn: '2026-09-20' },
+    { ...item, url: 'https://other.test/news' }, { ...item, url: 'https://www.prada.com/news/seen' }],
+    { sources: [source], window, seenUrls: new Set(['https://prada.com/news/seen?utm=test']) });
+  assert.ok(prompt.includes('/news/fresh'));
+  assert.ok(prompt.includes('Non copiarli senza riapertura'));
+  for (const text of ['/news/old', 'other.test', '/news/seen']) assert.equal(prompt.includes(text), false);
+});
+
+test('le press room ufficiali LVMH sono autorizzate per Loro Piana e Pucci', async () => {
+  const sources = JSON.parse(await readFile(new URL('../config/competitors.json', import.meta.url), 'utf8'));
+  for (const brand of ['Loro Piana', 'Pucci']) {
+    assert.ok(matchesCompetitor({ brand, url: 'https://www.lvmh.com/en/news-lvmh/' + brand.toLowerCase().replace(/ /g, '-') }, sources));
+    assert.equal(matchesCompetitor({ brand, url: 'https://www.lvmh.com.evil.test/news' }, sources), false);
+  }
+});
+
+test('gli estratti degli articoli non sono esclusi dai due indici senza metadati', () => {
+  const page = (url, isIndex) => ({ brand: 'Prada', url, isIndex, title: 'Prada', text: 'Contenuto editoriale', publicationMetadata: [], links: [] });
+  const prompt = scanBrief({ reports: [{ brand: 'Prada', status: 'editorial_pages_read' }], documents: [
+    page('https://www.prada.com/news-index', true), page('https://www.pradagroup.com/news-index', true),
+    page('https://www.prada.com/news/article-one', false), page('https://www.prada.com/news/article-two', false)
+  ] });
+  assert.ok(prompt.includes('/news/article-one'));
+  assert.ok(prompt.includes('/news/article-two'));
+  assert.equal(prompt.includes('news-index'), false);
+});
 
 test('discovery di tutti i 33 brand prima dei dettagli e report senza copertura inventata', async () => {
   const brands = Array.from({ length: 33 }, (_, i) => ({ brand: 'Brand ' + i, domain: 'brand' + i + '.com', urls: ['https://brand' + i + '.com/editorial'] }));

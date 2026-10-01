@@ -2,7 +2,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { buildNewYorkDesk, failedDesk, newYorkSchema, deskUrl } from './new-york-desk.mjs';
 import { noteDate } from './daily-note.mjs';
-import { competitorBrief, sourceDomains } from './competitor-research.mjs';
+import { competitorBrief, sourceDomains, recentRadarLeads } from './competitor-research.mjs';
 import { researchWindow, freshnessBrief } from './freshness.mjs';
 import { scanSources, scanBrief, scanCoverage, radarWindow, researchUsage } from './source-scan.mjs';
 
@@ -38,6 +38,7 @@ try {
     'Watchlist e pagine di partenza: ' + JSON.stringify(sources),
     freshnessBrief(window),
     scanBrief(scan),
+    recentRadarLeads(previous.brandPulse?.updates, { sources, window, seenUrls }),
     'Cerca ogni brand della watchlist. Scegli 0-10 novità distinte, dalla più recente, senza privilegiare il numero dei risultati. Non aggiungere riempitivi. Se non emergono aggiornamenti verificabili restituisci updates vuoto.',
     'Per tutte le schede usa scope=new_york. Non generare il radar italiano né pensieri motivazionali.',
     'Dai priorità a USA o New York quando esiste un legame locale documentato. Includi anche le novità internazionali delle maison come geography=Globale: campagne, collezioni e progetti non richiedono attivazione americana. Descrivi l’ambito in geographyEvidence, senza inventare distribuzione mondiale o presenza USA.',

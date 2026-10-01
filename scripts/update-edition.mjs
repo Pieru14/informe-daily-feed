@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { buildDailyNote } from './daily-note.mjs';
-import { competitorBrief, matchesCompetitor, competitorCoverage, sourceDomains } from './competitor-research.mjs';
+import { competitorBrief, matchesCompetitor, competitorCoverage, sourceDomains, recentRadarLeads } from './competitor-research.mjs';
 import { researchWindow, verifyPublication, freshnessBrief } from './freshness.mjs';
 import { scanSources, scanBrief, scanCoverage, radarWindow, researchUsage } from './source-scan.mjs';
 
@@ -311,6 +311,7 @@ async function askEditor({ allowedDomains, seenUrls, today, previousNote, window
     'Pagine ufficiali di partenza, non date di pubblicazione: ' + JSON.stringify(brands),
     'geography deve essere Italia se esiste una prova locale, oppure Globale per novità internazionali di collezioni, campagne e progetti. geographyEvidence descrive l’ambito documentato: non inventare presenza italiana o distribuzione mondiale.',
     scanBrief(scan),
+    recentRadarLeads(previous.newYorkDesk?.updates, { sources, window, seenUrls }),
     'La ricerca web è filtrata ai soli domini ufficiali. Devi usare la ricerca prima di decidere.',
     'Le fonti già pubblicate qui sotto non possono essere riproposte come nuove:',
     knownUrls || '(nessuna)',

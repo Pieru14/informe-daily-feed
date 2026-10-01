@@ -70,7 +70,7 @@ export function extractPage(html, url, source) {
   const useful = (editorialUrl(url) && (links.size > 0 || dates.length > 0 || text.length > 400))
     || (configuredIndex && links.size > 0) || dates.length === 1;
   if (!useful) return null;
-  return { url, title, text: text.slice(0, 2500), publicationMetadata: dates, links: [...links.values()].slice(0, 80) };
+  return { url, title, isIndex: configuredIndex, text: text.slice(0, 2500), publicationMetadata: dates, links: [...links.values()].slice(0, 80) };
 }
 
 async function readPage(url, source, fetcher, deadline, maxBytes) {
@@ -164,7 +164,9 @@ export function scanBrief(scan) {
     'Le publicationMetadata sono soltanto date esplicite datePublished/article:published_time: controlla che appartengano all’articolo specifico, non all’indice. I link e gli estratti NON sono automaticamente notizie nuove. Non copiare date di eventi o copyright.',
     ...scan.reports.map(report => {
       const available = scan.documents.filter(p => p.brand === report.brand);
-      const pages = [...available].sort((a, b) => b.publicationMetadata.length - a.publicationMetadata.length);
+      // The two starting indexes must not crowd out the actual articles fetched.
+      const pages = [...available].sort((a, b) => b.publicationMetadata.length - a.publicationMetadata.length
+        || Number(Boolean(a.isIndex)) - Number(Boolean(b.isIndex)));
       const entry = { brand: report.brand, status: report.status, pages: [] };
       for (const p of pages) {
         const next = { url: p.url, title: p.title, publicationMetadata: p.publicationMetadata, excerpt: p.text.slice(0, 280) };
