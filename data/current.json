@@ -1005,15 +1005,15 @@
   },
   "checkStatus": "partial",
   "newYorkDesk": {
-    "checkedAt": "2026-10-01T19:21:53.607Z",
-    "updatedAt": "2026-10-01T19:21:53.607Z",
+    "checkedAt": "2026-10-02T16:42:56.815Z",
+    "updatedAt": "2026-10-02T16:42:56.815Z",
     "status": "updated",
     "freshnessPolicy": "rolling-48h-v2",
     "researchWindow": {
-      "since": "2026-09-29T19:21:05.273Z",
-      "until": "2026-10-01T19:21:05.273Z",
-      "fromDate": "2026-09-29",
-      "toDate": "2026-10-01",
+      "since": "2026-09-30T16:42:17.238Z",
+      "until": "2026-10-02T16:42:17.238Z",
+      "fromDate": "2026-09-30",
+      "toDate": "2026-10-02",
       "timezone": "Europe/Rome"
     },
     "lastSuccessfulSearchAt": "2026-09-30T16:40:15.303Z",
@@ -1165,11 +1165,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
+              "url": "https://www.gucci.com/us/en/st/stories/people-events",
               "status": "read"
             },
             {
-              "url": "https://www.gucci.com/us/en/st/stories/people-events",
+              "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
               "status": "read"
             }
           ]
@@ -1177,7 +1177,7 @@
         {
           "brand": "Dior",
           "status": "editorial_pages_read",
-          "pagesRead": 3,
+          "pagesRead": 4,
           "pagesWithPublicationMetadata": 0,
           "receipts": [
             {
@@ -1233,11 +1233,11 @@
               "status": "read"
             },
             {
-              "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
+              "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
               "status": "http_403"
             },
             {
-              "url": "https://us.louisvuitton.com/eng-us/magazine/articles/cruise-2027-show",
+              "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
               "status": "http_403"
             }
           ]
@@ -1277,12 +1277,12 @@
               "status": "read"
             },
             {
-              "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
-              "status": "unusable"
-            },
-            {
               "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
               "status": "read"
+            },
+            {
+              "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
+              "status": "unusable"
             }
           ]
         },
@@ -1301,12 +1301,12 @@
               "status": "read"
             },
             {
-              "url": "https://www.ysl.com/en-us/rive-droite/calendar/andy-warhol-banal-objects-exhibition",
+              "url": "https://www.ysl.com/en-us/rive-droite/calendar/charlotte-gainsbourg-5-bis",
               "status": "unusable"
             },
             {
-              "url": "https://www.ysl.com/en-us/rive-droite/calendar/charlotte-gainsbourg-5-bis",
-              "status": "unusable"
+              "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
+              "status": "http_404"
             }
           ]
         },
@@ -1763,76 +1763,53 @@
       "partial": true
     },
     "consultedSources": [
-      "https://corporate.ralphlauren.com/pr_260930_PoloFest.html?q=lauren+ralph",
-      "https://corporate.ralphlauren.com/newsroom",
-      "https://corporate.ralphlauren.com/",
-      "https://www.ralphlauren.com/discover",
-      "https://www.ralphlauren.com/keyword_fallcampaign/keyword_fallcampaign.html",
-      "https://www.monclergroup.com/wp-content/uploads/2025/10/moncler_eng_financial-calendar-2026.pdf",
-      "https://investors.tapestry.com/",
-      "https://www.ralphlauren.com/runway",
-      "https://www.ralphlauren.com/brands-prl-men-heritage-icons-cg",
-      "https://investors.tapestry.com/news-releases/news-release-details/tapestry-inc-reports-fiscal-2026-fourth-quarter-and-full-year",
-      "https://investor.ralphlauren.com/news-releases/news-release-details/ralph-lauren-presents-its-updated-strategic-growth-plan-next-0",
-      "https://www.ralphlauren.com/men-clothing-polo-shirts?msockid=3643cafc100b677c3e01dc3211c56647",
-      "https://corporate.ralphlauren.com/contact",
-      "https://www.monclergroup.com/v3/assets/blt61bda6b71f29a239/bltf918207c92bab566/690b64c396cc598759a0dd60/Moncler-Group-Press-Release-9M-2025.pdf",
-      "https://www.ralphlauren.com/on/demandware.static/-/Sites-RalphLauren_US-Library/default/dwe07b70ee/hbcu/PoloRLExclusivelyforMorehouseAndSpelmanColleges.pdf",
-      "https://www.ralphlauren.com/on/demandware.static/-/Library-Sites-RalphLauren_NA_Library/en_US/v1719915296419/img/202307/20230718-timeless-by-design-hub/2023-RL-GCSReport.pdf",
-      "https://www.ralphlauren.com/on/demandware.static/-/Library-Sites-RalphLauren_NA_Library/default/dw5da867b1/img/202305/20230509-home-trade-lp/RL_FBTY_6x8_SingleCards_V7_GM_R2.pdf",
-      "https://corporate.ralphlauren.com/on/demandware.static/-/Sites-RalphLauren_Corporate-Library/default/dw20e62662/assets/images/PRESS_RELEASES/PoloRalphLaurenForMorehouseSpelmanColleges_PressRelease.pdf",
       "https://www.prada.com/us/en/pradasphere/campaigns/2026/fw-woman-man.html",
-      "https://www.prada.com/us/en/pradasphere/special-projects.html",
-      "https://www.prada.com/us/en/pradasphere/campaigns.html",
+      "https://www.prada.com/us/en/pradasphere/fashion-shows/2026/fw-womenswear.html",
+      "https://www.prada.com/ww/en/pradasphere/campaigns.html",
+      "https://www.prada.com/us/en/womens/ready-to-wear/c/10048US",
       "https://www.pradagroup.com/en/news-media/highlights.html",
-      "https://www.prada.com/ww/en/pradasphere.html",
-      "https://www.prada.com/us/en.html",
-      "https://www.pradagroup.com/en/news-media/news-section/26-07-21-prada-fw-26-campaign.html",
-      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-04-22-prada-days-of-summer-26.html",
-      "https://www.prada.com/us/es/pradasphere/special-projects.html",
-      "https://www.prada.com/us/en.html?site=pc7",
+      "https://www.prada.com/us/en.html?media_type=image",
+      "https://corporate.ralphlauren.com/newsroom",
+      "https://www.pradagroup.com/en/news-media/media-library.html",
+      "https://www.dior.com/en_int/fashion/womens-fashion/dior-or",
+      "https://www.pradagroup.com/en/sustainability/environment-csr/prada-re-nylon.html",
+      "https://www.prada.com/us/en/womens/fall-winter-2026/c/11098US",
       "https://www.pradagroup.com/en/news-media/news-section/26-04-22-prada-days-of-summer-2026.html",
-      "https://www.prada.com/us/es/pradasphere.html",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Gennaio/Inglese/Prada-SS26-campaign-PR.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Marzo/Inglese/PRADA-RE-NYLON-2026-CAMPAIGN-PR.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Gennaio/Inglese/Prada-Fall-Winter-2026-Menswear-show-PR.pdf",
       "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Febbraio/Inglese/Prada-Fall-Winter-2026-Womenswears-show-PR.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/investors/Q1-2026/Prada-Group-Q1-26-Results-Presentation.pdf",
-      "https://www.kering.com/en/press/",
-      "https://www.lvmh.com/en/news-lvmh",
-      "https://www.lvmh.com/en/news-lvmh/get-ready-reservations-for-les-journees-particulieres-open-today-at-200-pm-paris-time",
-      "https://www.kering.com/en/news/romain-spitzer-appointed-chief-executive-officer-of-bottega-veneta/",
-      "https://www.kering.com/en/news/revenue-for-the-third-quarter-of-2025/",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Gennaio/Inglese/Prada-SS26-campaign-PR.pdf",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/2025/Luglio/inglese/Prada_FW25_campaign_PR.pdf",
+      "https://videos.prada.com/csr-video/NL98_Lyst%20Q3.pdf",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Giugno/inglese/Prada-Mode-New-York-PR-ENG.pdf",
+      "https://www.kering.com/api/download-file/?path=KERING_LETTRE_ACTIONNAIRES_AUGUST_25_UK_106dcebd9f.pdf",
       "https://www.kering.com/en/press/contacts/",
-      "https://www.kering.com/en/news/kering-and-l-oreal-complete-their-strategic-alliance/",
-      "https://www.lvmh.com/en/our-maisons/fashion-leather-good",
-      "https://www.lvmh.com/static/lettre-aux-actionnaires-juillet-2026/mode-et-maroquinerie.html",
-      "https://www.lvmh.com/fr/les-actualites-lvmh/prets-les-reservations-pour-les-journees-particulieres-ouvrent-aujourdhui-a-14h-heure-de-paris",
-      "https://www.kering.com/en/press/resources/",
+      "https://www.kering.com/en/press/",
+      "https://www.lvmh.com/en/news-lvmh/2026-lvmh-prize-for-young-fashion-designers-13th-edition-the-winners-julie-kegels-lvmh-prize-lii-karl-lagerfeld-prize-yoshita-1967-savoir-faire-prize",
+      "https://www.lvmh.com/en/news-lvmh",
       "https://www.lvmh.com/en/publications/accelerating-growth-in-the-second-quarter---solid-first-half-results",
-      "https://urd.lvmh.com/en/urd-2023-va_vdef.pdf",
+      "https://www.lvmh.com/en/our-maisons/fashion-leather-good",
+      "https://www.lvmh.com/en/news-lvmh/this-is-more-than-a-t-shirt-a-symbol-of-lvmhs-commitment-to-pride-month-2026-designed-by-louis-vuitton",
+      "https://www.lvmh.com/en/publications/amelioration-des-tendances-au-troisieme-trimestre-",
+      "https://www.lvmh.com/en/publications/lvmh-unveils-les-journees-particulieres-2026-program-65-venues-open-across-11-countries-and-exclusive-experiences",
+      "https://www.lvmh.com/en/sitemap",
+      "https://www.kering.com/en/houses/fashion-and-leather-goods/",
+      "https://www.kering.com/en/news/press-release/",
+      "https://www.kering.com/api/download-file/?path=KERING_BDC_2026_EN_12b2ea9527.pdf",
       "https://www.kering.com/api/download-file/?path=Kering_Press_Release_2026_First_Quarter_Revenue_04_14_26_5c1c87ab5f.pdf",
       "https://www.kering.com/api/download-file/?path=Kering_Press_Release_2026_First_Quarter_Revenue_04_14_26_71ec2db5b6.pdf",
-      "https://www.kering.com/api/download-file/?path=Kering_Press_Release_Capital_Markets_Day_EN_16_04_2026_893f4f2e65.pdf",
-      "https://www.lvmh.com/en/news-lvmh/loro-piana-opens-a-new-center-for-knitwear-excellence-in-ghemme",
-      "https://www.lvmh.com/en/news-lvmh?tag=Watches+%26+Jewelry",
-      "https://www.lvmh.com/fr/les-actualites-lvmh/loro-piana-inaugure-a-ghemme-un-nouveau-centre-dedie-a-lexcellence-de-la-maille",
-      "https://www.lvmh.com/en/news-lvmh/annual-loro-piana-knit-design-award-celebrates-talented-young-designers",
-      "https://www.lvmh.com/en/news-lvmh/loro-piana-announces-winners-of-knit-design-award-2025-in-milan/",
-      "https://www.lvmh.com/en/news-lvmh/loro-piana-announces-winners-of-knit-design-award-2024/",
-      "https://www.lvmh.com/en/news-lvmh/loro-piana-showcases-next-generation-talent-with-knit-design-award-2025/",
-      "https://www.lvmh.com/en/les-journees-particulieres-2026",
-      "https://www.lvmh.com/en/publications/lvmh-unveils-les-journees-particulieres-2026-program-65-venues-open-across-11-countries-and-exclusive-experiences",
-      "https://www.lvmh.com/en/news-lvmh/loro-piana-presents-springsummer-2027-collection-at-palazzo-di-brera",
-      "https://www.lvmh.com/en/news-lvmh/loro-piana-celebrates-centenary-with-stunning-exhibition-in-shanghai",
-      "https://lamaisondesstartups.lvmh.com/wp-content/uploads/2023/09/Book-2023-version-digitale.pdf",
+      "https://www.kering.com/api/download-file/?path=Kering_Press_Release_Annual_Results_2024_110225_d0961a25d1.pdf",
+      "https://urd.lvmh.com/en/urd-2023-va_vdef.pdf",
+      "https://www.lvmh.com/en/news-lvmh/fluidity-and-lightness-prevail-at-dior-summer-2027-womens-show",
+      "https://www.lvmh.com/en/news-lvmh?tag=Other+activities",
+      "https://www.lvmh.com/en/news-lvmh?tag=Talents",
+      "https://www.lvmh.com/commitment-in-action/for-the-environment/lvmh-gaia",
       "https://www.pradagroup.com/en/news-media/news-section-archive.html",
       "https://www.pradagroup.com/en/sustainability/news-csr.html",
       "https://www.pradagroup.com/en/perspectives/special-projects.html",
       "https://www.gucci.com/us/en/st/stories",
-      "https://www.gucci.com/us/en/st/stories/advertising-campaign",
       "https://www.gucci.com/us/en/st/stories/people-events",
+      "https://www.gucci.com/us/en/st/stories/advertising-campaign",
       "https://www.dior.com/en_us/fashion/news-fashion-shows/folder-news-and-events",
+      "https://www.lvmh.com/en/news-lvmh/",
       "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
       "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
       "https://www.chanel.com/us/fashion/",
@@ -1840,7 +1817,6 @@
       "https://www.chanel.com/us/fashion/collection/fall-winter-pre-collection-2026/",
       "https://us.louisvuitton.com/eng-us/magazine",
       "https://www.fendi.com/us-en/inside-fendi",
-      "https://www.lvmh.com/en/news-lvmh/",
       "https://www.fendi.com/us-en/cm/fashion-shows/fendi-couture-fall-winter-2026-2027-collection",
       "https://www.valentino.com/en-us/v-universe/valentino-diary/news",
       "https://www.valentino.com/en-us/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
@@ -1848,6 +1824,7 @@
       "https://www.miumiu.com/us/en/miumiu-club.html",
       "https://www.miumiu.com/us/en/miumiu-club/special-projects/new-balance-x-miu-miu-with-coco-gauff-2026.html",
       "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
+      "https://www.kering.com/en/news/romain-spitzer-appointed-chief-executive-officer-of-bottega-veneta/",
       "https://finance.hermes.com/en/press-releases-and-news/",
       "https://armanivalues.com/news-archive/",
       "https://www.versace.com/us/en/stories/",
@@ -1886,42 +1863,23 @@
     ],
     "updates": [
       {
-        "id": "ny-2026-10-01-1a29ea17f2f6",
-        "addedAt": "2026-10-01T19:21:53.607Z",
+        "id": "ny-2026-10-02-05a91fee1151",
+        "addedAt": "2026-10-02T16:42:56.815Z",
         "scope": "new_york",
-        "brand": "Ralph Lauren",
-        "category": "evento / iniziativa culturale",
-        "publishedOn": "2026-09-30",
+        "brand": "Dior",
+        "category": "Sfilata / collezione",
+        "publishedOn": "2026-10-01",
         "publishedAt": null,
-        "publicationEvidence": "Pagina newsroom: “Published Sep 30, 2026”",
-        "dateOrSeason": "23–25 ottobre 2026",
+        "publicationEvidence": "Pagina LVMH: “Published on 10.01.2026 • 3 MINUTES”",
+        "dateOrSeason": "Summer 2027 Women’s Show",
         "geography": "Globale",
-        "geographyEvidence": "Comunicato ufficiale da Tokyo; l’evento è descritto come primo capitolo di una serie di gathering globali, senza prova di attivazione USA in questa pagina.",
-        "title": "Ralph Lauren debutta PoloFest a Tokyo",
-        "fact": "Ralph Lauren annuncia PoloFest, esperienza di tre giorni a Jing Harajuku, con mostra d’archivio, conversazioni, marketplace vintage e merchandise esclusivo/upcycled legato a Polo.",
-        "communication": "Il racconto costruisce Polo come cultura partecipativa: heritage, community, collezionismo e lifestyle diventano contenuto esperienziale. Canale documentato: comunicato newsroom ufficiale con pagina informativa collegata.",
-        "relevance": "Da osservare per il mercato USA: codici Americana e community dei collector vengono attivati fuori dagli Stati Uniti, mostrando come un brand USA possa internazionalizzare il proprio heritage senza perdere riconoscibilità.",
-        "source": "Ralph Lauren Newsroom",
-        "url": "https://corporate.ralphlauren.com/pr_260930_PoloFest.html?q=lauren+ralph"
-      },
-      {
-        "id": "ny-2026-10-01-ec6045a09a64",
-        "addedAt": "2026-10-01T19:21:53.607Z",
-        "scope": "new_york",
-        "brand": "Loro Piana",
-        "category": "artigianato / produzione / cultura del savoir-faire",
-        "publishedOn": "2026-09-29",
-        "publishedAt": null,
-        "publicationEvidence": "Articolo LVMH: “Published on 09.29.2026”",
-        "dateOrSeason": "2026",
-        "geography": "Globale",
-        "geographyEvidence": "Fonte LVMH su un’apertura a Ghemme, Piemonte; nessuna prova locale USA o New York nella pagina.",
-        "title": "Loro Piana apre a Ghemme un centro dedicato alla maglieria",
-        "fact": "Loro Piana presenta un nuovo centro di 8.000 metri quadrati dedicato alla maglieria, che riunisce ricerca, programmazione, lavorazione, assemblaggio e finissaggio; include Accademia dei Mestieri, spazio educativo ed esposizione del Knit Design Award.",
-        "communication": "La comunicazione mette in scena la filiera come contenuto: materiali nobili, trasmissione artigianale, architettura luminosa e sostenibilità operativa diventano codici di marca. Canale documentato: news ufficiale LVMH con testo e gallery immagini.",
-        "relevance": "Spunto per il radar USA: il lusso soft e tessile rafforza la credibilità attraverso luoghi produttivi narrabili, non solo attraverso campagne prodotto; utile confrontarlo con brand che puntano su eventi community o runway spectacle.",
-        "source": "LVMH News",
-        "url": "https://www.lvmh.com/en/news-lvmh/loro-piana-opens-a-new-center-for-knitwear-excellence-in-ghemme"
+        "geographyEvidence": "Fonte LVMH internazionale; non documenta un’attivazione USA o New York per la notizia.",
+        "title": "Fluidity and lightness prevail at Dior Summer 2027 Women’s Show",
+        "fact": "LVMH pubblica il racconto della sfilata Dior Summer 2027 Women’s Show: la collezione lavora su natura, leggerezza, trasparenze, organza, mousseline, lace, pleats, accessori floreali e nuove versioni di borse Dior Double e Dior Initial Hobo.",
+        "communication": "Il messaggio visivo insiste su aria, acqua, natura e fluidità: mist, basin alberato, trasparenze e forme floreali costruiscono un codice couture più etereo che monumentale. Canale documentato: articolo news LVMH con formato editoriale di show recap.",
+        "relevance": "Da osservare per il mercato USA come Dior traduce il cambio di stagione in un lessico di leggerezza e craft, utile nel confronto con maison che comunicano FW/SS attraverso scenografie più narrative o performative.",
+        "source": "LVMH",
+        "url": "https://www.lvmh.com/en/news-lvmh/fluidity-and-lightness-prevail-at-dior-summer-2027-womens-show"
       }
     ]
   }
