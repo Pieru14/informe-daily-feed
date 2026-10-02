@@ -243,18 +243,18 @@
     ]
   },
   "dailyNote": {
-    "date": "2026-10-01",
-    "createdAt": "2026-10-01T08:41:52.832Z",
-    "text": "Lascia che oggi un dettaglio ti guidi: una cucitura, un’ombra, un ritmo lento. Il tuo sguardo cresce anche quando scegli di ascoltare."
+    "date": "2026-10-02",
+    "createdAt": "2026-10-02T08:39:48.359Z",
+    "text": "Oggi lascia spazio a un piccolo errore fertile: una piega inattesa può aprire una strada. Riposa lo sguardo, poi torna a scegliere con calma."
   },
-  "checkedAt": "2026-10-01T08:42:36.785Z",
-  "checkedSourceCount": 78,
+  "checkedAt": "2026-10-02T08:40:28.887Z",
+  "checkedSourceCount": 104,
   "freshnessPolicy": "rolling-48h-v2",
   "researchWindow": {
-    "since": "2026-09-29T08:41:52.832Z",
-    "until": "2026-10-01T08:41:52.832Z",
-    "fromDate": "2026-09-29",
-    "toDate": "2026-10-01",
+    "since": "2026-09-30T08:39:48.359Z",
+    "until": "2026-10-02T08:39:48.359Z",
+    "fromDate": "2026-09-30",
+    "toDate": "2026-10-02",
     "timezone": "Europe/Rome"
   },
   "lastSuccessfulSearchAt": "2026-09-30T08:41:20.424Z",
@@ -382,11 +382,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
+            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
+            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
             "status": "read"
           }
         ]
@@ -406,11 +406,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
+            "url": "https://www.gucci.com/us/en/st/stories/people-events",
             "status": "read"
           },
           {
-            "url": "https://www.gucci.com/us/en/st/stories/people-events",
+            "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
             "status": "read"
           }
         ]
@@ -418,7 +418,7 @@
       {
         "brand": "Dior",
         "status": "editorial_pages_read",
-        "pagesRead": 3,
+        "pagesRead": 4,
         "pagesWithPublicationMetadata": 0,
         "receipts": [
           {
@@ -430,11 +430,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
             "status": "read"
           },
           {
-            "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
             "status": "read"
           }
         ]
@@ -518,12 +518,12 @@
             "status": "read"
           },
           {
-            "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
-            "status": "read"
-          },
-          {
             "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
             "status": "unusable"
+          },
+          {
+            "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
+            "status": "read"
           }
         ]
       },
@@ -542,11 +542,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.ysl.com/en-us/rive-droite/calendar/charlotte-gainsbourg-5-bis",
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/andy-warhol-banal-objects-exhibition",
             "status": "unusable"
           },
           {
-            "url": "https://www.ysl.com/en-us/rive-droite/calendar/andy-warhol-banal-objects-exhibition",
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/charlotte-gainsbourg-5-bis",
             "status": "unusable"
           }
         ]
@@ -566,11 +566,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
+            "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/new-balance-x-miu-miu-with-coco-gauff-2026.html",
             "status": "read"
           },
           {
-            "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/new-balance-x-miu-miu-with-coco-gauff-2026.html",
+            "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
             "status": "read"
           }
         ]
@@ -678,11 +678,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.versace.com/us/en/stories/?year=2026",
+            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-eyewear-fw-2026.html",
             "status": "read"
           },
           {
-            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-eyewear-fw-2026.html",
+            "url": "https://www.versace.com/us/en/stories/?year=2026",
             "status": "read"
           }
         ]
@@ -698,11 +698,11 @@
             "status": "read"
           },
           {
-            "url": "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
+            "url": "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
             "status": "read"
           },
           {
-            "url": "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
+            "url": "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
             "status": "read"
           }
         ]
@@ -722,11 +722,11 @@
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/givenchy-spring-summer-2027-menswear-campaign-489973/?lang=eng",
+            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
+            "url": "https://press.givenchy.com/givenchy-spring-summer-2027-menswear-campaign-489973/?lang=eng",
             "status": "read"
           }
         ]
@@ -836,6 +836,10 @@
           {
             "url": "https://www.pucci.com/en/pages/pucci-journey",
             "status": "unusable"
+          },
+          {
+            "url": "https://www.lvmh.com/en/news-lvmh/",
+            "status": "read"
           }
         ]
       },
@@ -906,11 +910,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
+            "url": "https://www.zimmermann.com/us/collections-archive",
             "status": "read"
           },
           {
-            "url": "https://www.zimmermann.com/us/collections-archive",
+            "url": "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
             "status": "read"
           }
         ]
@@ -930,7 +934,7 @@
       {
         "brand": "Loro Piana",
         "status": "editorial_pages_read",
-        "pagesRead": 1,
+        "pagesRead": 2,
         "pagesWithPublicationMetadata": 0,
         "receipts": [
           {
@@ -938,8 +942,16 @@
             "status": "read"
           },
           {
+            "url": "https://www.lvmh.com/en/news-lvmh/",
+            "status": "read"
+          },
+          {
             "url": "https://us.loropiana.com/en/campaign/landing",
             "status": "unusable"
+          },
+          {
+            "url": "https://www.lvmh.com/en/undefined/loro-piana-presents-springsummer-2027-collection-at-palazzo-di-brera",
+            "status": "http_404"
           }
         ]
       },
@@ -991,7 +1003,7 @@
     "method": "official-editorial-scan-v2",
     "partial": true
   },
-  "checkStatus": "published",
+  "checkStatus": "partial",
   "newYorkDesk": {
     "checkedAt": "2026-10-01T19:21:53.607Z",
     "updatedAt": "2026-10-01T19:21:53.607Z",

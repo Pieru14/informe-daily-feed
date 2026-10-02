@@ -1,15 +1,14 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-01T08:42:36.791Z",
-  "result": "published",
+  "checkedAt": "2026-10-02T08:40:28.888Z",
+  "result": "partial",
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 29640,
-    "outputTokens": 1999,
-    "searchCalls": 3
+    "inputTokens": 45875,
+    "outputTokens": 919,
+    "searchCalls": 5
   },
-  "localDate": "2026-10-01",
-  "editionId": "2026-10-01-13",
-  "consultedOfficialSources": 31,
-  "message": "Nuova edizione verificata e pubblicata."
+  "localDate": "2026-10-02",
+  "consultedOfficialSources": 104,
+  "message": "Nella finestra 2026-09-30 — 2026-10-02 ho consultato e ricontrollato fonti ufficiali autorizzate della watchlist. Le evidenze trovate erano fuori finestra, già pubblicate in precedenza, prive di data di pubblicazione verificabile, pagine indice/prodotto/job posting, oppure non pertinenti a campagne, collezioni, sfilate, aperture, collaborazioni, craft, design o cultura visiva. Nessuna nuova notizia distinta e pubblicabile è stata verificata."
 }
