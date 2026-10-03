@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-02T08:40:28.883Z",
+  "checkedAt": "2026-10-03T08:40:42.276Z",
   "coverage": {
     "watchlist": [
       "Prada",
@@ -124,11 +124,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
+            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
+            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
             "status": "read"
           }
         ]
@@ -148,11 +148,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.gucci.com/us/en/st/stories/people-events",
+            "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
             "status": "read"
           },
           {
-            "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
+            "url": "https://www.gucci.com/us/en/st/stories/people-events",
             "status": "read"
           }
         ]
@@ -160,23 +160,15 @@
       {
         "brand": "Dior",
         "status": "editorial_pages_read",
-        "pagesRead": 4,
+        "pagesRead": 1,
         "pagesWithPublicationMetadata": 0,
         "receipts": [
           {
             "url": "https://www.dior.com/en_us/fashion/news-fashion-shows/folder-news-and-events",
-            "status": "read"
+            "status": "http_403"
           },
           {
             "url": "https://www.lvmh.com/en/news-lvmh/",
-            "status": "read"
-          },
-          {
-            "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
-            "status": "read"
-          },
-          {
-            "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
             "status": "read"
           }
         ]
@@ -184,7 +176,7 @@
       {
         "brand": "Chanel",
         "status": "editorial_pages_read",
-        "pagesRead": 3,
+        "pagesRead": 2,
         "pagesWithPublicationMetadata": 0,
         "receipts": [
           {
@@ -192,11 +184,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
-            "status": "read"
+            "url": "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
+            "status": "unusable"
           },
           {
-            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-pre-collection-2026/",
+            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
             "status": "read"
           }
         ]
@@ -220,7 +212,7 @@
             "status": "http_403"
           },
           {
-            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/cruise-2027-show",
+            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
             "status": "http_403"
           }
         ]
@@ -284,7 +276,7 @@
             "status": "read"
           },
           {
-            "url": "https://www.ysl.com/en-us/rive-droite/calendar/andy-warhol-banal-objects-exhibition",
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
             "status": "unusable"
           },
           {
@@ -420,11 +412,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-eyewear-fw-2026.html",
+            "url": "https://www.versace.com/us/en/stories/?year=2026",
             "status": "read"
           },
           {
-            "url": "https://www.versace.com/us/en/stories/?year=2026",
+            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-eyewear-fw-2026.html",
             "status": "read"
           }
         ]
@@ -440,11 +432,11 @@
             "status": "read"
           },
           {
-            "url": "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
+            "url": "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
             "status": "read"
           },
           {
-            "url": "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
+            "url": "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
             "status": "read"
           }
         ]
@@ -464,11 +456,11 @@
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
+            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/givenchy-spring-summer-2027-menswear-campaign-489973/?lang=eng",
+            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
             "status": "read"
           }
         ]
@@ -520,12 +512,12 @@
             "status": "read"
           },
           {
-            "url": "https://us.maxmara.com/editorial/runway-fall-winter",
-            "status": "read"
-          },
-          {
             "url": "https://us.maxmara.com/editorial/campaign",
             "status": "unusable"
+          },
+          {
+            "url": "https://us.maxmara.com/editorial/runway-fall-winter",
+            "status": "read"
           }
         ]
       },
@@ -596,11 +588,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.driesvannoten.com/pages/summer-stories",
+            "url": "https://www.driesvannoten.com/pages/stories-raqib-shaw",
             "status": "read"
           },
           {
-            "url": "https://www.driesvannoten.com/pages/stories-raqib-shaw",
+            "url": "https://www.driesvannoten.com/pages/summer-stories",
             "status": "read"
           }
         ]
@@ -616,11 +608,11 @@
             "status": "read"
           },
           {
-            "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
+            "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
             "status": "read"
           },
           {
-            "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
+            "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
             "status": "read"
           }
         ]
@@ -747,8 +739,8 @@
   },
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 45875,
-    "outputTokens": 919,
-    "searchCalls": 5
+    "inputTokens": 29548,
+    "outputTokens": 2175,
+    "searchCalls": 2
   }
 }
