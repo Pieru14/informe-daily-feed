@@ -1012,15 +1012,15 @@
   },
   "checkStatus": "published",
   "newYorkDesk": {
-    "checkedAt": "2026-10-02T16:42:56.815Z",
-    "updatedAt": "2026-10-02T16:42:56.815Z",
+    "checkedAt": "2026-10-03T20:10:47.526Z",
+    "updatedAt": "2026-10-03T20:10:47.526Z",
     "status": "updated",
     "freshnessPolicy": "rolling-48h-v2",
     "researchWindow": {
-      "since": "2026-09-30T16:42:17.238Z",
-      "until": "2026-10-02T16:42:17.238Z",
-      "fromDate": "2026-09-30",
-      "toDate": "2026-10-02",
+      "since": "2026-10-01T20:10:00.455Z",
+      "until": "2026-10-03T20:10:00.455Z",
+      "fromDate": "2026-10-01",
+      "toDate": "2026-10-03",
       "timezone": "Europe/Rome"
     },
     "lastSuccessfulSearchAt": "2026-09-30T16:40:15.303Z",
@@ -1184,23 +1184,15 @@
         {
           "brand": "Dior",
           "status": "editorial_pages_read",
-          "pagesRead": 4,
+          "pagesRead": 1,
           "pagesWithPublicationMetadata": 0,
           "receipts": [
             {
               "url": "https://www.dior.com/en_us/fashion/news-fashion-shows/folder-news-and-events",
-              "status": "read"
+              "status": "http_403"
             },
             {
               "url": "https://www.lvmh.com/en/news-lvmh/",
-              "status": "read"
-            },
-            {
-              "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
-              "status": "read"
-            },
-            {
-              "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
               "status": "read"
             }
           ]
@@ -1208,7 +1200,7 @@
         {
           "brand": "Chanel",
           "status": "editorial_pages_read",
-          "pagesRead": 3,
+          "pagesRead": 2,
           "pagesWithPublicationMetadata": 0,
           "receipts": [
             {
@@ -1216,11 +1208,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
-              "status": "read"
+              "url": "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
+              "status": "unusable"
             },
             {
-              "url": "https://www.chanel.com/us/fashion/collection/fall-winter-pre-collection-2026/",
+              "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
               "status": "read"
             }
           ]
@@ -1284,12 +1276,12 @@
               "status": "read"
             },
             {
-              "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
-              "status": "read"
-            },
-            {
               "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
               "status": "unusable"
+            },
+            {
+              "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
+              "status": "read"
             }
           ]
         },
@@ -1308,12 +1300,12 @@
               "status": "read"
             },
             {
-              "url": "https://www.ysl.com/en-us/rive-droite/calendar/charlotte-gainsbourg-5-bis",
+              "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
               "status": "unusable"
             },
             {
-              "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
-              "status": "http_404"
+              "url": "https://www.ysl.com/en-us/rive-droite/calendar/charlotte-gainsbourg-5-bis",
+              "status": "unusable"
             }
           ]
         },
@@ -1332,11 +1324,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/new-balance-x-miu-miu-with-coco-gauff-2026.html",
+              "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
               "status": "read"
             },
             {
-              "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
+              "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/new-balance-x-miu-miu-with-coco-gauff-2026.html",
               "status": "read"
             }
           ]
@@ -1488,11 +1480,11 @@
               "status": "read"
             },
             {
-              "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
+              "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
               "status": "read"
             },
             {
-              "url": "https://press.givenchy.com/givenchy-spring-summer-2027-menswear-campaign-489973/?lang=eng",
+              "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
               "status": "read"
             }
           ]
@@ -1544,12 +1536,12 @@
               "status": "read"
             },
             {
-              "url": "https://us.maxmara.com/editorial/campaign",
-              "status": "unusable"
-            },
-            {
               "url": "https://us.maxmara.com/editorial/runway-fall-winter",
               "status": "read"
+            },
+            {
+              "url": "https://us.maxmara.com/editorial/campaign",
+              "status": "unusable"
             }
           ]
         },
@@ -1676,11 +1668,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
+              "url": "https://www.zimmermann.com/us/collections-archive",
               "status": "read"
             },
             {
-              "url": "https://www.zimmermann.com/us/collections-archive",
+              "url": "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
               "status": "read"
             }
           ]
@@ -1770,67 +1762,53 @@
       "partial": true
     },
     "consultedSources": [
-      "https://www.prada.com/us/en/pradasphere/campaigns/2026/fw-woman-man.html",
-      "https://www.prada.com/us/en/pradasphere/fashion-shows/2026/fw-womenswear.html",
-      "https://www.prada.com/ww/en/pradasphere/campaigns.html",
-      "https://www.prada.com/us/en/womens/ready-to-wear/c/10048US",
-      "https://www.pradagroup.com/en/news-media/highlights.html",
-      "https://www.prada.com/us/en.html?media_type=image",
-      "https://corporate.ralphlauren.com/newsroom",
-      "https://www.pradagroup.com/en/news-media/media-library.html",
-      "https://www.dior.com/en_int/fashion/womens-fashion/dior-or",
-      "https://www.pradagroup.com/en/sustainability/environment-csr/prada-re-nylon.html",
-      "https://www.prada.com/us/en/womens/fall-winter-2026/c/11098US",
-      "https://www.pradagroup.com/en/news-media/news-section/26-04-22-prada-days-of-summer-2026.html",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Febbraio/Inglese/Prada-Fall-Winter-2026-Womenswears-show-PR.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Gennaio/Inglese/Prada-SS26-campaign-PR.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/2025/Luglio/inglese/Prada_FW25_campaign_PR.pdf",
-      "https://videos.prada.com/csr-video/NL98_Lyst%20Q3.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Giugno/inglese/Prada-Mode-New-York-PR-ENG.pdf",
-      "https://www.kering.com/api/download-file/?path=KERING_LETTRE_ACTIONNAIRES_AUGUST_25_UK_106dcebd9f.pdf",
-      "https://www.kering.com/en/press/contacts/",
-      "https://www.kering.com/en/press/",
-      "https://www.lvmh.com/en/news-lvmh/2026-lvmh-prize-for-young-fashion-designers-13th-edition-the-winners-julie-kegels-lvmh-prize-lii-karl-lagerfeld-prize-yoshita-1967-savoir-faire-prize",
-      "https://www.lvmh.com/en/news-lvmh",
-      "https://www.lvmh.com/en/publications/accelerating-growth-in-the-second-quarter---solid-first-half-results",
-      "https://www.lvmh.com/en/our-maisons/fashion-leather-good",
-      "https://www.lvmh.com/en/news-lvmh/this-is-more-than-a-t-shirt-a-symbol-of-lvmhs-commitment-to-pride-month-2026-designed-by-louis-vuitton",
-      "https://www.lvmh.com/en/publications/amelioration-des-tendances-au-troisieme-trimestre-",
-      "https://www.lvmh.com/en/publications/lvmh-unveils-les-journees-particulieres-2026-program-65-venues-open-across-11-countries-and-exclusive-experiences",
-      "https://www.lvmh.com/en/sitemap",
-      "https://www.kering.com/en/houses/fashion-and-leather-goods/",
-      "https://www.kering.com/en/news/press-release/",
-      "https://www.kering.com/api/download-file/?path=KERING_BDC_2026_EN_12b2ea9527.pdf",
-      "https://www.kering.com/api/download-file/?path=Kering_Press_Release_2026_First_Quarter_Revenue_04_14_26_5c1c87ab5f.pdf",
-      "https://www.kering.com/api/download-file/?path=Kering_Press_Release_2026_First_Quarter_Revenue_04_14_26_71ec2db5b6.pdf",
-      "https://www.kering.com/api/download-file/?path=Kering_Press_Release_Annual_Results_2024_110225_d0961a25d1.pdf",
-      "https://urd.lvmh.com/en/urd-2023-va_vdef.pdf",
-      "https://www.lvmh.com/en/news-lvmh/fluidity-and-lightness-prevail-at-dior-summer-2027-womens-show",
-      "https://www.lvmh.com/en/news-lvmh?tag=Other+activities",
-      "https://www.lvmh.com/en/news-lvmh?tag=Talents",
-      "https://www.lvmh.com/commitment-in-action/for-the-environment/lvmh-gaia",
+      "https://press.givenchy.com/en/?lang=eng",
+      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-07-30-pradagroup-h126.html",
       "https://www.pradagroup.com/en/news-media/news-section-archive.html",
+      "https://www.kering.com/en/press/",
+      "https://www.lvmh.com/en/news-lvmh",
+      "https://www.lvmh.com/en/news-lvmh/2026-lvmh-prize-for-young-fashion-designers-13th-edition-the-winners-julie-kegels-lvmh-prize-lii-karl-lagerfeld-prize-yoshita-1967-savoir-faire-prize",
+      "https://www.kering.com/en/press/contacts/",
+      "https://www.pradagroup.com/en/news-media/news-section/26-02-26-prada-fw-26-womenswear-show.html",
+      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-07-24-miumiu-fw26-campaign.html",
+      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-03-05-prada-group-2025-fy-results.html",
+      "https://www.lvmh.com/en/publications/accelerating-growth-in-the-second-quarter---solid-first-half-results",
+      "https://www.givenchy.com/coremedia/givenchy-en/explore/collections/spring-summer-2027-womenswear-show",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/Shareholderinformation/2026/inglese/e_Annual_Report_2025.pdf",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/investors/Q1-2026/Prada-Group-Q1-26-Results-Presentation.pdf",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/investors/Q1-2026/Prada-Group-Q1-26-PR.pdf",
+      "https://www.kering.com/api/download-file/?path=Kering_2025_Results_Press_Release_bd7165a4ea.pdf",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/investors/FY-2025/Prada-Group-FY25-PR.pdf",
+      "https://us.louisvuitton.com/eng-us/magazine/fashion-shows/women",
+      "https://us.louisvuitton.com/eng-us/magazine/fashion-shows",
+      "https://www.lvmh.com/en/news-lvmh/during-les-journees-particulieres-lvmh-maisons-also-open-their-doors-to-you-without-reservation",
+      "https://us.louisvuitton.com/eng-us/magazine",
+      "https://us.louisvuitton.com/eng-us/magazine/fashion-shows?page=24",
+      "https://www.lvmh.com/en/news-lvmh/fluidity-and-lightness-prevail-at-dior-summer-2027-womens-show",
+      "https://us.louisvuitton.com/eng-us/magazine/fashion-shows?page=2",
+      "https://us.louisvuitton.com/eng-us/magazine/fashion-shows?page=3",
+      "https://us.louisvuitton.com/eng-us/magazine/fashion-shows/men?page=2",
+      "https://www.lvmh.com/en/news-lvmh?tag=Other+activities",
+      "https://us.louisvuitton.com/eng-us/magazine/fashion-shows?page=4",
+      "https://www.lvmh.com/en/news-lvmh?tag=Environment",
+      "https://www.burberryplc.com/content/dam/burberryplc/corporate/oar/oar-2024-2025/financial-statements.pdf.downloadasset.pdf",
+      "https://www.burberryplc.com/content/dam/burberryplc/corporate/oar/oar-2024-2025/burberry_annual_report_and_accounts_2024_25_accessibility.pdf",
       "https://www.pradagroup.com/en/sustainability/news-csr.html",
       "https://www.pradagroup.com/en/perspectives/special-projects.html",
       "https://www.gucci.com/us/en/st/stories",
       "https://www.gucci.com/us/en/st/stories/people-events",
       "https://www.gucci.com/us/en/st/stories/advertising-campaign",
-      "https://www.dior.com/en_us/fashion/news-fashion-shows/folder-news-and-events",
       "https://www.lvmh.com/en/news-lvmh/",
-      "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
-      "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
       "https://www.chanel.com/us/fashion/",
       "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
-      "https://www.chanel.com/us/fashion/collection/fall-winter-pre-collection-2026/",
-      "https://us.louisvuitton.com/eng-us/magazine",
       "https://www.fendi.com/us-en/inside-fendi",
       "https://www.fendi.com/us-en/cm/fashion-shows/fendi-couture-fall-winter-2026-2027-collection",
       "https://www.valentino.com/en-us/v-universe/valentino-diary/news",
       "https://www.valentino.com/en-us/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
       "https://www.ysl.com/en-us/rive-droite/calendar/yearly",
       "https://www.miumiu.com/us/en/miumiu-club.html",
-      "https://www.miumiu.com/us/en/miumiu-club/special-projects/new-balance-x-miu-miu-with-coco-gauff-2026.html",
       "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
+      "https://www.miumiu.com/us/en/miumiu-club/special-projects/new-balance-x-miu-miu-with-coco-gauff-2026.html",
       "https://www.kering.com/en/news/romain-spitzer-appointed-chief-executive-officer-of-bottega-veneta/",
       "https://finance.hermes.com/en/press-releases-and-news/",
       "https://armanivalues.com/news-archive/",
@@ -1840,9 +1818,8 @@
       "https://world.dolcegabbana.com/",
       "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
       "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
-      "https://press.givenchy.com/en/?lang=eng",
+      "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
       "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
-      "https://press.givenchy.com/givenchy-spring-summer-2027-menswear-campaign-489973/?lang=eng",
       "https://museo.ferragamo.com/en/news",
       "https://www.burberryplc.com/news",
       "https://www.monclergroup.com/en/media/press-releases?sub_category_document_type=moncler",
@@ -1861,8 +1838,8 @@
       "https://alanui.it/en-it/collections/mens-clothing-view-all",
       "https://www.zimmermann.com/us/collections",
       "https://www.zimmermann.com/us/immerse",
-      "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
       "https://www.zimmermann.com/us/collections-archive",
+      "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
       "https://us.loropiana.com/en/cm/campaigns/narratives",
       "https://corporate.ralphlauren.com/s/RalphLauren_Corporate/newsroom",
       "https://www.coach.com/content/courage-to-be-real",
@@ -1870,23 +1847,61 @@
     ],
     "updates": [
       {
-        "id": "ny-2026-10-02-05a91fee1151",
-        "addedAt": "2026-10-02T16:42:56.815Z",
+        "id": "ny-2026-10-03-35411f8b7ccb",
+        "addedAt": "2026-10-03T20:10:47.526Z",
         "scope": "new_york",
-        "brand": "Dior",
+        "brand": "Givenchy",
+        "category": "Sfilata / collezione",
+        "publishedOn": "2026-10-02",
+        "publishedAt": "2026-10-02T19:29:04.000Z",
+        "publicationEvidence": "Pressroom: 02 Oct 2026; metadata articolo 2026-10-02T19:29:04+00:00",
+        "dateOrSeason": "Spring-Summer 2027",
+        "geography": "Globale",
+        "geographyEvidence": "Fonte ufficiale Givenchy Pressroom in inglese; nessuna attivazione USA/New York documentata nella pagina consultata.",
+        "title": "Women’s Ready-to-Wear Spring-Summer 2027 Collection",
+        "fact": "Givenchy ha pubblicato il press release della collezione donna ready-to-wear Spring-Summer 2027, con PDF stampa e materiali immagini associati.",
+        "communication": "Il messaggio osservabile insiste su equilibrio, chiarezza, precisione e semplicità del guardaroba. Il formato documentato è pressroom con comunicato PDF e asset immagini; il pubblico è presumibilmente stampa e operatori moda, per collocazione in area press.",
+        "relevance": "Da osservare nel radar USA come linguaggio di collezione che privilegia ordine, movimento e riduzione formale rispetto a storytelling più spettacolare o pop.",
+        "source": "Givenchy Pressroom",
+        "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng"
+      },
+      {
+        "id": "ny-2026-10-03-a60adc84f9af",
+        "addedAt": "2026-10-03T20:10:47.526Z",
+        "scope": "new_york",
+        "brand": "Louis Vuitton",
+        "category": "Iniziativa culturale / savoir-faire",
+        "publishedOn": "2026-10-02",
+        "publishedAt": null,
+        "publicationEvidence": "LVMH News: Published on 10.02.2026 • 5 MINUTES",
+        "dateOrSeason": "16–18 ottobre 2026",
+        "geography": "Globale",
+        "geographyEvidence": "La news LVMH elenca sedi in più paesi; per Louis Vuitton cita luoghi in Francia e Italia, senza attivazione Louis Vuitton USA/New York documentata.",
+        "title": "Les Journées Particulières: aperture di luoghi e atelier LVMH",
+        "fact": "LVMH ha pubblicato l’elenco delle sedi accessibili per Les Journées Particulières 2026; tra le maison della watchlist compaiono luoghi Louis Vuitton come Asnières, Vendôme e Fiesso d’Artico.",
+        "communication": "Il canale è news ufficiale LVMH. Il racconto valorizza heritage, luoghi produttivi e accesso del pubblico al savoir-faire; il pubblico è indicato come visitatori delle giornate, con accesso su prenotazione o libero secondo disponibilità.",
+        "relevance": "Per il desk USA è un segnale di come il gruppo costruisce comunicazione culturale attorno agli atelier: utile da confrontare con eventuali aperture, flagship experience o format heritage a New York.",
+        "source": "LVMH News",
+        "url": "https://www.lvmh.com/en/news-lvmh/during-les-journees-particulieres-lvmh-maisons-also-open-their-doors-to-you-without-reservation"
+      },
+      {
+        "id": "ny-2026-10-03-e62dd3fade1e",
+        "addedAt": "2026-10-03T20:10:47.526Z",
+        "scope": "new_york",
+        "brand": "Louis Vuitton",
         "category": "Sfilata / collezione",
         "publishedOn": "2026-10-01",
         "publishedAt": null,
-        "publicationEvidence": "Pagina LVMH: “Published on 10.01.2026 • 3 MINUTES”",
-        "dateOrSeason": "Summer 2027 Women’s Show",
+        "publicationEvidence": "Louis Vuitton Magazine: “Women’s Spring-Summer 2027 Show 10/01”",
+        "dateOrSeason": "Women’s Spring-Summer 2027 Show",
         "geography": "Globale",
-        "geographyEvidence": "Fonte LVMH internazionale; non documenta un’attivazione USA o New York per la notizia.",
-        "title": "Fluidity and lightness prevail at Dior Summer 2027 Women’s Show",
-        "fact": "LVMH pubblica il racconto della sfilata Dior Summer 2027 Women’s Show: la collezione lavora su natura, leggerezza, trasparenze, organza, mousseline, lace, pleats, accessori floreali e nuove versioni di borse Dior Double e Dior Initial Hobo.",
-        "communication": "Il messaggio visivo insiste su aria, acqua, natura e fluidità: mist, basin alberato, trasparenze e forme floreali costruiscono un codice couture più etereo che monumentale. Canale documentato: articolo news LVMH con formato editoriale di show recap.",
-        "relevance": "Da osservare per il mercato USA come Dior traduce il cambio di stagione in un lessico di leggerezza e craft, utile nel confronto con maison che comunicano FW/SS attraverso scenografie più narrative o performative.",
-        "source": "LVMH",
-        "url": "https://www.lvmh.com/en/news-lvmh/fluidity-and-lightness-prevail-at-dior-summer-2027-womens-show"
+        "geographyEvidence": "Pagina Magazine Louis Vuitton su dominio US che indicizza il contenuto show; il percorso en-us non basta come prova di attivazione locale New York.",
+        "title": "Women’s Spring-Summer 2027 Show",
+        "fact": "Louis Vuitton ha aggiornato il Magazine ufficiale con la voce “Women’s Spring-Summer 2027 Show”, datata 10/01 nella sezione Fashion Shows.",
+        "communication": "Il formato osservabile è una pagina magazine/fashion shows che organizza il contenuto come esperienza editoriale di sfilata. La comunicazione è centrata sulla continuità del calendario show e sull’accesso digitale ai materiali della Maison.",
+        "relevance": "Da monitorare per il confronto USA perché la pagina mostra come una maison globale usa il proprio magazine proprietario per trasformare la sfilata in contenuto sempreverde ma datato.",
+        "source": "Louis Vuitton Magazine",
+        "url": "https://us.louisvuitton.com/eng-us/magazine/fashion-shows/women"
       }
     ]
   }

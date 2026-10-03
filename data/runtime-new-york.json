@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-10-02T16:42:56.815Z",
+  "checkedAt": "2026-10-03T20:10:47.526Z",
   "result": "updated",
-  "consultedOfficialSources": 97,
+  "consultedOfficialSources": 82,
   "model": "gpt-5.5",
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 35744,
-    "outputTokens": 1035,
-    "searchCalls": 6
+    "inputTokens": 32257,
+    "outputTokens": 1973,
+    "searchCalls": 4
   }
 }
