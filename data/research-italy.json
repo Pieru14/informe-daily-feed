@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-03T08:40:42.276Z",
+  "checkedAt": "2026-10-04T15:49:25.233Z",
   "coverage": {
     "watchlist": [
       "Prada",
@@ -124,11 +124,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
+            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
+            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
             "status": "read"
           }
         ]
@@ -160,15 +160,23 @@
       {
         "brand": "Dior",
         "status": "editorial_pages_read",
-        "pagesRead": 1,
+        "pagesRead": 4,
         "pagesWithPublicationMetadata": 0,
         "receipts": [
           {
             "url": "https://www.dior.com/en_us/fashion/news-fashion-shows/folder-news-and-events",
-            "status": "http_403"
+            "status": "read"
           },
           {
             "url": "https://www.lvmh.com/en/news-lvmh/",
+            "status": "read"
+          },
+          {
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
+            "status": "read"
+          },
+          {
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
             "status": "read"
           }
         ]
@@ -208,11 +216,11 @@
             "status": "read"
           },
           {
-            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
+            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
             "status": "http_403"
           },
           {
-            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
+            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
             "status": "http_403"
           }
         ]
@@ -252,12 +260,12 @@
             "status": "read"
           },
           {
-            "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
-            "status": "unusable"
-          },
-          {
             "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
             "status": "read"
+          },
+          {
+            "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
+            "status": "unusable"
           }
         ]
       },
@@ -412,11 +420,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.versace.com/us/en/stories/?year=2026",
+            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-eyewear-fw-2026.html",
             "status": "read"
           },
           {
-            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-eyewear-fw-2026.html",
+            "url": "https://www.versace.com/us/en/stories/?year=2026",
             "status": "read"
           }
         ]
@@ -456,11 +464,11 @@
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
+            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
+            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
             "status": "read"
           }
         ]
@@ -552,11 +560,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.marni.com/wx/erykah-badu-collection.html",
+            "url": "https://www.marni.com/wx/marni-fw24-campaign.html",
             "status": "read"
           },
           {
-            "url": "https://www.marni.com/wx/marni-fw24-campaign.html",
+            "url": "https://www.marni.com/wx/erykah-badu-collection.html",
             "status": "read"
           }
         ]
@@ -739,8 +747,8 @@
   },
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 29548,
-    "outputTokens": 2175,
-    "searchCalls": 2
+    "inputTokens": 34732,
+    "outputTokens": 2269,
+    "searchCalls": 5
   }
 }
