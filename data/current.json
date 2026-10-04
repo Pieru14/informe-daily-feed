@@ -1005,15 +1005,15 @@
   },
   "checkStatus": "published",
   "newYorkDesk": {
-    "checkedAt": "2026-10-03T20:10:47.526Z",
+    "checkedAt": "2026-10-04T21:00:52.571Z",
     "updatedAt": "2026-10-03T20:10:47.526Z",
-    "status": "updated",
+    "status": "partial",
     "freshnessPolicy": "rolling-48h-v2",
     "researchWindow": {
-      "since": "2026-10-01T20:10:00.455Z",
-      "until": "2026-10-03T20:10:00.455Z",
-      "fromDate": "2026-10-01",
-      "toDate": "2026-10-03",
+      "since": "2026-10-02T21:00:17.667Z",
+      "until": "2026-10-04T21:00:17.667Z",
+      "fromDate": "2026-10-02",
+      "toDate": "2026-10-04",
       "timezone": "Europe/Rome"
     },
     "lastSuccessfulSearchAt": "2026-09-30T16:40:15.303Z",
@@ -1165,11 +1165,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.gucci.com/us/en/st/stories/people-events",
+              "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
               "status": "read"
             },
             {
-              "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
+              "url": "https://www.gucci.com/us/en/st/stories/people-events",
               "status": "read"
             }
           ]
@@ -1177,15 +1177,23 @@
         {
           "brand": "Dior",
           "status": "editorial_pages_read",
-          "pagesRead": 1,
+          "pagesRead": 4,
           "pagesWithPublicationMetadata": 0,
           "receipts": [
             {
               "url": "https://www.dior.com/en_us/fashion/news-fashion-shows/folder-news-and-events",
-              "status": "http_403"
+              "status": "read"
             },
             {
               "url": "https://www.lvmh.com/en/news-lvmh/",
+              "status": "read"
+            },
+            {
+              "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
+              "status": "read"
+            },
+            {
+              "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
               "status": "read"
             }
           ]
@@ -1225,11 +1233,11 @@
               "status": "read"
             },
             {
-              "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
+              "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
               "status": "http_403"
             },
             {
-              "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
+              "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
               "status": "http_403"
             }
           ]
@@ -1317,11 +1325,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
+              "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/new-balance-x-miu-miu-with-coco-gauff-2026.html",
               "status": "read"
             },
             {
-              "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/new-balance-x-miu-miu-with-coco-gauff-2026.html",
+              "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
               "status": "read"
             }
           ]
@@ -1449,11 +1457,11 @@
               "status": "read"
             },
             {
-              "url": "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
+              "url": "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
               "status": "read"
             },
             {
-              "url": "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
+              "url": "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
               "status": "read"
             }
           ]
@@ -1625,11 +1633,11 @@
               "status": "read"
             },
             {
-              "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
+              "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
               "status": "read"
             },
             {
-              "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
+              "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
               "status": "read"
             }
           ]
@@ -1661,11 +1669,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.zimmermann.com/us/collections-archive",
+              "url": "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
               "status": "read"
             },
             {
-              "url": "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
+              "url": "https://www.zimmermann.com/us/collections-archive",
               "status": "read"
             }
           ]
@@ -1755,53 +1763,72 @@
       "partial": true
     },
     "consultedSources": [
-      "https://press.givenchy.com/en/?lang=eng",
-      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-07-30-pradagroup-h126.html",
-      "https://www.pradagroup.com/en/news-media/news-section-archive.html",
       "https://www.kering.com/en/press/",
-      "https://www.lvmh.com/en/news-lvmh",
-      "https://www.lvmh.com/en/news-lvmh/2026-lvmh-prize-for-young-fashion-designers-13th-edition-the-winners-julie-kegels-lvmh-prize-lii-karl-lagerfeld-prize-yoshita-1967-savoir-faire-prize",
+      "https://www.pradagroup.com/en/news-media/news-section-archive.html",
+      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-07-30-pradagroup-h126.html",
       "https://www.kering.com/en/press/contacts/",
-      "https://www.pradagroup.com/en/news-media/news-section/26-02-26-prada-fw-26-womenswear-show.html",
+      "https://press.givenchy.com/en/?lang=eng",
+      "https://www.lvmh.com/en/news-lvmh",
       "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-07-24-miumiu-fw26-campaign.html",
-      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-03-05-prada-group-2025-fy-results.html",
-      "https://www.lvmh.com/en/publications/accelerating-growth-in-the-second-quarter---solid-first-half-results",
-      "https://www.givenchy.com/coremedia/givenchy-en/explore/collections/spring-summer-2027-womenswear-show",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/Shareholderinformation/2026/inglese/e_Annual_Report_2025.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/investors/Q1-2026/Prada-Group-Q1-26-Results-Presentation.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/investors/Q1-2026/Prada-Group-Q1-26-PR.pdf",
-      "https://www.kering.com/api/download-file/?path=Kering_2025_Results_Press_Release_bd7165a4ea.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/investors/FY-2025/Prada-Group-FY25-PR.pdf",
-      "https://us.louisvuitton.com/eng-us/magazine/fashion-shows/women",
-      "https://us.louisvuitton.com/eng-us/magazine/fashion-shows",
+      "https://www.lvmh.com/en/news-lvmh/2026-lvmh-prize-for-young-fashion-designers-13th-edition-the-winners-julie-kegels-lvmh-prize-lii-karl-lagerfeld-prize-yoshita-1967-savoir-faire-prize",
       "https://www.lvmh.com/en/news-lvmh/during-les-journees-particulieres-lvmh-maisons-also-open-their-doors-to-you-without-reservation",
-      "https://us.louisvuitton.com/eng-us/magazine",
-      "https://us.louisvuitton.com/eng-us/magazine/fashion-shows?page=24",
-      "https://www.lvmh.com/en/news-lvmh/fluidity-and-lightness-prevail-at-dior-summer-2027-womens-show",
-      "https://us.louisvuitton.com/eng-us/magazine/fashion-shows?page=2",
-      "https://us.louisvuitton.com/eng-us/magazine/fashion-shows?page=3",
-      "https://us.louisvuitton.com/eng-us/magazine/fashion-shows/men?page=2",
-      "https://www.lvmh.com/en/news-lvmh?tag=Other+activities",
-      "https://us.louisvuitton.com/eng-us/magazine/fashion-shows?page=4",
-      "https://www.lvmh.com/en/news-lvmh?tag=Environment",
-      "https://www.burberryplc.com/content/dam/burberryplc/corporate/oar/oar-2024-2025/financial-statements.pdf.downloadasset.pdf",
-      "https://www.burberryplc.com/content/dam/burberryplc/corporate/oar/oar-2024-2025/burberry_annual_report_and_accounts_2024_25_accessibility.pdf",
+      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-04-01-miumiu-leathergoods-campaign-26.html",
+      "https://www.pradagroup.com/en/news-media/media-library.html",
+      "https://www.pradagroup.com/en/brands/miu-miu.html",
+      "https://www.kering.com/api/download-file/?path=KERING_BDC_2026_EN_12b2ea9527.pdf",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/Shareholderinformation/2026/inglese/e_Annual_Report_2025.pdf",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/investors/Q1-2026/Prada-Group-Q1-26-PR.pdf",
+      "https://www.kering.com/api/download-file/?path=Kering_Press_Release_2026_First_Quarter_Revenue_04_14_26_5c1c87ab5f.pdf",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/investors/Q1-2026/Prada-Group-Q1-26-Results-Presentation.pdf",
+      "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
+      "https://www.chanel.com/us/fashion/",
+      "https://www.chanel.com/us/fashion/collection/fall-winter-pre-collection-2026/",
+      "https://www.chanel.com/us/fashion/fall-winter-2026/l/FshCollection26K/the-looks/",
+      "https://www.chanel.com/us/fashion/p/26K-PODIUM-069/look-69/",
+      "https://www.chanel.com/us/fashion/p/26K-PODIUM-001/look-1/",
+      "https://www.chanel.com/us/fashion/p/26K-PODIUM-072/look-72/",
+      "https://www.chanel.com/us/fashion/collection/fall-winter-pre-collection-2026-masculine-feminine-essentials/",
+      "https://www.chanel.com/us/fashion/p/26K-PODIUM-073/look-73/",
+      "https://www.chanel.com/us/fashion/p/26K-PODIUM-031/look-31/",
+      "https://www.chanel.com/us/fashion/ready-to-wear/spring-summer-2026-pre-collection/",
+      "https://www.chanel.com/us/fashion/p/26K-PODIUM-065/look-65/",
+      "https://www.chanel.com/puls-img/1779118002743-fy25-results-press-release-en-final.pdf",
+      "https://www.monclergroup.com/v3/assets/blt61bda6b71f29a239/bltcb58e552894a153d/69bd85b71b80b4c01fa3c051/Moncler_-_Relazione_remunerazione_2026_ITA.pdf",
+      "https://www.chanel.com/puls-img/1779117970551-fy25-results-press-release-fr-final.pdf",
+      "https://www.monclergroup.com/v3/assets/blt61bda6b71f29a239/blta8236f6d33cc3b20/69eb69290b80b0003b7a7aca/Moncler_RR_ITA_26_double.pdf",
+      "https://www.monclergroup.com/v3/assets/blt61bda6b71f29a239/blt799613580da77e09/69e79d8d775d987634d4442f/Moncler-Group-Press-Release-Q1-2026.pdf",
+      "https://www.monclergroup.com/v3/assets/blt61bda6b71f29a239/bltc22a78c5e50fd5cc/69f0daf1650a783eef601350/Moncler_Group_Transcript_Q1_2026.pdf",
+      "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
+      "https://www.valentino.com/en-us/",
+      "https://www.valentino.com/en-hk/v-universe/valentino-diary/news/shunsuke-michieda-as-new-brand-ambassador",
+      "https://www.valentino.com/en-sg/v-universe/valentino-diary/news/aspen-art-museum-exhibition",
+      "https://www.valentino.com/en-th/",
+      "https://endofyearparty.versace.com/apple-tv-has-too-many-good-shows-on-now-and-i-cant-keep-up/",
+      "https://www.valentino.com/en-sk/",
+      "https://investors.tapestry.com/news-releases/news-release-details/tapestry-inc-host-fy26-first-quarter-earnings-call",
+      "https://www.valentino.com/en-ro/",
+      "https://endofyearparty.versace.com/next-five-vcs-judging-startup-battlefield-200-at-disrupt-2026-techcrunch/",
+      "https://www.valentino.com/en-om/",
+      "https://www.valentino.com/en-my/",
+      "https://www.valentino.com/en-me/",
       "https://www.pradagroup.com/en/sustainability/news-csr.html",
       "https://www.pradagroup.com/en/perspectives/special-projects.html",
       "https://www.gucci.com/us/en/st/stories",
-      "https://www.gucci.com/us/en/st/stories/people-events",
       "https://www.gucci.com/us/en/st/stories/advertising-campaign",
+      "https://www.gucci.com/us/en/st/stories/people-events",
+      "https://www.dior.com/en_us/fashion/news-fashion-shows/folder-news-and-events",
       "https://www.lvmh.com/en/news-lvmh/",
-      "https://www.chanel.com/us/fashion/",
-      "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
+      "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
+      "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
+      "https://us.louisvuitton.com/eng-us/magazine",
       "https://www.fendi.com/us-en/inside-fendi",
       "https://www.fendi.com/us-en/cm/fashion-shows/fendi-couture-fall-winter-2026-2027-collection",
       "https://www.valentino.com/en-us/v-universe/valentino-diary/news",
       "https://www.valentino.com/en-us/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
       "https://www.ysl.com/en-us/rive-droite/calendar/yearly",
       "https://www.miumiu.com/us/en/miumiu-club.html",
-      "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
       "https://www.miumiu.com/us/en/miumiu-club/special-projects/new-balance-x-miu-miu-with-coco-gauff-2026.html",
+      "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
       "https://www.kering.com/en/news/romain-spitzer-appointed-chief-executive-officer-of-bottega-veneta/",
       "https://finance.hermes.com/en/press-releases-and-news/",
       "https://armanivalues.com/news-archive/",
@@ -1809,9 +1836,8 @@
       "https://www.versace.com/us/en/stories/?year=2026",
       "https://www.versace.com/us/en/stories/advertising-campaigns/versace-eyewear-fw-2026.html",
       "https://world.dolcegabbana.com/",
-      "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
       "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
-      "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
+      "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
       "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
       "https://museo.ferragamo.com/en/news",
       "https://www.burberryplc.com/news",
@@ -1827,12 +1853,12 @@
       "https://www.driesvannoten.com/pages/stories-raqib-shaw",
       "https://www.driesvannoten.com/pages/summer-stories",
       "https://alanui.it/en-it",
-      "https://alanui.it/en-it/collections/womens-clothing-view-all",
       "https://alanui.it/en-it/collections/mens-clothing-view-all",
+      "https://alanui.it/en-it/collections/womens-clothing-view-all",
       "https://www.zimmermann.com/us/collections",
       "https://www.zimmermann.com/us/immerse",
-      "https://www.zimmermann.com/us/collections-archive",
       "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
+      "https://www.zimmermann.com/us/collections-archive",
       "https://us.loropiana.com/en/cm/campaigns/narratives",
       "https://corporate.ralphlauren.com/s/RalphLauren_Corporate/newsroom",
       "https://www.coach.com/content/courage-to-be-real",
