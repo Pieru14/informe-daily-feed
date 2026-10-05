@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-04T15:49:25.233Z",
+  "checkedAt": "2026-10-05T08:44:25.125Z",
   "coverage": {
     "watchlist": [
       "Prada",
@@ -124,11 +124,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
+            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
+            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
             "status": "read"
           }
         ]
@@ -172,11 +172,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
             "status": "read"
           },
           {
-            "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
             "status": "read"
           }
         ]
@@ -420,11 +420,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-eyewear-fw-2026.html",
+            "url": "https://www.versace.com/us/en/stories/?year=2026",
             "status": "read"
           },
           {
-            "url": "https://www.versace.com/us/en/stories/?year=2026",
+            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-eyewear-fw-2026.html",
             "status": "read"
           }
         ]
@@ -440,11 +440,11 @@
             "status": "read"
           },
           {
-            "url": "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
+            "url": "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
             "status": "read"
           },
           {
-            "url": "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
+            "url": "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
             "status": "read"
           }
         ]
@@ -464,11 +464,11 @@
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
+            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
+            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
             "status": "read"
           }
         ]
@@ -520,12 +520,12 @@
             "status": "read"
           },
           {
-            "url": "https://us.maxmara.com/editorial/campaign",
-            "status": "unusable"
-          },
-          {
             "url": "https://us.maxmara.com/editorial/runway-fall-winter",
             "status": "read"
+          },
+          {
+            "url": "https://us.maxmara.com/editorial/campaign",
+            "status": "unusable"
           }
         ]
       },
@@ -616,11 +616,11 @@
             "status": "read"
           },
           {
-            "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
+            "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
             "status": "read"
           },
           {
-            "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
+            "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
             "status": "read"
           }
         ]
@@ -693,7 +693,7 @@
           },
           {
             "url": "https://www.lvmh.com/en/undefined/loro-piana-presents-springsummer-2027-collection-at-palazzo-di-brera",
-            "status": "http_404"
+            "status": "timeout"
           }
         ]
       },
@@ -747,8 +747,8 @@
   },
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 34732,
-    "outputTokens": 2269,
-    "searchCalls": 5
+    "inputTokens": 37303,
+    "outputTokens": 2203,
+    "searchCalls": 4
   }
 }
