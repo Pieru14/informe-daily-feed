@@ -1,15 +1,13 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-05T08:44:25.132Z",
-  "result": "published",
+  "checkedAt": "2026-10-06T08:42:09.028Z",
+  "result": "partial",
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 37303,
-    "outputTokens": 2203,
+    "inputTokens": 35458,
+    "outputTokens": 2060,
     "searchCalls": 4
   },
-  "localDate": "2026-10-05",
-  "editionId": "2026-10-05-16",
-  "consultedOfficialSources": 29,
-  "message": "Nuova edizione verificata e pubblicata."
+  "localDate": "2026-10-06",
+  "message": "Nessuna nuova notizia dopo la deduplicazione."
 }

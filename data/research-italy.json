@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-05T08:44:25.125Z",
+  "checkedAt": "2026-10-06T08:42:09.021Z",
   "coverage": {
     "watchlist": [
       "Prada",
@@ -40,12 +40,12 @@
       "Prada",
       "Gucci",
       "Dior",
-      "Chanel",
       "Louis Vuitton",
       "Fendi",
       "Valentino",
       "Saint Laurent",
       "Miu Miu",
+      "Loewe",
       "Balenciaga",
       "Bottega Veneta",
       "Hermès",
@@ -67,7 +67,7 @@
       "Coach"
     ],
     "unverifiedBrands": [
-      "Loewe",
+      "Chanel",
       "Pucci",
       "La DoubleJ",
       "Brunello Cucinelli",
@@ -124,11 +124,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
+            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
+            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
             "status": "read"
           }
         ]
@@ -183,21 +183,13 @@
       },
       {
         "brand": "Chanel",
-        "status": "editorial_pages_read",
-        "pagesRead": 2,
+        "status": "unavailable",
+        "pagesRead": 0,
         "pagesWithPublicationMetadata": 0,
         "receipts": [
           {
             "url": "https://www.chanel.com/us/fashion/",
-            "status": "read"
-          },
-          {
-            "url": "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
             "status": "unusable"
-          },
-          {
-            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
-            "status": "read"
           }
         ]
       },
@@ -216,11 +208,11 @@
             "status": "read"
           },
           {
-            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
+            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
             "status": "http_403"
           },
           {
-            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
+            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
             "status": "http_403"
           }
         ]
@@ -245,7 +237,7 @@
           },
           {
             "url": "https://www.lvmh.com/en/undefined/a-fusion-of-bodies-designs-and-emotion-for-fendi-spring-summer-2027-collection",
-            "status": "http_404"
+            "status": "timeout"
           }
         ]
       },
@@ -284,11 +276,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/charlotte-gainsbourg-5-bis",
             "status": "unusable"
           },
           {
-            "url": "https://www.ysl.com/en-us/rive-droite/calendar/charlotte-gainsbourg-5-bis",
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
             "status": "unusable"
           }
         ]
@@ -319,8 +311,8 @@
       },
       {
         "brand": "Loewe",
-        "status": "unavailable",
-        "pagesRead": 0,
+        "status": "editorial_pages_read",
+        "pagesRead": 1,
         "pagesWithPublicationMetadata": 0,
         "receipts": [
           {
@@ -380,11 +372,11 @@
             "status": "read"
           },
           {
-            "url": "https://finance.hermes.com/en/publications/hermes-unveils-its-expanded-store-chengdu-taikoo-li-mall-china-contemporary-expression",
+            "url": "https://finance.hermes.com/en/publications/hermes-opens-new-maison-london-166-new-bond-street-reaffirming-its-presence-united",
             "status": "unusable"
           },
           {
-            "url": "https://finance.hermes.com/en/publications/hermes-opens-new-maison-london-166-new-bond-street-reaffirming-its-presence-united",
+            "url": "https://finance.hermes.com/en/publications/hermes-unveils-its-expanded-store-chengdu-taikoo-li-mall-china-contemporary-expression",
             "status": "unusable"
           }
         ]
@@ -464,11 +456,11 @@
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
+            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
+            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
             "status": "read"
           }
         ]
@@ -616,11 +608,11 @@
             "status": "read"
           },
           {
-            "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
+            "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
             "status": "read"
           },
           {
-            "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
+            "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
             "status": "read"
           }
         ]
@@ -693,7 +685,7 @@
           },
           {
             "url": "https://www.lvmh.com/en/undefined/loro-piana-presents-springsummer-2027-collection-at-palazzo-di-brera",
-            "status": "timeout"
+            "status": "http_404"
           }
         ]
       },
@@ -747,8 +739,8 @@
   },
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 37303,
-    "outputTokens": 2203,
+    "inputTokens": 35458,
+    "outputTokens": 2060,
     "searchCalls": 4
   }
 }
