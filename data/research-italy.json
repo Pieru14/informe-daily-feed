@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-06T08:42:09.021Z",
+  "checkedAt": "2026-10-07T08:43:15.685Z",
   "coverage": {
     "watchlist": [
       "Prada",
@@ -40,12 +40,12 @@
       "Prada",
       "Gucci",
       "Dior",
+      "Chanel",
       "Louis Vuitton",
       "Fendi",
       "Valentino",
       "Saint Laurent",
       "Miu Miu",
-      "Loewe",
       "Balenciaga",
       "Bottega Veneta",
       "Hermès",
@@ -67,7 +67,7 @@
       "Coach"
     ],
     "unverifiedBrands": [
-      "Chanel",
+      "Loewe",
       "Pucci",
       "La DoubleJ",
       "Brunello Cucinelli",
@@ -148,11 +148,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
+            "url": "https://www.gucci.com/us/en/st/stories/people-events",
             "status": "read"
           },
           {
-            "url": "https://www.gucci.com/us/en/st/stories/people-events",
+            "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
             "status": "read"
           }
         ]
@@ -172,24 +172,32 @@
             "status": "read"
           },
           {
-            "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
             "status": "read"
           },
           {
-            "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
             "status": "read"
           }
         ]
       },
       {
         "brand": "Chanel",
-        "status": "unavailable",
-        "pagesRead": 0,
+        "status": "editorial_pages_read",
+        "pagesRead": 3,
         "pagesWithPublicationMetadata": 0,
         "receipts": [
           {
             "url": "https://www.chanel.com/us/fashion/",
-            "status": "unusable"
+            "status": "read"
+          },
+          {
+            "url": "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
+            "status": "read"
+          },
+          {
+            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
+            "status": "read"
           }
         ]
       },
@@ -208,11 +216,11 @@
             "status": "read"
           },
           {
-            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
+            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
             "status": "http_403"
           },
           {
-            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
+            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
             "status": "http_403"
           }
         ]
@@ -237,7 +245,7 @@
           },
           {
             "url": "https://www.lvmh.com/en/undefined/a-fusion-of-bodies-designs-and-emotion-for-fendi-spring-summer-2027-collection",
-            "status": "timeout"
+            "status": "http_404"
           }
         ]
       },
@@ -276,11 +284,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.ysl.com/en-us/rive-droite/calendar/charlotte-gainsbourg-5-bis",
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
             "status": "unusable"
           },
           {
-            "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/charlotte-gainsbourg-5-bis",
             "status": "unusable"
           }
         ]
@@ -311,8 +319,8 @@
       },
       {
         "brand": "Loewe",
-        "status": "editorial_pages_read",
-        "pagesRead": 1,
+        "status": "unavailable",
+        "pagesRead": 0,
         "pagesWithPublicationMetadata": 0,
         "receipts": [
           {
@@ -372,11 +380,11 @@
             "status": "read"
           },
           {
-            "url": "https://finance.hermes.com/en/publications/hermes-opens-new-maison-london-166-new-bond-street-reaffirming-its-presence-united",
+            "url": "https://finance.hermes.com/en/publications/hermes-unveils-its-expanded-store-chengdu-taikoo-li-mall-china-contemporary-expression",
             "status": "unusable"
           },
           {
-            "url": "https://finance.hermes.com/en/publications/hermes-unveils-its-expanded-store-chengdu-taikoo-li-mall-china-contemporary-expression",
+            "url": "https://finance.hermes.com/en/publications/hermes-opens-new-maison-london-166-new-bond-street-reaffirming-its-presence-united",
             "status": "unusable"
           }
         ]
@@ -456,11 +464,11 @@
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
+            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
+            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
             "status": "read"
           }
         ]
@@ -512,12 +520,12 @@
             "status": "read"
           },
           {
-            "url": "https://us.maxmara.com/editorial/runway-fall-winter",
-            "status": "read"
-          },
-          {
             "url": "https://us.maxmara.com/editorial/campaign",
             "status": "unusable"
+          },
+          {
+            "url": "https://us.maxmara.com/editorial/runway-fall-winter",
+            "status": "read"
           }
         ]
       },
@@ -608,11 +616,11 @@
             "status": "read"
           },
           {
-            "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
+            "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
             "status": "read"
           },
           {
-            "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
+            "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
             "status": "read"
           }
         ]
@@ -648,7 +656,7 @@
             "status": "read"
           },
           {
-            "url": "https://www.zimmermann.com/us/fall-rtw-2026-campaign",
+            "url": "https://www.zimmermann.com/us/runway-spring-rtw-2027",
             "status": "read"
           }
         ]
@@ -739,8 +747,8 @@
   },
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 35458,
-    "outputTokens": 2060,
-    "searchCalls": 4
+    "inputTokens": 35554,
+    "outputTokens": 1736,
+    "searchCalls": 3
   }
 }
