@@ -1003,15 +1003,15 @@
   },
   "checkStatus": "published",
   "newYorkDesk": {
-    "checkedAt": "2026-10-07T16:44:30.803Z",
-    "updatedAt": "2026-10-07T16:44:30.803Z",
+    "checkedAt": "2026-10-08T16:45:15.605Z",
+    "updatedAt": "2026-10-08T16:45:15.605Z",
     "status": "updated",
     "freshnessPolicy": "rolling-48h-v2",
     "researchWindow": {
-      "since": "2026-10-05T16:43:47.993Z",
-      "until": "2026-10-07T16:43:47.993Z",
-      "fromDate": "2026-10-05",
-      "toDate": "2026-10-07",
+      "since": "2026-10-06T16:44:26.266Z",
+      "until": "2026-10-08T16:44:26.266Z",
+      "fromDate": "2026-10-06",
+      "toDate": "2026-10-08",
       "timezone": "Europe/Rome"
     },
     "lastSuccessfulSearchAt": "2026-09-30T16:40:15.303Z",
@@ -1163,11 +1163,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.gucci.com/us/en/st/stories/people-events",
+              "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
               "status": "read"
             },
             {
-              "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
+              "url": "https://www.gucci.com/us/en/st/stories/people-events",
               "status": "read"
             }
           ]
@@ -1187,11 +1187,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
+              "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
               "status": "read"
             },
             {
-              "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
+              "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
               "status": "read"
             }
           ]
@@ -1231,11 +1231,11 @@
               "status": "read"
             },
             {
-              "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
+              "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
               "status": "http_403"
             },
             {
-              "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
+              "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
               "status": "http_403"
             }
           ]
@@ -1260,7 +1260,7 @@
             },
             {
               "url": "https://www.lvmh.com/en/undefined/a-fusion-of-bodies-designs-and-emotion-for-fendi-spring-summer-2027-collection",
-              "status": "http_404"
+              "status": "timeout"
             }
           ]
         },
@@ -1275,12 +1275,12 @@
               "status": "read"
             },
             {
-              "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
-              "status": "unusable"
-            },
-            {
               "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
               "status": "read"
+            },
+            {
+              "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
+              "status": "unusable"
             }
           ]
         },
@@ -1299,11 +1299,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
+              "url": "https://www.ysl.com/en-us/rive-droite/calendar/brandon-morris",
               "status": "unusable"
             },
             {
-              "url": "https://www.ysl.com/en-us/rive-droite/calendar/charlotte-gainsbourg-5-bis",
+              "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
               "status": "unusable"
             }
           ]
@@ -1334,8 +1334,8 @@
         },
         {
           "brand": "Loewe",
-          "status": "unavailable",
-          "pagesRead": 0,
+          "status": "editorial_pages_read",
+          "pagesRead": 1,
           "pagesWithPublicationMetadata": 0,
           "receipts": [
             {
@@ -1395,11 +1395,11 @@
               "status": "read"
             },
             {
-              "url": "https://finance.hermes.com/en/publications/hermes-opens-new-maison-london-166-new-bond-street-reaffirming-its-presence-united",
+              "url": "https://finance.hermes.com/en/publications/hermes-unveils-its-expanded-store-chengdu-taikoo-li-mall-china-contemporary-expression",
               "status": "unusable"
             },
             {
-              "url": "https://finance.hermes.com/en/publications/hermes-unveils-its-expanded-store-chengdu-taikoo-li-mall-china-contemporary-expression",
+              "url": "https://finance.hermes.com/en/publications/hermes-opens-new-maison-london-166-new-bond-street-reaffirming-its-presence-united",
               "status": "unusable"
             }
           ]
@@ -1439,7 +1439,7 @@
               "status": "read"
             },
             {
-              "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-eyewear-fw-2026.html",
+              "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
               "status": "read"
             }
           ]
@@ -1447,8 +1447,8 @@
         {
           "brand": "Dolce&Gabbana",
           "status": "editorial_pages_read",
-          "pagesRead": 2,
-          "pagesWithPublicationMetadata": 0,
+          "pagesRead": 3,
+          "pagesWithPublicationMetadata": 1,
           "receipts": [
             {
               "url": "https://world.dolcegabbana.com/",
@@ -1460,7 +1460,7 @@
             },
             {
               "url": "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
-              "status": "timeout"
+              "status": "read"
             }
           ]
         },
@@ -1535,12 +1535,12 @@
               "status": "read"
             },
             {
-              "url": "https://us.maxmara.com/editorial/runway-fall-winter",
-              "status": "read"
-            },
-            {
               "url": "https://us.maxmara.com/editorial/campaign",
               "status": "unusable"
+            },
+            {
+              "url": "https://us.maxmara.com/editorial/runway-fall-winter",
+              "status": "read"
             }
           ]
         },
@@ -1631,11 +1631,11 @@
               "status": "read"
             },
             {
-              "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
+              "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
               "status": "read"
             },
             {
-              "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
+              "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
               "status": "read"
             }
           ]
@@ -1703,12 +1703,12 @@
               "status": "read"
             },
             {
-              "url": "https://us.loropiana.com/en/campaign/landing",
-              "status": "unusable"
-            },
-            {
               "url": "https://www.lvmh.com/en/undefined/loro-piana-presents-springsummer-2027-collection-at-palazzo-di-brera",
               "status": "http_404"
+            },
+            {
+              "url": "https://us.loropiana.com/en/campaign/landing",
+              "status": "unusable"
             }
           ]
         },
@@ -1761,69 +1761,55 @@
       "partial": true
     },
     "consultedSources": [
-      "https://www.kering.com/en/press/",
-      "https://www.lvmh.com/en/news-lvmh",
-      "https://www.kering.com/en/press/resources/logo-library/",
-      "https://www.lvmh.com/en/news-lvmh/super-nature-for-louis-vuitton-womens-fall-winter-2026-collection",
-      "https://www.pradagroup.com/en/investors/investor-relations.html",
-      "https://www.lvmh.com/static/lettre-aux-actionnaires-juillet-2026/mode-et-maroquinerie.html",
-      "https://www.lvmh.com/en/publications/accelerating-growth-in-the-second-quarter---solid-first-half-results",
-      "https://www.kering.com/fr/presse/",
-      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-10-04-miumiu-ss27-fashionshow.html",
-      "https://www.kering.com/en/news/press-release/",
-      "https://www.lvmh.com/fr/les-actualites-lvmh?tag=Soci%C3%A9t%C3%A9",
-      "https://www.lvmh.com/en/sitemap",
-      "https://www.kering.com/api/download-file/?path=KERING_BDC_2026_EN_12b2ea9527.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/Shareholderinformation/2026/inglese/e_Annual_Report_2025.pdf",
-      "https://www.kering.com/api/download-file/?path=Kering_Press_release_Segment_reporting_EN_16_03_2026_f0765535e4.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Marzo/Inglese/Miu-Miu-FW26-fashion-show-PR.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/investors/Q1-2026/Prada-Group-Q1-26-Results-Presentation.pdf",
-      "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
-      "https://www.chanel.com/us/fashion/",
-      "https://www.chanel.com/us/fashion/collection/fall-winter-pre-collection-2026/",
-      "https://www.chanel.com/us/fashion/p/26B-COMMERCIAL-007/look-7/",
-      "https://www.tapestry.com/newsroom/",
-      "https://www.chanel.com/us/fashion/collection/fall-winter-pre-collection-2026-masculine-feminine-essentials/",
-      "https://www.chanel.com/us/fashion/p/26K-PODIUM-057/look-57/",
-      "https://www.chanel.com/us/fashion/p/26K-PODIUM-067/look-67/",
-      "https://www.chanel.com/us/fashion/p/P83813K12111UE681/dress-silk/",
-      "https://www.chanel.com/us/fashion/p/P83541V76004UC911/long-dress-cotton-mixed-fibers/",
-      "https://www.chanel.com/us/fashion/ready-to-wear/page-2/",
-      "https://corporate.ralphlauren.com/newsroom",
-      "https://www.chanel.com/puls-img/1779118002743-fy25-results-press-release-en-final.pdf",
-      "https://assets.tapestry.com/tapestrycorp/assets/docs/2025/TPR_CR_REPORT_FY2025_FINAL.pdf",
-      "https://pressroom.chanel.com/sites/8/chanel_fall-winter-2025-26-haute-couture-collection_en.pdf",
-      "https://www.burberryplc.com/content/dam/burberryplc/corporate/oar/oar-2024-2025/burberry_annual_report_and_accounts_2024_25_accessibility.pdf",
-      "https://finance.hermes.com/en/press-releases-and-news/",
-      "https://www.givenchy.com/us/en-US/unisex/",
-      "https://finance.hermes.com/en/financial-publications/",
-      "https://www.givenchy.com/us/en-US/women/discover/fall-2026-selection/",
-      "https://finance.hermes.com/en/regulated-information/",
-      "https://www.givenchy.com/us/en-US/women/discover/fall-winter-2026/",
-      "https://www.valentino.com/it-it/v-universe/valentino-diary",
-      "https://www.zimmermann.com/us/shoes",
-      "https://finance.hermes.com/fr/communiques-de-presse-et-actualites/",
-      "https://www.hermes.com/us/en/legal/6735-privacy-cookies/",
-      "https://www.zimmermann.com/us/boutique/directory",
-      "https://finance.hermes.com/fr/informations-reglementees/",
-      "https://assets-finance.hermes.com/s3fs-public/node/pdf_file/2026-03/1774022582/260320_hermes_urd2025_en.pdf",
-      "https://assets-finance.hermes.com/s3fs-public/node/pdf_file/2025-10/1761060884/hermes_20251022_q3revenue_en.pdf",
-      "https://www.givenchy.com/on/demandware.static/-/Library-Sites-shared_GIV_Library/default/dw02777798/Content/personal_data_notice.pdf",
-      "https://www.givenchy.com/on/demandware.static/-/Library-Sites-shared_GIV_Library/default/dwe31b6eb5/ROBES-MTO-T%26C-US.pdf",
-      "https://presse.hermes.com/wp-content/uploads/2024/08/be2f90c14dc077d426431a8c5e005037.pdf",
-      "https://assets-finance.hermes.com/s3fs-public/node/pdf_file/2026-03/1774022520/260320_hermes_urd2025_en.pdf",
-      "https://www.lvmh.com/en/news-lvmh/ease-and-presence-for-loewe-spring-summer-2027",
+      "https://www.versace.com/us/en/stories/advertising-campaigns/?year=2026",
+      "https://www.versace.com/us/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
+      "https://www.versace.com/us/en/stories/?hashtag=metgala",
+      "https://www.versace.com/by/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
+      "https://www.versace.com/pr/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
+      "https://www.versace.com/us/en/stories/?year=2026",
+      "https://www.versace.com/us/en/stories/advertising-campaigns/?hashtag=versacehome",
+      "https://www.versace.com/me/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
+      "https://www.versace.com/bh/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
+      "https://www.versace.com/qa/en/stories/advertising-campaigns/versace-fw-2026.html",
+      "https://www.versace.com/gr/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
+      "https://www.versace.com/ro/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
+      "https://www.chanel.com/us/fashion/services/boutique-san-diego/",
+      "https://www.chanel.com/in/storelocator/store/chanel-san-diego-132759/",
+      "https://www.lvmh.com/our-maisons/fashion-leather-good/barton-perreira",
+      "https://www.chanel.com/bh-en/storelocator/store/chanel-san-diego-132759/",
+      "https://www.chanel.com/gb/fashion/services/boutique-san-diego/",
+      "https://www.chanel.com/at/storelocator/store/chanel-san-diego-132759/",
+      "https://www.chanel.com/se/fashion/tjaenster/boutique-san-diego/",
+      "https://www.chanel.com/ch-de/storelocator/store/chanel-san-diego-132759/",
+      "https://www.chanel.com/pl/storelocator/store/chanel-san-diego-132759/",
+      "https://www.chanel.com/pa/storelocator/store/chanel-san-diego-132759/",
+      "https://www.chanel.com/ch-de/mode/services/boutique-san-diego/",
+      "https://www.chanel.com/ru/fashion/services/boutique-san-diego/",
+      "https://www.lvmh.com/en/news-lvmh?tag=Wines+%26+Spirits",
+      "https://www.lvmh.com/it/opportunita-di-lavoro/le-nostre-posizioni/FEND04604",
+      "https://www.lvmh.com/fr/nous-rejoindre/nos-offres/FEND04614",
+      "https://www.lvmh.com/fr/nous-rejoindre/nos-offres/LVM33607",
+      "https://www.lvmh.com/it/opportunita-di-lavoro/le-nostre-posizioni/LVM33611",
+      "https://www.lvmh.com/it/opportunita-di-lavoro/le-nostre-posizioni/LVM33613",
+      "https://www.lvmh.com/it/opportunita-di-lavoro/le-nostre-posizioni/LVM33612",
+      "https://www.lvmh.com/it/opportunita-di-lavoro/le-nostre-posizioni/LVM32973",
+      "https://www.lvmh.com/fr/nous-rejoindre/nos-offres/LVMHFB02698",
+      "https://www.lvmh.com/fr/nous-rejoindre/nos-offres/CELI05596",
+      "https://www.lvmh.com/fr/nous-rejoindre/nos-offres/PCD22272",
       "https://www.pradagroup.com/en/news-media/news-section-archive.html",
       "https://www.pradagroup.com/en/sustainability/news-csr.html",
       "https://www.pradagroup.com/en/perspectives/special-projects.html",
       "https://www.gucci.com/us/en/st/stories",
-      "https://www.gucci.com/us/en/st/stories/people-events",
+      "https://www.kering.com/en/press/",
       "https://www.gucci.com/us/en/st/stories/advertising-campaign",
+      "https://www.gucci.com/us/en/st/stories/people-events",
       "https://www.dior.com/en_us/fashion/news-fashion-shows/folder-news-and-events",
       "https://www.lvmh.com/en/news-lvmh/",
-      "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
       "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
+      "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
+      "https://www.chanel.com/us/fashion/",
       "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
+      "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
       "https://us.louisvuitton.com/eng-us/magazine",
       "https://www.fendi.com/us-en/inside-fendi",
       "https://www.fendi.com/us-en/cm/fashion-shows/fendi-couture-fall-winter-2026-2027-collection",
@@ -1834,12 +1820,12 @@
       "https://www.miumiu.com/us/en/miumiu-club/special-projects/new-balance-x-miu-miu-with-coco-gauff-2026.html",
       "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
       "https://www.kering.com/en/news/romain-spitzer-appointed-chief-executive-officer-of-bottega-veneta/",
+      "https://finance.hermes.com/en/press-releases-and-news/",
       "https://armanivalues.com/news-archive/",
       "https://www.versace.com/us/en/stories/",
-      "https://www.versace.com/us/en/stories/?year=2026",
-      "https://www.versace.com/us/en/stories/advertising-campaigns/versace-eyewear-fw-2026.html",
       "https://world.dolcegabbana.com/",
       "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
+      "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
       "https://press.givenchy.com/en/?lang=eng",
       "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
       "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
@@ -1857,35 +1843,36 @@
       "https://www.driesvannoten.com/pages/stories-raqib-shaw",
       "https://www.driesvannoten.com/pages/summer-stories",
       "https://alanui.it/en-it",
-      "https://alanui.it/en-it/collections/mens-clothing-view-all",
       "https://alanui.it/en-it/collections/womens-clothing-view-all",
+      "https://alanui.it/en-it/collections/mens-clothing-view-all",
       "https://www.zimmermann.com/us/collections",
       "https://www.zimmermann.com/us/immerse",
       "https://www.zimmermann.com/us/runway-spring-rtw-2027",
       "https://www.zimmermann.com/us/collections-archive",
       "https://us.loropiana.com/en/cm/campaigns/narratives",
       "https://corporate.ralphlauren.com/s/RalphLauren_Corporate/newsroom",
-      "https://www.coach.com/content/courage-to-be-real"
+      "https://www.coach.com/content/courage-to-be-real",
+      "https://www.tapestry.com/newsroom/"
     ],
     "updates": [
       {
-        "id": "ny-2026-10-07-cb841a5f7f27",
-        "addedAt": "2026-10-07T16:44:30.803Z",
+        "id": "ny-2026-10-08-1c10eb5adfc6",
+        "addedAt": "2026-10-08T16:45:15.605Z",
         "scope": "new_york",
-        "brand": "Loewe",
-        "category": "sfilata/collezione",
-        "publishedOn": "2026-10-05",
+        "brand": "Versace",
+        "category": "Campagna / orologi",
+        "publishedOn": "2026-10-08",
         "publishedAt": null,
-        "publicationEvidence": "Pagina LVMH: “Published on 10.05.2026”",
-        "dateOrSeason": "Spring-Summer 2027",
+        "publicationEvidence": "datePublished metadata della pagina: 2026-10-08",
+        "dateOrSeason": "Fall Winter 2026",
         "geography": "Globale",
-        "geographyEvidence": "Fonte LVMH News internazionale sulla collezione Loewe; nessuna attivazione USA/New York documentata.",
-        "title": "Ease and presence for Loewe Spring-Summer 2027",
-        "fact": "LVMH pubblica un articolo sulla collezione Loewe Spring-Summer 2027: guardaroba femminile e maschile centrato su fisicità, tessuti a contatto con il corpo, nuovi accessori e richiami alla pelletteria della Maison.",
-        "communication": "Il racconto visivo combina color block, riferimenti barocchi spagnoli, archetipi sportswear e leggerezza estiva; formato documentato: news editoriale ufficiale LVMH con immagini/gallery.",
-        "relevance": "Segnale da osservare per il mercato USA: linguaggio che intreccia heritage europeo e codici pragmatici/sportivi leggibili anche per audience moda americana, senza prova di attivazione locale.",
-        "source": "LVMH News",
-        "url": "https://www.lvmh.com/en/news-lvmh/ease-and-presence-for-loewe-spring-summer-2027"
+        "geographyEvidence": "Pagina ufficiale Versace US consultata; non documenta un’attivazione locale USA/New York della campagna.",
+        "title": "Versace Fall Winter 2026 Watches Collection",
+        "fact": "Versace ha pubblicato la pagina della campagna Watches Fall Winter 2026, con lancio dei nuovi segnatempo e selezione prodotto uomo/donna, tra cui Dylos, V-Arcadis, V-Square Petite, V-Libra, Tolomeo Chrono, Greca Reaction GMT, V-Leo e Greca Edge Gent.",
+        "communication": "Formato documentato: pagina Stories/Advertising Campaigns con video/visual hero, moduli shop now e griglia prodotto. Il linguaggio visuale sposta i codici Versace su una categoria accessorio ad alta riconoscibilità, combinando campagna e conversione retail nello stesso ambiente digitale.",
+        "relevance": "Da osservare per il mercato USA: come le maison usano pagine editoriali ufficiali per rendere immediatamente acquistabile una campagna accessori, senza separare racconto visivo e assortimento.",
+        "source": "Versace US",
+        "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-watches-fw-2026.html"
       }
     ]
   }
