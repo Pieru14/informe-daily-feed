@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-08T08:43:29.796Z",
+  "checkedAt": "2026-10-09T08:43:58.983Z",
   "coverage": {
     "watchlist": [
       "Prada",
@@ -46,6 +46,7 @@
       "Valentino",
       "Saint Laurent",
       "Miu Miu",
+      "Loewe",
       "Balenciaga",
       "Bottega Veneta",
       "Hermès",
@@ -67,7 +68,6 @@
       "Coach"
     ],
     "unverifiedBrands": [
-      "Loewe",
       "Pucci",
       "La DoubleJ",
       "Brunello Cucinelli",
@@ -124,11 +124,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
+            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
+            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
             "status": "read"
           }
         ]
@@ -245,7 +245,7 @@
           },
           {
             "url": "https://www.lvmh.com/en/undefined/a-fusion-of-bodies-designs-and-emotion-for-fendi-spring-summer-2027-collection",
-            "status": "http_404"
+            "status": "timeout"
           }
         ]
       },
@@ -260,12 +260,12 @@
             "status": "read"
           },
           {
-            "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
-            "status": "unusable"
-          },
-          {
             "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
             "status": "read"
+          },
+          {
+            "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
+            "status": "unusable"
           }
         ]
       },
@@ -284,11 +284,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.ysl.com/en-us/rive-droite/calendar/charlotte-gainsbourg-5-bis",
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
             "status": "unusable"
           },
           {
-            "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/brandon-morris",
             "status": "unusable"
           }
         ]
@@ -296,7 +296,7 @@
       {
         "brand": "Miu Miu",
         "status": "editorial_pages_read",
-        "pagesRead": 4,
+        "pagesRead": 3,
         "pagesWithPublicationMetadata": 0,
         "receipts": [
           {
@@ -313,14 +313,14 @@
           },
           {
             "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
-            "status": "read"
+            "status": "timeout"
           }
         ]
       },
       {
         "brand": "Loewe",
-        "status": "unavailable",
-        "pagesRead": 0,
+        "status": "editorial_pages_read",
+        "pagesRead": 1,
         "pagesWithPublicationMetadata": 0,
         "receipts": [
           {
@@ -380,11 +380,11 @@
             "status": "read"
           },
           {
-            "url": "https://finance.hermes.com/en/publications/hermes-unveils-its-expanded-store-chengdu-taikoo-li-mall-china-contemporary-expression",
+            "url": "https://finance.hermes.com/en/publications/hermes-opens-new-maison-london-166-new-bond-street-reaffirming-its-presence-united",
             "status": "unusable"
           },
           {
-            "url": "https://finance.hermes.com/en/publications/hermes-opens-new-maison-london-166-new-bond-street-reaffirming-its-presence-united",
+            "url": "https://finance.hermes.com/en/publications/hermes-unveils-its-expanded-store-chengdu-taikoo-li-mall-china-contemporary-expression",
             "status": "unusable"
           }
         ]
@@ -420,11 +420,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
+            "url": "https://www.versace.com/us/en/stories/?year=2026",
             "status": "read"
           },
           {
-            "url": "https://www.versace.com/us/en/stories/?year=2026",
+            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
             "status": "read"
           }
         ]
@@ -432,8 +432,8 @@
       {
         "brand": "Dolce&Gabbana",
         "status": "editorial_pages_read",
-        "pagesRead": 3,
-        "pagesWithPublicationMetadata": 1,
+        "pagesRead": 2,
+        "pagesWithPublicationMetadata": 0,
         "receipts": [
           {
             "url": "https://world.dolcegabbana.com/",
@@ -445,14 +445,14 @@
           },
           {
             "url": "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
-            "status": "read"
+            "status": "timeout"
           }
         ]
       },
       {
         "brand": "Givenchy",
         "status": "editorial_pages_read",
-        "pagesRead": 3,
+        "pagesRead": 4,
         "pagesWithPublicationMetadata": 2,
         "receipts": [
           {
@@ -464,11 +464,11 @@
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
+            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
+            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
             "status": "read"
           }
         ]
@@ -616,11 +616,11 @@
             "status": "read"
           },
           {
-            "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
+            "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
             "status": "read"
           },
           {
-            "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
+            "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
             "status": "read"
           }
         ]
@@ -747,8 +747,8 @@
   },
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 26739,
-    "outputTokens": 1635,
-    "searchCalls": 2
+    "inputTokens": 47003,
+    "outputTokens": 2210,
+    "searchCalls": 6
   }
 }
