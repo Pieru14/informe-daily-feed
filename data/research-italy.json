@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-09T08:43:58.983Z",
+  "checkedAt": "2026-10-10T08:41:51.428Z",
   "coverage": {
     "watchlist": [
       "Prada",
@@ -124,11 +124,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
+            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
+            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
             "status": "read"
           }
         ]
@@ -172,11 +172,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
             "status": "read"
           },
           {
-            "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
             "status": "read"
           }
         ]
@@ -192,11 +192,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
+            "url": "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
             "status": "read"
           },
           {
-            "url": "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
+            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
             "status": "read"
           }
         ]
@@ -216,11 +216,11 @@
             "status": "read"
           },
           {
-            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
+            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
             "status": "http_403"
           },
           {
-            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
+            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
             "status": "http_403"
           }
         ]
@@ -245,7 +245,7 @@
           },
           {
             "url": "https://www.lvmh.com/en/undefined/a-fusion-of-bodies-designs-and-emotion-for-fendi-spring-summer-2027-collection",
-            "status": "timeout"
+            "status": "http_404"
           }
         ]
       },
@@ -260,12 +260,12 @@
             "status": "read"
           },
           {
-            "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
-            "status": "read"
-          },
-          {
             "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
             "status": "unusable"
+          },
+          {
+            "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
+            "status": "read"
           }
         ]
       },
@@ -296,7 +296,7 @@
       {
         "brand": "Miu Miu",
         "status": "editorial_pages_read",
-        "pagesRead": 3,
+        "pagesRead": 4,
         "pagesWithPublicationMetadata": 0,
         "receipts": [
           {
@@ -313,7 +313,7 @@
           },
           {
             "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
-            "status": "timeout"
+            "status": "read"
           }
         ]
       },
@@ -380,11 +380,11 @@
             "status": "read"
           },
           {
-            "url": "https://finance.hermes.com/en/publications/hermes-opens-new-maison-london-166-new-bond-street-reaffirming-its-presence-united",
+            "url": "https://finance.hermes.com/en/publications/hermes-unveils-its-expanded-store-chengdu-taikoo-li-mall-china-contemporary-expression",
             "status": "unusable"
           },
           {
-            "url": "https://finance.hermes.com/en/publications/hermes-unveils-its-expanded-store-chengdu-taikoo-li-mall-china-contemporary-expression",
+            "url": "https://finance.hermes.com/en/publications/hermes-opens-new-maison-london-166-new-bond-street-reaffirming-its-presence-united",
             "status": "unusable"
           }
         ]
@@ -432,8 +432,8 @@
       {
         "brand": "Dolce&Gabbana",
         "status": "editorial_pages_read",
-        "pagesRead": 2,
-        "pagesWithPublicationMetadata": 0,
+        "pagesRead": 3,
+        "pagesWithPublicationMetadata": 1,
         "receipts": [
           {
             "url": "https://world.dolcegabbana.com/",
@@ -445,7 +445,7 @@
           },
           {
             "url": "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
-            "status": "timeout"
+            "status": "read"
           }
         ]
       },
@@ -560,11 +560,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.marni.com/wx/marni-fw24-campaign.html",
+            "url": "https://www.marni.com/wx/erykah-badu-collection.html",
             "status": "read"
           },
           {
-            "url": "https://www.marni.com/wx/erykah-badu-collection.html",
+            "url": "https://www.marni.com/wx/marni-fw24-campaign.html",
             "status": "read"
           }
         ]
@@ -596,11 +596,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.driesvannoten.com/pages/stories-raqib-shaw",
+            "url": "https://www.driesvannoten.com/pages/summer-stories",
             "status": "read"
           },
           {
-            "url": "https://www.driesvannoten.com/pages/summer-stories",
+            "url": "https://www.driesvannoten.com/pages/stories-raqib-shaw",
             "status": "read"
           }
         ]
@@ -693,7 +693,7 @@
           },
           {
             "url": "https://www.lvmh.com/en/undefined/loro-piana-presents-springsummer-2027-collection-at-palazzo-di-brera",
-            "status": "timeout"
+            "status": "http_404"
           }
         ]
       },
@@ -747,8 +747,8 @@
   },
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 47003,
-    "outputTokens": 2210,
-    "searchCalls": 6
+    "inputTokens": 23292,
+    "outputTokens": 1678,
+    "searchCalls": 2
   }
 }
