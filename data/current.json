@@ -1003,15 +1003,15 @@
   },
   "checkStatus": "published",
   "newYorkDesk": {
-    "checkedAt": "2026-10-09T16:43:18.011Z",
+    "checkedAt": "2026-10-10T16:41:50.680Z",
     "updatedAt": "2026-10-09T16:43:18.011Z",
-    "status": "updated",
+    "status": "partial",
     "freshnessPolicy": "rolling-48h-v2",
     "researchWindow": {
-      "since": "2026-10-07T16:42:38.266Z",
-      "until": "2026-10-09T16:42:38.266Z",
-      "fromDate": "2026-10-07",
-      "toDate": "2026-10-09",
+      "since": "2026-10-08T16:41:18.073Z",
+      "until": "2026-10-10T16:41:18.073Z",
+      "fromDate": "2026-10-08",
+      "toDate": "2026-10-10",
       "timezone": "Europe/Rome"
     },
     "lastSuccessfulSearchAt": "2026-09-30T16:40:15.303Z",
@@ -1163,11 +1163,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
+              "url": "https://www.gucci.com/us/en/st/stories/people-events",
               "status": "read"
             },
             {
-              "url": "https://www.gucci.com/us/en/st/stories/people-events",
+              "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
               "status": "read"
             }
           ]
@@ -1275,12 +1275,12 @@
               "status": "read"
             },
             {
-              "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
-              "status": "read"
-            },
-            {
               "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
               "status": "unusable"
+            },
+            {
+              "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
+              "status": "read"
             }
           ]
         },
@@ -1299,11 +1299,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.ysl.com/en-us/rive-droite/calendar/brandon-morris",
+              "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
               "status": "unusable"
             },
             {
-              "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
+              "url": "https://www.ysl.com/en-us/rive-droite/calendar/brandon-morris",
               "status": "unusable"
             }
           ]
@@ -1435,11 +1435,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
+              "url": "https://www.versace.com/us/en/stories/?year=2026",
               "status": "read"
             },
             {
-              "url": "https://www.versace.com/us/en/stories/?year=2026",
+              "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
               "status": "read"
             }
           ]
@@ -1467,7 +1467,7 @@
         {
           "brand": "Givenchy",
           "status": "editorial_pages_read",
-          "pagesRead": 3,
+          "pagesRead": 4,
           "pagesWithPublicationMetadata": 2,
           "receipts": [
             {
@@ -1479,11 +1479,11 @@
               "status": "read"
             },
             {
-              "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
+              "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
               "status": "read"
             },
             {
-              "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
+              "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
               "status": "read"
             }
           ]
@@ -1535,12 +1535,12 @@
               "status": "read"
             },
             {
-              "url": "https://us.maxmara.com/editorial/runway-fall-winter",
-              "status": "read"
-            },
-            {
               "url": "https://us.maxmara.com/editorial/campaign",
               "status": "unusable"
+            },
+            {
+              "url": "https://us.maxmara.com/editorial/runway-fall-winter",
+              "status": "read"
             }
           ]
         },
@@ -1667,11 +1667,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.zimmermann.com/us/collections-archive",
+              "url": "https://www.zimmermann.com/us/runway-spring-rtw-2027",
               "status": "read"
             },
             {
-              "url": "https://www.zimmermann.com/us/runway-spring-rtw-2027",
+              "url": "https://www.zimmermann.com/us/collections-archive",
               "status": "read"
             }
           ]
@@ -1761,34 +1761,48 @@
       "partial": true
     },
     "consultedSources": [
-      "https://www.lvmh.com/en/news-lvmh/precision-and-clarity-in-the-givenchy-summer-2027-womenswear-collection",
-      "https://www.lvmh.com/en/news-lvmh",
-      "https://www.lvmh.com/en/dream-machine",
-      "https://www.lvmh.com/press",
-      "https://www.lvmh.com/en/news-lvmh/personal-messages-for-the-givenchy-spring-summer-2027-mens-collection",
+      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-10-04-miumiu-ss27-fashionshow.html",
+      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-07-24-miumiu-fw26-campaign.html",
       "https://www.versace.com/us/en/stories/?year=2026",
-      "https://www.lvmh.com/en/news-lvmh/intuitive-harmony-for-louis-vuitton-spring-summer-2027",
-      "https://www.versace.com/us/en/stories/advertising-campaigns/?year=2026",
-      "https://www.lvmh.com/en/news-lvmh/lvmh-and-kering-strengthen-the-charter-for-the-respect-and-protection-of-models",
-      "https://www.lvmh.com/en/news-lvmh/unencumbered-elegance-for-celine-spring-summer-2027-show",
-      "https://www.lvmh.com/en/news-lvmh/ease-and-presence-for-loewe-spring-summer-2027",
-      "https://www.lvmh.com/en/news-lvmh/givenchy-unveils-womens-fall-winter-2026-ready-to-wear-collection-by-sarah-burton",
-      "https://urd.lvmh.com/en/urd-2023-va_vdef.pdf",
-      "https://corporate.ralphlauren.com/s/RalphLauren_Corporate/newsroom",
-      "https://www.versace.com/us/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
-      "https://www.lvmh.com/en/news-lvmh?tag=Wines+%26+Spirits",
-      "https://www.lvmh.com/en/news-lvmh?tag=Talents",
-      "https://www.lvmh.com/en/news-lvmh?tag=Other+activities",
+      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-07-30-pradagroup-h126.html",
+      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-04-01-miumiu-leathergoods-campaign-26.html",
+      "https://www.versace.com/us/en/stories/?hashtag=versacehome",
+      "https://www.pradagroup.com/en/news-media/media-library.html",
+      "https://www.versace.com/us/en/stories/?hashtag=atelierversace",
+      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-01-18-prada-fw-2026-menswear-show.html",
+      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-03-05-prada-group-2025-fy-results.html",
+      "https://www.versace.com/us/en/stories/advertising-campaigns/la-vacanza-2026.html",
+      "https://www.pradagroup.com/en/brands/miu-miu.html",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/investors/Q1-2026/Prada-Group-Q1-26-Results-Presentation.pdf",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Aprile/Inglese/MIU-MIU-LETE-2026-CAMPAIGN-PR.pdf",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/investors/Q1-2026/Prada-Group-Q1-26-PR.pdf",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Gennaio/Inglese/MIU-MIU-SS2026-ADV-CAMPAIGN-PR.pdf",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Gennaio/Inglese/MIU-MIU-PRELUDE-PR.pdf",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/Shareholderinformation/2026/inglese/e_Sustainability-Report-2025.pdf",
+      "https://www.versace.com/us/en/stories/advertising-campaigns/?hashtag=versacehome",
       "https://www.versace.com/by/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
-      "https://www.versace.com/pr/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
       "https://www.versace.com/qa/en/stories/advertising-campaigns/versace-fw-2026.html",
+      "https://www.versace.com/eu/en/stories/advertising-campaigns/",
+      "https://www.versace.com/us/es/stories/campanas-publicitarias/",
+      "https://www.versace.com/es/es/stories/?hashtag=metgala",
+      "https://www.versace.com/at/de/stories/werbekampagnen/",
+      "https://www.versace.com/it/it/stories/?hashtag=versacejeanscouture",
+      "https://www.versace.com/ca/fr/stories/campagnes-publicitaires/?hashtag=versacehome",
+      "https://www.versace.com/kr/ko/stories/%EA%B4%91%EA%B3%A0-%EC%BA%A0%ED%8E%98%EC%9D%B8/",
+      "https://www.monclergroup.com/v3/assets/blt61bda6b71f29a239/blt2d3842e923434705/68f7b0691cfb9e2122a69923/WARMER_TOGETHER_PRESS_RELEASE_ENG.pdf",
+      "https://www.monclergroup.com/wp-content/uploads/2018/07/moncler-fifth-avenue-flagship-store.pdf",
+      "https://www.versace.com/lb/ar/stories/?year=2026",
+      "https://www.monclergroup.com/wp-content/uploads/2025/02/moncler-group-fy-2024-financial-results-presentation.pdf",
+      "https://www.monclergroup.com/wp-content/uploads/2025/11/moncler-group-transcript-9m-2025.pdf",
+      "https://www.monclergroup.com/v3/assets/blt61bda6b71f29a239/bltf918207c92bab566/690b64c396cc598759a0dd60/Moncler-Group-Press-Release-9M-2025.pdf",
+      "https://www.versace.com/us/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
       "https://www.pradagroup.com/en/news-media/news-section-archive.html",
       "https://www.pradagroup.com/en/perspectives/special-projects.html",
       "https://www.pradagroup.com/en/sustainability/news-csr.html",
       "https://www.gucci.com/us/en/st/stories",
       "https://www.kering.com/en/press/",
-      "https://www.gucci.com/us/en/st/stories/advertising-campaign",
       "https://www.gucci.com/us/en/st/stories/people-events",
+      "https://www.gucci.com/us/en/st/stories/advertising-campaign",
       "https://www.dior.com/en_us/fashion/news-fashion-shows/folder-news-and-events",
       "https://www.lvmh.com/en/news-lvmh/",
       "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
@@ -1813,8 +1827,8 @@
       "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
       "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
       "https://press.givenchy.com/en/?lang=eng",
-      "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
       "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
+      "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
       "https://museo.ferragamo.com/en/news",
       "https://www.burberryplc.com/news",
       "https://www.monclergroup.com/en/media/press-releases?sub_category_document_type=moncler",
@@ -1833,9 +1847,10 @@
       "https://alanui.it/en-it/collections/womens-clothing-view-all",
       "https://www.zimmermann.com/us/collections",
       "https://www.zimmermann.com/us/immerse",
-      "https://www.zimmermann.com/us/collections-archive",
       "https://www.zimmermann.com/us/runway-spring-rtw-2027",
+      "https://www.zimmermann.com/us/collections-archive",
       "https://us.loropiana.com/en/cm/campaigns/narratives",
+      "https://corporate.ralphlauren.com/s/RalphLauren_Corporate/newsroom",
       "https://www.coach.com/content/courage-to-be-real",
       "https://www.tapestry.com/newsroom/"
     ],

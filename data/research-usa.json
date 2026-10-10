@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-09T16:43:18.009Z",
+  "checkedAt": "2026-10-10T16:41:50.678Z",
   "coverage": {
     "watchlist": [
       "Prada",
@@ -148,11 +148,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
+            "url": "https://www.gucci.com/us/en/st/stories/people-events",
             "status": "read"
           },
           {
-            "url": "https://www.gucci.com/us/en/st/stories/people-events",
+            "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
             "status": "read"
           }
         ]
@@ -260,12 +260,12 @@
             "status": "read"
           },
           {
-            "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
-            "status": "read"
-          },
-          {
             "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
             "status": "unusable"
+          },
+          {
+            "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
+            "status": "read"
           }
         ]
       },
@@ -284,11 +284,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.ysl.com/en-us/rive-droite/calendar/brandon-morris",
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
             "status": "unusable"
           },
           {
-            "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/brandon-morris",
             "status": "unusable"
           }
         ]
@@ -420,11 +420,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
+            "url": "https://www.versace.com/us/en/stories/?year=2026",
             "status": "read"
           },
           {
-            "url": "https://www.versace.com/us/en/stories/?year=2026",
+            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
             "status": "read"
           }
         ]
@@ -452,7 +452,7 @@
       {
         "brand": "Givenchy",
         "status": "editorial_pages_read",
-        "pagesRead": 3,
+        "pagesRead": 4,
         "pagesWithPublicationMetadata": 2,
         "receipts": [
           {
@@ -464,11 +464,11 @@
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
+            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
+            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
             "status": "read"
           }
         ]
@@ -520,12 +520,12 @@
             "status": "read"
           },
           {
-            "url": "https://us.maxmara.com/editorial/runway-fall-winter",
-            "status": "read"
-          },
-          {
             "url": "https://us.maxmara.com/editorial/campaign",
             "status": "unusable"
+          },
+          {
+            "url": "https://us.maxmara.com/editorial/runway-fall-winter",
+            "status": "read"
           }
         ]
       },
@@ -652,11 +652,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.zimmermann.com/us/collections-archive",
+            "url": "https://www.zimmermann.com/us/runway-spring-rtw-2027",
             "status": "read"
           },
           {
-            "url": "https://www.zimmermann.com/us/runway-spring-rtw-2027",
+            "url": "https://www.zimmermann.com/us/collections-archive",
             "status": "read"
           }
         ]
@@ -747,8 +747,8 @@
   },
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 40031,
-    "outputTokens": 1508,
-    "searchCalls": 5
+    "inputTokens": 35266,
+    "outputTokens": 926,
+    "searchCalls": 3
   }
 }
