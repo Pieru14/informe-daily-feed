@@ -1,15 +1,14 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-10T08:41:51.456Z",
-  "result": "published",
+  "checkedAt": "2026-10-11T08:42:28.144Z",
+  "result": "partial",
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 23292,
-    "outputTokens": 1678,
-    "searchCalls": 2
+    "inputTokens": 40644,
+    "outputTokens": 1465,
+    "searchCalls": 4
   },
-  "localDate": "2026-10-10",
-  "editionId": "2026-10-10-20",
-  "consultedOfficialSources": 29,
-  "message": "Nuova edizione verificata e pubblicata."
+  "localDate": "2026-10-11",
+  "consultedOfficialSources": 80,
+  "message": "Nella finestra 2026-10-09 — 2026-10-11, dopo ricerca sui domini ufficiali autorizzati e controllo delle piste recenti, non emerge una novità moda/comunicazione distinta, datata in fonte e non già pubblicata. I risultati verificabili trovati erano fuori finestra, già noti, finanziari/corporate generici o privi di una data di pubblicazione articolo utilizzabile."
 }

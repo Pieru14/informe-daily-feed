@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-10T08:41:51.428Z",
+  "checkedAt": "2026-10-11T08:42:28.141Z",
   "coverage": {
     "watchlist": [
       "Prada",
@@ -124,11 +124,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
+            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
+            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
             "status": "read"
           }
         ]
@@ -148,11 +148,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
+            "url": "https://www.gucci.com/us/en/st/stories/people-events",
             "status": "read"
           },
           {
-            "url": "https://www.gucci.com/us/en/st/stories/people-events",
+            "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
             "status": "read"
           }
         ]
@@ -172,11 +172,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
             "status": "read"
           },
           {
-            "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
             "status": "read"
           }
         ]
@@ -192,11 +192,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
+            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
             "status": "read"
           },
           {
-            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
+            "url": "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
             "status": "read"
           }
         ]
@@ -216,11 +216,11 @@
             "status": "read"
           },
           {
-            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
+            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
             "status": "http_403"
           },
           {
-            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
+            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
             "status": "http_403"
           }
         ]
@@ -284,11 +284,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/brandon-morris",
             "status": "unusable"
           },
           {
-            "url": "https://www.ysl.com/en-us/rive-droite/calendar/brandon-morris",
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
             "status": "unusable"
           }
         ]
@@ -420,11 +420,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.versace.com/us/en/stories/?year=2026",
+            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
             "status": "read"
           },
           {
-            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
+            "url": "https://www.versace.com/us/en/stories/?year=2026",
             "status": "read"
           }
         ]
@@ -464,11 +464,11 @@
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
+            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
+            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
             "status": "read"
           }
         ]
@@ -560,11 +560,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.marni.com/wx/erykah-badu-collection.html",
+            "url": "https://www.marni.com/wx/marni-fw24-campaign.html",
             "status": "read"
           },
           {
-            "url": "https://www.marni.com/wx/marni-fw24-campaign.html",
+            "url": "https://www.marni.com/wx/erykah-badu-collection.html",
             "status": "read"
           }
         ]
@@ -616,11 +616,11 @@
             "status": "read"
           },
           {
-            "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
+            "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
             "status": "read"
           },
           {
-            "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
+            "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
             "status": "read"
           }
         ]
@@ -747,8 +747,8 @@
   },
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 23292,
-    "outputTokens": 1678,
-    "searchCalls": 2
+    "inputTokens": 40644,
+    "outputTokens": 1465,
+    "searchCalls": 4
   }
 }
