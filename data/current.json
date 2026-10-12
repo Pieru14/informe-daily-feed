@@ -241,18 +241,18 @@
     ]
   },
   "dailyNote": {
-    "date": "2026-10-11",
-    "createdAt": "2026-10-11T08:41:51.768Z",
-    "text": "Lascia che oggi il tuo sguardo raccolga una sola traccia: una piega, un colore, un silenzio. Anche il riposo può preparare una forma più libera."
+    "date": "2026-10-12",
+    "createdAt": "2026-10-12T08:47:04.357Z",
+    "text": "Segui oggi un dettaglio piccolo e sincero: una cucitura, una carta, una luce sul tavolo. Il tuo passo vale anche quando resta quieto."
   },
-  "checkedAt": "2026-10-11T08:42:28.143Z",
-  "checkedSourceCount": 80,
+  "checkedAt": "2026-10-12T08:47:41.338Z",
+  "checkedSourceCount": 99,
   "freshnessPolicy": "rolling-48h-v2",
   "researchWindow": {
-    "since": "2026-10-09T08:41:51.768Z",
-    "until": "2026-10-11T08:41:51.768Z",
-    "fromDate": "2026-10-09",
-    "toDate": "2026-10-11",
+    "since": "2026-10-10T08:47:04.357Z",
+    "until": "2026-10-12T08:47:04.357Z",
+    "fromDate": "2026-10-10",
+    "toDate": "2026-10-12",
     "timezone": "Europe/Rome"
   },
   "lastSuccessfulSearchAt": "2026-09-30T08:41:20.424Z",
@@ -380,11 +380,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
+            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
+            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
             "status": "read"
           }
         ]
@@ -404,11 +404,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.gucci.com/us/en/st/stories/people-events",
+            "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
             "status": "read"
           },
           {
-            "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
+            "url": "https://www.gucci.com/us/en/st/stories/people-events",
             "status": "read"
           }
         ]
@@ -428,11 +428,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
             "status": "read"
           },
           {
-            "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
             "status": "read"
           }
         ]
@@ -448,11 +448,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
+            "url": "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
             "status": "read"
           },
           {
-            "url": "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
+            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
             "status": "read"
           }
         ]
@@ -460,7 +460,7 @@
       {
         "brand": "Louis Vuitton",
         "status": "editorial_pages_read",
-        "pagesRead": 1,
+        "pagesRead": 2,
         "pagesWithPublicationMetadata": 0,
         "receipts": [
           {
@@ -472,11 +472,11 @@
             "status": "read"
           },
           {
-            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
+            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
             "status": "http_403"
           },
           {
-            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
+            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
             "status": "http_403"
           }
         ]
@@ -496,12 +496,12 @@
             "status": "read"
           },
           {
-            "url": "https://www.fendi.com/us-en/cm/fashion-shows/fendi-couture-fall-winter-2026-2027-collection",
-            "status": "read"
-          },
-          {
             "url": "https://www.lvmh.com/en/undefined/a-fusion-of-bodies-designs-and-emotion-for-fendi-spring-summer-2027-collection",
             "status": "http_404"
+          },
+          {
+            "url": "https://www.fendi.com/us-en/cm/fashion-shows/fendi-couture-fall-winter-2026-2027-collection",
+            "status": "read"
           }
         ]
       },
@@ -516,12 +516,12 @@
             "status": "read"
           },
           {
-            "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
-            "status": "unusable"
-          },
-          {
             "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
             "status": "read"
+          },
+          {
+            "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
+            "status": "unusable"
           }
         ]
       },
@@ -540,11 +540,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.ysl.com/en-us/rive-droite/calendar/brandon-morris",
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
             "status": "unusable"
           },
           {
-            "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/brandon-morris",
             "status": "unusable"
           }
         ]
@@ -636,11 +636,11 @@
             "status": "read"
           },
           {
-            "url": "https://finance.hermes.com/en/publications/hermes-unveils-its-expanded-store-chengdu-taikoo-li-mall-china-contemporary-expression",
+            "url": "https://finance.hermes.com/en/publications/hermes-opens-new-maison-london-166-new-bond-street-reaffirming-its-presence-united",
             "status": "unusable"
           },
           {
-            "url": "https://finance.hermes.com/en/publications/hermes-opens-new-maison-london-166-new-bond-street-reaffirming-its-presence-united",
+            "url": "https://finance.hermes.com/en/publications/hermes-unveils-its-expanded-store-chengdu-taikoo-li-mall-china-contemporary-expression",
             "status": "unusable"
           }
         ]
@@ -676,11 +676,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
+            "url": "https://www.versace.com/us/en/stories/?year=2026",
             "status": "read"
           },
           {
-            "url": "https://www.versace.com/us/en/stories/?year=2026",
+            "url": "https://www.versace.com/us/en/stories/advertising-campaigns/versace-watches-fw-2026.html",
             "status": "read"
           }
         ]
@@ -696,11 +696,11 @@
             "status": "read"
           },
           {
-            "url": "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
+            "url": "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
             "status": "read"
           },
           {
-            "url": "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
+            "url": "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
             "status": "read"
           }
         ]
@@ -720,11 +720,11 @@
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
+            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
+            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
             "status": "read"
           }
         ]
@@ -852,11 +852,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.driesvannoten.com/pages/summer-stories",
+            "url": "https://www.driesvannoten.com/pages/stories-raqib-shaw",
             "status": "read"
           },
           {
-            "url": "https://www.driesvannoten.com/pages/stories-raqib-shaw",
+            "url": "https://www.driesvannoten.com/pages/summer-stories",
             "status": "read"
           }
         ]
@@ -908,11 +908,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.zimmermann.com/us/collections-archive",
+            "url": "https://www.zimmermann.com/us/runway-spring-rtw-2027",
             "status": "read"
           },
           {
-            "url": "https://www.zimmermann.com/us/runway-spring-rtw-2027",
+            "url": "https://www.zimmermann.com/us/collections-archive",
             "status": "read"
           }
         ]
@@ -949,7 +949,7 @@
           },
           {
             "url": "https://www.lvmh.com/en/undefined/loro-piana-presents-springsummer-2027-collection-at-palazzo-di-brera",
-            "status": "http_404"
+            "status": "timeout"
           }
         ]
       },

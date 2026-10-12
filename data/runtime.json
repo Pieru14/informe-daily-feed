@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-11T08:42:28.144Z",
+  "checkedAt": "2026-10-12T08:47:41.339Z",
   "result": "partial",
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 40644,
-    "outputTokens": 1465,
-    "searchCalls": 4
+    "inputTokens": 31789,
+    "outputTokens": 701,
+    "searchCalls": 3
   },
-  "localDate": "2026-10-11",
-  "consultedOfficialSources": 80,
-  "message": "Nella finestra 2026-10-09 — 2026-10-11, dopo ricerca sui domini ufficiali autorizzati e controllo delle piste recenti, non emerge una novità moda/comunicazione distinta, datata in fonte e non già pubblicata. I risultati verificabili trovati erano fuori finestra, già noti, finanziari/corporate generici o privi di una data di pubblicazione articolo utilizzabile."
+  "localDate": "2026-10-12",
+  "consultedOfficialSources": 99,
+  "message": "Nella finestra 2026-10-10 — 2026-10-12 non sono emerse nuove pubblicazioni ufficiali verificabili e utili per moda/comunicazione dai domini autorizzati consultati. I risultati recenti trovati erano fuori finestra, già noti, finanziari/corporate, job posting, store locator o privi di una data di pubblicazione dell’articolo specifico."
 }
