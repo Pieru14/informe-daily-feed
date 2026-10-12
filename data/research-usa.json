@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-11T16:42:22.335Z",
+  "checkedAt": "2026-10-12T16:43:06.510Z",
   "coverage": {
     "watchlist": [
       "Prada",
@@ -43,7 +43,6 @@
       "Chanel",
       "Louis Vuitton",
       "Fendi",
-      "Valentino",
       "Saint Laurent",
       "Miu Miu",
       "Loewe",
@@ -68,6 +67,7 @@
       "Coach"
     ],
     "unverifiedBrands": [
+      "Valentino",
       "Pucci",
       "La DoubleJ",
       "Brunello Cucinelli",
@@ -124,11 +124,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
+            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
+            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
             "status": "read"
           }
         ]
@@ -148,11 +148,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.gucci.com/us/en/st/stories/people-events",
+            "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
             "status": "read"
           },
           {
-            "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
+            "url": "https://www.gucci.com/us/en/st/stories/people-events",
             "status": "read"
           }
         ]
@@ -172,11 +172,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
             "status": "read"
           },
           {
-            "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
+            "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
             "status": "read"
           }
         ]
@@ -192,11 +192,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
+            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
             "status": "read"
           },
           {
-            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
+            "url": "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
             "status": "read"
           }
         ]
@@ -204,7 +204,7 @@
       {
         "brand": "Louis Vuitton",
         "status": "editorial_pages_read",
-        "pagesRead": 1,
+        "pagesRead": 2,
         "pagesWithPublicationMetadata": 0,
         "receipts": [
           {
@@ -245,27 +245,19 @@
           },
           {
             "url": "https://www.lvmh.com/en/undefined/a-fusion-of-bodies-designs-and-emotion-for-fendi-spring-summer-2027-collection",
-            "status": "timeout"
+            "status": "http_404"
           }
         ]
       },
       {
         "brand": "Valentino",
-        "status": "editorial_pages_read",
-        "pagesRead": 2,
+        "status": "unavailable",
+        "pagesRead": 0,
         "pagesWithPublicationMetadata": 0,
         "receipts": [
           {
             "url": "https://www.valentino.com/en-us/v-universe/valentino-diary/news",
-            "status": "read"
-          },
-          {
-            "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
-            "status": "read"
-          },
-          {
-            "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
-            "status": "unusable"
+            "status": "timeout"
           }
         ]
       },
@@ -308,11 +300,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/new-balance-x-miu-miu-with-coco-gauff-2026.html",
+            "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
             "status": "read"
           },
           {
-            "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
+            "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/new-balance-x-miu-miu-with-coco-gauff-2026.html",
             "status": "read"
           }
         ]
@@ -616,11 +608,11 @@
             "status": "read"
           },
           {
-            "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
+            "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
             "status": "read"
           },
           {
-            "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
+            "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
             "status": "read"
           }
         ]
@@ -693,7 +685,7 @@
           },
           {
             "url": "https://www.lvmh.com/en/undefined/loro-piana-presents-springsummer-2027-collection-at-palazzo-di-brera",
-            "status": "timeout"
+            "status": "http_404"
           }
         ]
       },
@@ -747,8 +739,8 @@
   },
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 33323,
-    "outputTokens": 576,
-    "searchCalls": 3
+    "inputTokens": 20903,
+    "outputTokens": 719,
+    "searchCalls": 4
   }
 }

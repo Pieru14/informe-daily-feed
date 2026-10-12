@@ -1003,15 +1003,15 @@
   },
   "checkStatus": "partial",
   "newYorkDesk": {
-    "checkedAt": "2026-10-11T16:42:22.337Z",
+    "checkedAt": "2026-10-12T16:43:06.512Z",
     "updatedAt": "2026-10-09T16:43:18.011Z",
     "status": "partial",
     "freshnessPolicy": "rolling-48h-v2",
     "researchWindow": {
-      "since": "2026-10-09T16:41:45.864Z",
-      "until": "2026-10-11T16:41:45.864Z",
-      "fromDate": "2026-10-09",
-      "toDate": "2026-10-11",
+      "since": "2026-10-10T16:42:32.329Z",
+      "until": "2026-10-12T16:42:32.329Z",
+      "fromDate": "2026-10-10",
+      "toDate": "2026-10-12",
       "timezone": "Europe/Rome"
     },
     "lastSuccessfulSearchAt": "2026-09-30T16:40:15.303Z",
@@ -1058,7 +1058,6 @@
         "Chanel",
         "Louis Vuitton",
         "Fendi",
-        "Valentino",
         "Saint Laurent",
         "Miu Miu",
         "Loewe",
@@ -1083,6 +1082,7 @@
         "Coach"
       ],
       "unverifiedBrands": [
+        "Valentino",
         "Pucci",
         "La DoubleJ",
         "Brunello Cucinelli",
@@ -1139,11 +1139,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
+              "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
               "status": "read"
             },
             {
-              "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
+              "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
               "status": "read"
             }
           ]
@@ -1163,11 +1163,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.gucci.com/us/en/st/stories/people-events",
+              "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
               "status": "read"
             },
             {
-              "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
+              "url": "https://www.gucci.com/us/en/st/stories/people-events",
               "status": "read"
             }
           ]
@@ -1187,11 +1187,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
+              "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
               "status": "read"
             },
             {
-              "url": "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
+              "url": "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
               "status": "read"
             }
           ]
@@ -1207,11 +1207,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
+              "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
               "status": "read"
             },
             {
-              "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
+              "url": "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
               "status": "read"
             }
           ]
@@ -1219,7 +1219,7 @@
         {
           "brand": "Louis Vuitton",
           "status": "editorial_pages_read",
-          "pagesRead": 1,
+          "pagesRead": 2,
           "pagesWithPublicationMetadata": 0,
           "receipts": [
             {
@@ -1260,27 +1260,19 @@
             },
             {
               "url": "https://www.lvmh.com/en/undefined/a-fusion-of-bodies-designs-and-emotion-for-fendi-spring-summer-2027-collection",
-              "status": "timeout"
+              "status": "http_404"
             }
           ]
         },
         {
           "brand": "Valentino",
-          "status": "editorial_pages_read",
-          "pagesRead": 2,
+          "status": "unavailable",
+          "pagesRead": 0,
           "pagesWithPublicationMetadata": 0,
           "receipts": [
             {
               "url": "https://www.valentino.com/en-us/v-universe/valentino-diary/news",
-              "status": "read"
-            },
-            {
-              "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
-              "status": "read"
-            },
-            {
-              "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
-              "status": "unusable"
+              "status": "timeout"
             }
           ]
         },
@@ -1323,11 +1315,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/new-balance-x-miu-miu-with-coco-gauff-2026.html",
+              "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
               "status": "read"
             },
             {
-              "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
+              "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/new-balance-x-miu-miu-with-coco-gauff-2026.html",
               "status": "read"
             }
           ]
@@ -1631,11 +1623,11 @@
               "status": "read"
             },
             {
-              "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
+              "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
               "status": "read"
             },
             {
-              "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
+              "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
               "status": "read"
             }
           ]
@@ -1708,7 +1700,7 @@
             },
             {
               "url": "https://www.lvmh.com/en/undefined/loro-piana-presents-springsummer-2027-collection-at-palazzo-di-brera",
-              "status": "timeout"
+              "status": "http_404"
             }
           ]
         },
@@ -1761,64 +1753,46 @@
       "partial": true
     },
     "consultedSources": [
-      "https://www.kering.com/en/press/",
-      "https://www.pradagroup.com/en/news-media/press-releases-documents.html",
-      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-07-24-miumiu-fw26-campaign.html",
-      "https://www.kering.com/en/press/resources/logo-library/",
-      "https://www.lvmh.com/en/news-lvmh/2026-lvmh-prize-for-young-fashion-designers-13th-edition-the-winners-julie-kegels-lvmh-prize-lii-karl-lagerfeld-prize-yoshita-1967-savoir-faire-prize",
-      "https://www.kering.com/fr/presse/",
-      "https://www.lvmh.com/en/news-lvmh/super-nature-for-louis-vuitton-womens-fall-winter-2026-collection",
-      "https://www.kering.com/en/houses/fashion-and-leather-goods/",
-      "https://www.lvmh.com/en/news-lvmh/this-is-more-than-a-t-shirt-a-symbol-of-lvmhs-commitment-to-pride-month-2026-designed-by-louis-vuitton",
-      "https://www.kering.com/en/news/press-release/",
-      "https://www.lvmh.com/press",
-      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-04-01-miumiu-leathergoods-campaign-26.html",
-      "https://www.kering.com/api/download-file/?path=KERING_BDC_2026_EN_12b2ea9527.pdf",
-      "https://www.kering.com/api/download-file/?path=Kering_Press_Release_2026_First_Quarter_Revenue_04_14_26_71ec2db5b6.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/investors/Q1-2026/Prada-Group-Q1-26-Results-Presentation.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/Shareholderinformation/2026/inglese/e_Annual_Report_2025.pdf",
-      "https://www.kering.com/api/download-file/?path=Kering_Press_Release_Annual_Results_2024_110225_9cba4c9340.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/Shareholderinformation/2026/inglese/Q1-2026/e-Announcement_of_the_Consolidated_revenues_for_the_period_ended_March_31_2026.pdf",
-      "https://www.monclergroup.com/en/media/press-releases?sub_category_document_type=moncler",
-      "https://investor.ralphlauren.com/news-releases/news-release-details/ralph-lauren-corporation-declares-quarterly-dividend-49",
-      "https://investor.ralphlauren.com/news-releases",
-      "https://www.coach.com/content/courage-to-be-real",
+      "https://www.pradagroup.com/en.html",
+      "https://www.prada.com/ww/en/p/timecapsule-printed-cotton-shirt/UCN608_165W_F0T38_S_OOO",
+      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-09-17-ocv-cagliari-lunarossa.html",
+      "https://www.prada.com/th/en/pradasphere/special-projects/2026/prada-essence-popup.html",
+      "https://www.prada.com/sa/ar/pradasphere/special-projects/2026/prada-essence-popup.html",
+      "https://www.prada.com/at/de/pradasphere/special-projects/2026/prada-timecapsule.html",
       "https://www.chanel.com/puls-img/1779118002743-fy25-results-press-release-en-final.pdf",
-      "https://www.ralphlauren.com/runway",
-      "https://www.burberryplc.com/",
-      "https://www.chanel.com/my/storelocator/store/chanel-san-diego-132759/",
-      "https://www.ralphlauren.com/discover",
-      "https://www.chanel.com/us/sitemap/",
-      "https://www.coach.com/products/tabby-shoulder-bag-26-inspired-by-elle-fanning/CGV20%20B4LJN.html",
-      "https://www.coach.com/shop/shop-the-campaign?page=2&startFrom=2&wbraid=CloKCQjw5vLVBhD7ARJJAH46dRuBd0-wrN4iJCmUa07WqWhhF-khO3uen6vGzDykzvDgSCeCjsTy802eXB1bzkAswGwLrNo-Upt-LKAl4uBWFaB-c6H7YRoC5ok",
+      "https://www.pradagroup.com/ja/investors/investor-relations.html",
       "https://www.chanel.com/ie/fashion/services/boutique-san-diego/",
-      "https://www.chanel.com/qa/fashion/services/boutique-san-diego/",
-      "https://investor.ralphlauren.com/node/21961/pdf",
-      "https://www.burberryplc.com/content/dam/burberryplc/corporate/oar/oar-2024-2025/burberry_annual_report_and_accounts_2024_25_accessibility.pdf",
-      "https://assets.coach.com/Coach_Foundation_Social_Impact_Report.pdf",
-      "https://pressroom.chanel.com/sites/8/chanel_le19m-tokyo_vernissage_en.pdf",
+      "https://www.pradagroup.com/en.html%29_",
+      "https://www.chanel.com/sg/storelocator/store/chanel-san-diego-132759/",
+      "https://www.prada.com/us/en.html?ranEAID=QFGLnEolOWg&ranMID=47117&ranSiteID=QFGLnEolOWg-jDFDJ6cRZn2C1Q5Uy5lycQ",
+      "https://www.chanel.com/mx/moda/servicios/boutique-san-diego/",
+      "https://www.dior.com/couture/en_int/folder-media/folder-fichiers/folder-dior-game/8-differences",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/Shareholderinformation/2024/Inglese/e-Date_of_Board_Meeting.pdf",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/investors/9M-2024/24.10.30_Q3-24_Results_Presentation.pdf",
+      "https://www.kering.com/api/download-file/?path=Kering_Press_release_Q3_revenue_2025_22_10_2025_589da209ff.pdf",
+      "https://wwws.dior.com/couture/en_us/folder-media/folder-fichiers/folder-rapport-de-vision/rapport-de-vision-eng",
+      "https://world.dolcegabbana.com/beauty/dolce-gabbana-beauty-bold-look-eyeshadow-palette-2026",
       "https://www.pradagroup.com/en/news-media/news-section-archive.html",
-      "https://www.pradagroup.com/en/perspectives/special-projects.html",
       "https://www.pradagroup.com/en/sustainability/news-csr.html",
+      "https://www.pradagroup.com/en/perspectives/special-projects.html",
       "https://www.gucci.com/us/en/st/stories",
-      "https://www.gucci.com/us/en/st/stories/people-events",
+      "https://www.kering.com/en/press/",
       "https://www.gucci.com/us/en/st/stories/advertising-campaign",
+      "https://www.gucci.com/us/en/st/stories/people-events",
       "https://www.dior.com/en_us/fashion/news-fashion-shows/folder-news-and-events",
       "https://www.lvmh.com/en/news-lvmh/",
-      "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
       "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
+      "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
       "https://www.chanel.com/us/fashion/",
-      "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
       "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
+      "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
       "https://us.louisvuitton.com/eng-us/magazine",
       "https://www.fendi.com/us-en/inside-fendi",
       "https://www.fendi.com/us-en/cm/fashion-shows/fendi-couture-fall-winter-2026-2027-collection",
-      "https://www.valentino.com/en-us/v-universe/valentino-diary/news",
-      "https://www.valentino.com/en-us/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
       "https://www.ysl.com/en-us/rive-droite/calendar/yearly",
       "https://www.miumiu.com/us/en/miumiu-club.html",
-      "https://www.miumiu.com/us/en/miumiu-club/special-projects/new-balance-x-miu-miu-with-coco-gauff-2026.html",
       "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
+      "https://www.miumiu.com/us/en/miumiu-club/special-projects/new-balance-x-miu-miu-with-coco-gauff-2026.html",
       "https://www.kering.com/en/news/romain-spitzer-appointed-chief-executive-officer-of-bottega-veneta/",
       "https://finance.hermes.com/en/press-releases-and-news/",
       "https://armanivalues.com/news-archive/",
@@ -1833,6 +1807,7 @@
       "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
       "https://museo.ferragamo.com/en/news",
       "https://www.burberryplc.com/news",
+      "https://www.monclergroup.com/en/media/press-releases?sub_category_document_type=moncler",
       "https://us.maxmara.com/mm-world",
       "https://us.maxmara.com/editorial/runway-fall-winter",
       "https://www.etro.com/it-it/advertising-campaign.html",
@@ -1844,14 +1819,15 @@
       "https://www.driesvannoten.com/pages/stories-raqib-shaw",
       "https://www.driesvannoten.com/pages/summer-stories",
       "https://alanui.it/en-it",
-      "https://alanui.it/en-it/collections/womens-clothing-view-all",
       "https://alanui.it/en-it/collections/mens-clothing-view-all",
+      "https://alanui.it/en-it/collections/womens-clothing-view-all",
       "https://www.zimmermann.com/us/collections",
       "https://www.zimmermann.com/us/immerse",
       "https://www.zimmermann.com/us/runway-spring-rtw-2027",
       "https://www.zimmermann.com/us/collections-archive",
       "https://us.loropiana.com/en/cm/campaigns/narratives",
       "https://corporate.ralphlauren.com/s/RalphLauren_Corporate/newsroom",
+      "https://www.coach.com/content/courage-to-be-real",
       "https://www.tapestry.com/newsroom/"
     ],
     "updates": [
