@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "editionId": "2026-10-10-20",
-  "updatedAt": "2026-10-10T08:41:08.174Z",
+  "editionId": "2026-10-13-21",
+  "updatedAt": "2026-10-13T08:46:33.353Z",
   "sourceCoverage": {
     "configuredBrands": 33,
     "consultedSources": [
@@ -11,6 +11,8 @@
       "finance.hermes.com",
       "museo.ferragamo.com",
       "press.givenchy.com",
+      "pressroom.chanel.com",
+      "urd.lvmh.com",
       "us.loropiana.com",
       "us.louisvuitton.com",
       "us.maxmara.com",
@@ -27,7 +29,9 @@
       "www.lvmh.com",
       "www.marni.com",
       "www.miumiu.com",
+      "www.moncler.com",
       "www.monclergroup.com",
+      "www.prada.com",
       "www.pradagroup.com",
       "www.tapestry.com",
       "www.valentino.com",
@@ -72,6 +76,7 @@
       "Coach"
     ],
     "consultedBrands": [
+      "Prada",
       "Gucci",
       "Dior",
       "Chanel",
@@ -86,6 +91,7 @@
       "Givenchy",
       "Ferragamo",
       "Burberry",
+      "Moncler",
       "Max Mara",
       "Etro",
       "Marni",
@@ -97,12 +103,10 @@
       "Coach"
     ],
     "unverifiedBrands": [
-      "Prada",
       "Loewe",
       "Balenciaga",
       "Bottega Veneta",
       "Armani",
-      "Moncler",
       "Pucci",
       "La DoubleJ",
       "Brunello Cucinelli",
@@ -111,148 +115,148 @@
     "caveat": "Watchlist ampia di maison: fonti ufficiali emerse nella ricerca, non copertura garantita di ogni pubblicazione. Le date sono quelle delle fonti."
   },
   "brandPulse": {
-    "refreshedAt": "10 ottobre 2026 · edizione 20",
+    "refreshedAt": "13 ottobre 2026 · edizione 21",
     "updates": [
       {
-        "id": "louis-vuitton-louis-vuitton-costruisce-la-spring-summer-2027-intorno-a-ergonomia-viagg-2026-10-10-01",
-        "brand": "Louis Vuitton",
-        "publishedOn": "2026-10-09",
+        "id": "loro-piana-loro-piana-apre-il-racconto-del-knitwear-a-ghemme-per-les-journees-parti-2026-10-13-01",
+        "brand": "Loro Piana",
+        "publishedOn": "2026-10-12",
         "publishedAt": null,
-        "publicationEvidence": "“Published on 10.09.2026 • 2 MINUTES”, in testa all’articolo LVMH.",
-        "addedAt": "2026-10-10T08:41:08.174Z",
-        "geography": "Globale",
-        "geographyEvidence": "La fonte LVMH descrive la collezione Spring-Summer 2027 e la sfilata alla Cour carrée del Louvre; non documenta un’attivazione italiana.",
-        "label": "sfilata / collezione · Spring-Summer 2027",
-        "title": "Louis Vuitton costruisce la Spring-Summer 2027 intorno a ergonomia, viaggio e leggerezza",
-        "perspective": "Fatto: LVMH pubblica il 9 ottobre 2026 un articolo sulla collezione Louis Vuitton Spring-Summer 2027, presentata alla Cour carrée del Louvre, descrivendo abiti ergonomici, fluidità, superfici in tensione, chiffon compositi, sete e cashmere da foulard, tailoring ridotto e maglieria che delinea il corpo. Comunicazione: il lessico visivo è quello della leggerezza tecnica: piuma, pallone, seconda pelle, città sospesa, gesto amplificato. Il formato è un articolo editoriale ufficiale con gallery, più vicino a un racconto di progettazione che a una semplice cronaca di sfilata. Da osservare: la collezione usa il movimento come criterio narrativo; nel confronto tra maison, è interessante vedere come,",
+        "publicationEvidence": "In alto: “Published on 10.12.2026 • 8 MINUTES”.",
+        "addedAt": "2026-10-13T08:46:33.353Z",
+        "geography": "Italia",
+        "geographyEvidence": "La fonte indica Ghemme e il Knitwear Center of Excellence Loro Piana.",
+        "label": "craft / iniziativa culturale · Les Journées Particulières, 16–18 ottobre 2026",
+        "title": "Loro Piana apre il racconto del knitwear a Ghemme per Les Journées Particulières",
+        "perspective": "Fatto: LVMH pubblica un approfondimento sulle persone e i saperi al centro di Les Journées Particulières; per Loro Piana, il focus è il Knitwear Center of Excellence di Ghemme, dedicato ai tessuti a maglia, con attenzione al linking e alla trasmissione del mestiere. Comunicazione: il racconto sposta il lusso dalla superficie finita al gesto tecnico — unire, dare forma, prototipare — usando il centro produttivo come dispositivo narrativo. Da osservare: per l’Italia, la maglieria diventa contenuto culturale e non solo categoria merceologica; il confronto utile è con i brand che raccontano l’artigianato attraverso luoghi, mani e processi anziché solo attraverso immagini di campagna.",
         "source": "LVMH",
-        "url": "https://www.lvmh.com/en/news-lvmh/intuitive-harmony-for-louis-vuitton-spring-summer-2027"
+        "url": "https://www.lvmh.com/en/news-lvmh/les-journees-particulieres-meeting-the-people-who-bring-savoir-faire-to-life"
       }
     ]
   },
   "dailyEdition": {
-    "refreshedAt": "10 ottobre 2026 · edizione 20",
+    "refreshedAt": "13 ottobre 2026 · edizione 21",
     "focus": {
-      "id": "focus-il-corpo-come-sistema-di-misura-2026-10-10-20",
-      "eyebrow": "THE DAILY FILE / 020",
-      "title": "Il corpo come sistema di misura",
-      "body": "Il segnale più forte non è la leggerezza come effetto romantico, ma come metodo: togliere strati, ridurre rigidità, far coincidere materia e funzione. Per un radar creativo italiano, la lezione è concreta: quando il capo sembra semplice, può nascondere una topografia complessa. La comunicazione lavora bene perché traduce tecnica e sensazione nello stesso vocabolario: seconda pelle, tensione, gesto, viaggio.",
+      "id": "focus-il-gesto-prima-dell-immagine-2026-10-13-21",
+      "eyebrow": "THE DAILY FILE / 021",
+      "title": "Il gesto prima dell’immagine",
+      "body": "La notizia più interessante non è l’apertura in sé, ma il cambio di scala: Loro Piana porta l’attenzione sul punto di congiunzione, sul momento in cui parti diverse di un capo diventano volume. È una comunicazione del lusso molto concreta: meno aura astratta, più tempo, precisione e trasmissione. Per una giovane maison, il segnale è utile perché mostra come un processo tecnico possa diventare racconto visivo senza perdere sobrietà.",
       "source": "LVMH",
-      "url": "https://www.lvmh.com/en/news-lvmh/intuitive-harmony-for-louis-vuitton-spring-summer-2027"
+      "url": "https://www.lvmh.com/en/news-lvmh/les-journees-particulieres-meeting-the-people-who-bring-savoir-faire-to-life"
     },
     "directions": [
       {
-        "id": "direction-topografie-leggere-2026-10-10-01",
+        "id": "direction-micro-capitoli-di-lavorazione-2026-10-13-01",
         "tone": "blue",
-        "category": "silhouette",
-        "title": "Topografie leggere",
-        "body": "Disegna capi che sembrano sottratti più che aggiunti: linee continue, strati interni assenti, bordi che seguono il movimento. La complessità può restare nascosta nella costruzione."
+        "category": "contenuto editoriale",
+        "title": "Micro-capitoli di lavorazione",
+        "body": "Costruisci un racconto in tre passaggi: materia grezza, gesto ripetuto, forma finale. Evita il tono dimostrativo: lascia che siano ritmo, mani e dettagli ravvicinati a spiegare il valore."
       },
       {
-        "id": "direction-citta-sospesa-2026-10-10-02",
+        "id": "direction-tenerezza-tecnica-2026-10-13-02",
         "tone": "pink",
-        "category": "immaginario",
-        "title": "Città sospesa",
-        "body": "Lavora su figure ferme dentro uno spazio urbano in pausa: volumi morbidi, posture leggere, ombre nette. Il contrasto tra architettura e corpo rende visibile il gesto."
+        "category": "visual direction",
+        "title": "Tenerezza tecnica",
+        "body": "Tratta la maglia come una superficie viva: bordi, punti, giunzioni e piccole irregolarità possono diventare immagini emotive, non solo prove di abilità."
       },
       {
-        "id": "direction-seconda-pelle-tecnica-2026-10-10-03",
+        "id": "direction-atelier-come-soglia-2026-10-13-03",
         "tone": "lime",
-        "category": "materiale",
-        "title": "Seconda pelle tecnica",
-        "body": "Accosta materiali eterei e superfici più ancoranti: chiffon, maglia, pelle sottile, scarpe solide. Il dialogo tra peso e appoggio può diventare racconto, non solo styling."
+        "category": "retail / cultura",
+        "title": "Atelier come soglia",
+        "body": "Se mostri uno spazio produttivo, non trasformarlo in scenografia vuota. Fai emergere una soglia: dove si entra, cosa si ascolta, quale gesto cambia la percezione del capo."
       }
     ],
     "palette": [
       {
-        "name": "Chiffon nebbia",
-        "hex": "#D9DDD8",
+        "name": "Lana naturale",
+        "hex": "#D8C8B0",
         "text": "#111111"
       },
       {
-        "name": "Pietra Louvre",
-        "hex": "#B8B0A3",
+        "name": "Pietra di laboratorio",
+        "hex": "#B7B2AA",
         "text": "#111111"
       },
       {
-        "name": "Cashmere luce",
-        "hex": "#E8DDC7",
-        "text": "#111111"
-      },
-      {
-        "name": "Pelle ombra",
-        "hex": "#2F2D2A",
+        "name": "Verde Ghemme",
+        "hex": "#6F7D61",
         "text": "#FFFFFF"
       },
       {
-        "name": "Verde tensione",
-        "hex": "#A7C46A",
+        "name": "Ombra di filato",
+        "hex": "#4E4A45",
+        "text": "#FFFFFF"
+      },
+      {
+        "name": "Luce crema",
+        "hex": "#F2E8D8",
         "text": "#111111"
       }
     ],
     "notes": [
       {
-        "id": "note-la-sottrazione-come-lusso-visivo-2026-10-10-01",
-        "type": "forma",
-        "title": "La sottrazione come lusso visivo",
-        "body": "L’articolo insiste sulla rimozione degli strati interni del tailoring: il lusso comunicato non è l’accumulo, ma la precisione invisibile che libera il corpo.",
+        "id": "note-la-competenza-come-presenza-2026-10-13-01",
+        "type": "field note",
+        "title": "La competenza come presenza",
+        "body": "La fonte non costruisce il savoir-faire come formula generica: lo ancora a una figura tecnica, a un centro e a una pratica precisa. Questo rende il racconto più leggibile e meno decorativo.",
         "source": "LVMH",
-        "url": "https://www.lvmh.com/en/news-lvmh/intuitive-harmony-for-louis-vuitton-spring-summer-2027"
+        "url": "https://www.lvmh.com/en/news-lvmh/les-journees-particulieres-meeting-the-people-who-bring-savoir-faire-to-life"
       },
       {
-        "id": "note-movimento-prima-della-posa-2026-10-10-02",
-        "type": "gesto",
-        "title": "Movimento prima della posa",
-        "body": "La narrazione privilegia capi “engineered for action”: anche nelle immagini di sfilata, il criterio editoriale sembra spostarsi dalla silhouette statica alla silhouette in uso.",
+        "id": "note-il-luogo-non-e-sfondo-2026-10-13-02",
+        "type": "field note",
+        "title": "Il luogo non è sfondo",
+        "body": "Ghemme funziona come prova locale e come grammatica: un centro moderno dove eredità e processi innovativi vengono messi in dialogo. La comunicazione del craft guadagna forza quando il luogo ha una funzione chiara.",
         "source": "LVMH",
-        "url": "https://www.lvmh.com/en/news-lvmh/intuitive-harmony-for-louis-vuitton-spring-summer-2027"
+        "url": "https://www.lvmh.com/en/news-lvmh/les-journees-particulieres-meeting-the-people-who-bring-savoir-faire-to-life"
       },
       {
-        "id": "note-contraddizione-controllata-2026-10-10-03",
-        "type": "scena",
-        "title": "Contraddizione controllata",
-        "body": "La Cour carrée del Louvre viene raccontata come scenografia di rottura: figure leggere dentro un impianto monumentale. È un contrasto utile per costruire tensione senza gridare.",
+        "id": "note-dal-prototipo-al-racconto-2026-10-13-03",
+        "type": "field note",
+        "title": "Dal prototipo al racconto",
+        "body": "Il linking viene descritto come momento in cui l’idea prende forma. È uno spunto potente: raccontare la moda non solo quando è finita, ma quando sta diventando corpo.",
         "source": "LVMH",
-        "url": "https://www.lvmh.com/en/news-lvmh/intuitive-harmony-for-louis-vuitton-spring-summer-2027"
+        "url": "https://www.lvmh.com/en/news-lvmh/les-journees-particulieres-meeting-the-people-who-bring-savoir-faire-to-life"
       }
     ],
     "practice": [
       {
-        "id": "practice-taglia-uno-strato-2026-10-10-01",
+        "id": "practice-cinque-giunzioni-2026-10-13-01",
         "number": "01",
-        "label": "Esercizio 1",
-        "title": "Taglia uno strato",
-        "body": "Prendi un bozzetto già pieno e togli un elemento strutturale. Chiediti cosa deve restare perché il corpo sia più libero, non più povero."
+        "label": "osserva",
+        "title": "Cinque giunzioni",
+        "body": "Fotografa o disegna cinque punti di unione su un capo: spalla, fianco, bordo, polso, collo. Cerca dove la tecnica diventa carattere."
       },
       {
-        "id": "practice-disegna-il-peso-2026-10-10-02",
+        "id": "practice-una-frase-per-un-gesto-2026-10-13-02",
         "number": "02",
-        "label": "Esercizio 2",
-        "title": "Disegna il peso",
-        "body": "Su tre figurini, indica con colori diversi cosa vola, cosa aderisce e cosa ancora. Trasforma questi pesi in scelte di materiale."
+        "label": "riduci",
+        "title": "Una frase per un gesto",
+        "body": "Scegli un solo gesto tecnico e descrivilo in massimo dodici parole. Se suona astratto, torna alla mano, al tempo, alla pressione."
       },
       {
-        "id": "practice-una-foto-in-sospensione-2026-10-10-03",
+        "id": "practice-dal-campione-al-racconto-2026-10-13-03",
         "number": "03",
-        "label": "Esercizio 3",
-        "title": "Una foto in sospensione",
-        "body": "Costruisci un’immagine con una figura quasi immobile e un dettaglio in movimento: orlo, manica, laccio, ombra. Lascia che il gesto racconti il capo."
+        "label": "trasforma",
+        "title": "Dal campione al racconto",
+        "body": "Prendi un piccolo campione di materiale e immagina tre immagini: prima del gesto, durante il gesto, dopo il gesto. Non cercare perfezione, cerca continuità."
       }
     ]
   },
   "dailyNote": {
-    "date": "2026-10-12",
-    "createdAt": "2026-10-12T08:47:04.357Z",
-    "text": "Segui oggi un dettaglio piccolo e sincero: una cucitura, una carta, una luce sul tavolo. Il tuo passo vale anche quando resta quieto."
+    "date": "2026-10-13",
+    "createdAt": "2026-10-13T08:46:33.353Z",
+    "text": "Lascia che oggi una prova imperfetta ti insegni qualcosa: scegli un materiale, ascoltalo con pazienza e concediti pause leggere tra un’intuizione e l’altra."
   },
-  "checkedAt": "2026-10-12T08:47:41.338Z",
-  "checkedSourceCount": 99,
+  "checkedAt": "2026-10-13T08:47:31.773Z",
+  "checkedSourceCount": 109,
   "freshnessPolicy": "rolling-48h-v2",
   "researchWindow": {
-    "since": "2026-10-10T08:47:04.357Z",
-    "until": "2026-10-12T08:47:04.357Z",
-    "fromDate": "2026-10-10",
-    "toDate": "2026-10-12",
+    "since": "2026-10-11T08:46:33.353Z",
+    "until": "2026-10-13T08:46:33.353Z",
+    "fromDate": "2026-10-11",
+    "toDate": "2026-10-13",
     "timezone": "Europe/Rome"
   },
   "lastSuccessfulSearchAt": "2026-09-30T08:41:20.424Z",
@@ -380,11 +384,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
+            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
+            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
             "status": "read"
           }
         ]
@@ -472,11 +476,11 @@
             "status": "read"
           },
           {
-            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
+            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
             "status": "http_403"
           },
           {
-            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
+            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
             "status": "http_403"
           }
         ]
@@ -496,12 +500,12 @@
             "status": "read"
           },
           {
-            "url": "https://www.lvmh.com/en/undefined/a-fusion-of-bodies-designs-and-emotion-for-fendi-spring-summer-2027-collection",
-            "status": "http_404"
-          },
-          {
             "url": "https://www.fendi.com/us-en/cm/fashion-shows/fendi-couture-fall-winter-2026-2027-collection",
             "status": "read"
+          },
+          {
+            "url": "https://www.lvmh.com/en/undefined/a-fusion-of-bodies-designs-and-emotion-for-fendi-spring-summer-2027-collection",
+            "status": "timeout"
           }
         ]
       },
@@ -636,11 +640,11 @@
             "status": "read"
           },
           {
-            "url": "https://finance.hermes.com/en/publications/hermes-opens-new-maison-london-166-new-bond-street-reaffirming-its-presence-united",
+            "url": "https://finance.hermes.com/en/publications/hermes-unveils-its-expanded-store-chengdu-taikoo-li-mall-china-contemporary-expression",
             "status": "unusable"
           },
           {
-            "url": "https://finance.hermes.com/en/publications/hermes-unveils-its-expanded-store-chengdu-taikoo-li-mall-china-contemporary-expression",
+            "url": "https://finance.hermes.com/en/publications/hermes-opens-new-maison-london-166-new-bond-street-reaffirming-its-presence-united",
             "status": "unusable"
           }
         ]
@@ -720,11 +724,11 @@
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
+            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
+            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
             "status": "read"
           }
         ]
@@ -908,11 +912,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.zimmermann.com/us/runway-spring-rtw-2027",
+            "url": "https://www.zimmermann.com/us/collections-archive",
             "status": "read"
           },
           {
-            "url": "https://www.zimmermann.com/us/collections-archive",
+            "url": "https://www.zimmermann.com/us/runway-spring-rtw-2027",
             "status": "read"
           }
         ]
@@ -949,7 +953,7 @@
           },
           {
             "url": "https://www.lvmh.com/en/undefined/loro-piana-presents-springsummer-2027-collection-at-palazzo-di-brera",
-            "status": "timeout"
+            "status": "http_404"
           }
         ]
       },
@@ -1001,7 +1005,7 @@
     "method": "official-editorial-scan-v2",
     "partial": true
   },
-  "checkStatus": "partial",
+  "checkStatus": "published",
   "newYorkDesk": {
     "checkedAt": "2026-10-12T16:43:06.512Z",
     "updatedAt": "2026-10-09T16:43:18.011Z",

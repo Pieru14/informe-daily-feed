@@ -1,14 +1,15 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-12T08:47:41.339Z",
-  "result": "partial",
+  "checkedAt": "2026-10-13T08:47:31.780Z",
+  "result": "published",
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 31789,
-    "outputTokens": 701,
-    "searchCalls": 3
+    "inputTokens": 41838,
+    "outputTokens": 2109,
+    "searchCalls": 6
   },
-  "localDate": "2026-10-12",
-  "consultedOfficialSources": 99,
-  "message": "Nella finestra 2026-10-10 — 2026-10-12 non sono emerse nuove pubblicazioni ufficiali verificabili e utili per moda/comunicazione dai domini autorizzati consultati. I risultati recenti trovati erano fuori finestra, già noti, finanziari/corporate, job posting, store locator o privi di una data di pubblicazione dell’articolo specifico."
+  "localDate": "2026-10-13",
+  "editionId": "2026-10-13-21",
+  "consultedOfficialSources": 33,
+  "message": "Nuova edizione verificata e pubblicata."
 }

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-12T08:47:41.336Z",
+  "checkedAt": "2026-10-13T08:47:31.770Z",
   "coverage": {
     "watchlist": [
       "Prada",
@@ -124,11 +124,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
+            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
             "status": "read"
           },
           {
-            "url": "https://www.pradagroup.com/en/perspectives/special-projects.html",
+            "url": "https://www.pradagroup.com/en/sustainability/news-csr.html",
             "status": "read"
           }
         ]
@@ -216,11 +216,11 @@
             "status": "read"
           },
           {
-            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
+            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
             "status": "http_403"
           },
           {
-            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/women-spring-summer-2027-show",
+            "url": "https://us.louisvuitton.com/eng-us/magazine/articles/men-spring-summer-2027-show",
             "status": "http_403"
           }
         ]
@@ -240,12 +240,12 @@
             "status": "read"
           },
           {
-            "url": "https://www.lvmh.com/en/undefined/a-fusion-of-bodies-designs-and-emotion-for-fendi-spring-summer-2027-collection",
-            "status": "http_404"
-          },
-          {
             "url": "https://www.fendi.com/us-en/cm/fashion-shows/fendi-couture-fall-winter-2026-2027-collection",
             "status": "read"
+          },
+          {
+            "url": "https://www.lvmh.com/en/undefined/a-fusion-of-bodies-designs-and-emotion-for-fendi-spring-summer-2027-collection",
+            "status": "timeout"
           }
         ]
       },
@@ -380,11 +380,11 @@
             "status": "read"
           },
           {
-            "url": "https://finance.hermes.com/en/publications/hermes-opens-new-maison-london-166-new-bond-street-reaffirming-its-presence-united",
+            "url": "https://finance.hermes.com/en/publications/hermes-unveils-its-expanded-store-chengdu-taikoo-li-mall-china-contemporary-expression",
             "status": "unusable"
           },
           {
-            "url": "https://finance.hermes.com/en/publications/hermes-unveils-its-expanded-store-chengdu-taikoo-li-mall-china-contemporary-expression",
+            "url": "https://finance.hermes.com/en/publications/hermes-opens-new-maison-london-166-new-bond-street-reaffirming-its-presence-united",
             "status": "unusable"
           }
         ]
@@ -464,11 +464,11 @@
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
+            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
             "status": "read"
           },
           {
-            "url": "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
+            "url": "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
             "status": "read"
           }
         ]
@@ -652,11 +652,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.zimmermann.com/us/runway-spring-rtw-2027",
+            "url": "https://www.zimmermann.com/us/collections-archive",
             "status": "read"
           },
           {
-            "url": "https://www.zimmermann.com/us/collections-archive",
+            "url": "https://www.zimmermann.com/us/runway-spring-rtw-2027",
             "status": "read"
           }
         ]
@@ -693,7 +693,7 @@
           },
           {
             "url": "https://www.lvmh.com/en/undefined/loro-piana-presents-springsummer-2027-collection-at-palazzo-di-brera",
-            "status": "timeout"
+            "status": "http_404"
           }
         ]
       },
@@ -747,8 +747,8 @@
   },
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 31789,
-    "outputTokens": 701,
-    "searchCalls": 3
+    "inputTokens": 41838,
+    "outputTokens": 2109,
+    "searchCalls": 6
   }
 }
