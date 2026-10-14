@@ -1007,15 +1007,15 @@
   },
   "checkStatus": "partial",
   "newYorkDesk": {
-    "checkedAt": "2026-10-13T16:46:03.752Z",
+    "checkedAt": "2026-10-14T17:00:42.356Z",
     "updatedAt": "2026-10-13T16:46:03.752Z",
-    "status": "updated",
+    "status": "partial",
     "freshnessPolicy": "rolling-48h-v2",
     "researchWindow": {
-      "since": "2026-10-11T16:45:22.620Z",
-      "until": "2026-10-13T16:45:22.620Z",
-      "fromDate": "2026-10-11",
-      "toDate": "2026-10-13",
+      "since": "2026-10-12T17:00:11.027Z",
+      "until": "2026-10-14T17:00:11.027Z",
+      "fromDate": "2026-10-12",
+      "toDate": "2026-10-14",
       "timezone": "Europe/Rome"
     },
     "lastSuccessfulSearchAt": "2026-09-30T16:40:15.303Z",
@@ -1211,11 +1211,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
+              "url": "https://www.chanel.com/us/fashion/collection/chanel-coco-neige-2026-highlights/",
               "status": "read"
             },
             {
-              "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
+              "url": "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
               "status": "read"
             }
           ]
@@ -1303,11 +1303,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.ysl.com/en-us/rive-droite/calendar/brandon-morris",
+              "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
               "status": "unusable"
             },
             {
-              "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
+              "url": "https://www.ysl.com/en-us/rive-droite/calendar/brandon-morris",
               "status": "unusable"
             }
           ]
@@ -1371,8 +1371,8 @@
         {
           "brand": "Bottega Veneta",
           "status": "editorial_pages_read",
-          "pagesRead": 2,
-          "pagesWithPublicationMetadata": 1,
+          "pagesRead": 1,
+          "pagesWithPublicationMetadata": 0,
           "receipts": [
             {
               "url": "https://www.bottegaveneta.com/it-it/inside-bottega/storie",
@@ -1380,10 +1380,6 @@
             },
             {
               "url": "https://www.kering.com/en/press/",
-              "status": "read"
-            },
-            {
-              "url": "https://www.kering.com/en/news/romain-spitzer-appointed-chief-executive-officer-of-bottega-veneta/",
               "status": "read"
             }
           ]
@@ -1579,11 +1575,11 @@
               "status": "read"
             },
             {
-              "url": "https://www.marni.com/wx/marni-fw24-campaign.html",
+              "url": "https://www.marni.com/wx/erykah-badu-collection.html",
               "status": "read"
             },
             {
-              "url": "https://www.marni.com/wx/erykah-badu-collection.html",
+              "url": "https://www.marni.com/wx/marni-fw24-campaign.html",
               "status": "read"
             }
           ]
@@ -1635,11 +1631,11 @@
               "status": "read"
             },
             {
-              "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
+              "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
               "status": "read"
             },
             {
-              "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
+              "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
               "status": "read"
             }
           ]
@@ -1765,46 +1761,58 @@
       "partial": true
     },
     "consultedSources": [
-      "https://www.pradagroup.com/en/news-media/news-section-archive.html",
-      "https://www.pradagroup.com/en/news-media/media-library.html",
-      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-07-30-pradagroup-h126.html",
       "https://www.kering.com/en/press/",
-      "https://www.pradagroup.com/en/news-media/news-section/26-07-21-prada-fw-26-campaign.html",
+      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-10-04-miumiu-ss27-fashionshow.html",
       "https://www.kering.com/en/press/contacts/",
-      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-01-07-prada-ss2026-campaign.html",
-      "https://www.pradagroup.com/en/news-media/news-section/26-06-05-prada-mode-new-york.html",
-      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-02-24-prada-fw-2026-womenswear-show.html",
-      "https://www.pradagroup.com/en/news-media/news-section/prada-group-adopts-oracle-cloud-solutions.html",
-      "https://www.pradagroup.com/en/news-media/news-section/26-01-18-prada-fw-26-menswear-show.html",
-      "https://www.pradagroup.com/en.html.html",
-      "https://www.kering.com/api/download-file/?path=Kering_Press_release_Q3_revenue_2025_22_10_2025_589da209ff.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/Shareholderinformation/2026/inglese/e_Sustainability-Report-2025.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/investors/Q1-2026/Prada-Group-Q1-26-PR.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/investors/FY-2025/Prada-Group-FY25-PR.pdf",
-      "https://www.kering.com/api/download-file/?path=Kering_Press_release_Segment_reporting_EN_16_03_2026_f0765535e4.pdf",
-      "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Giugno/inglese/Prada-Mode-New-York-PR-ENG.pdf",
-      "https://www.lvmh.com/en/news-lvmh",
-      "https://www.lvmh.com/en/news-lvmh/les-journees-particulieres-meeting-the-people-who-bring-savoir-faire-to-life",
+      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-07-24-miumiu-fw26-campaign.html",
+      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-07-30-pradagroup-h126.html",
+      "https://www.kering.com/en/press/resources/logo-library/",
       "https://www.lvmh.com/en/publications/continued-growth-in-the-third-quarter-of-2026",
-      "https://www.lvmh.com/en/news-lvmh?tag=Watches+%26+Jewelry",
-      "https://www.lvmh.com/en/join-us/our-job-offers/LORP03809",
-      "https://www.lvmh.com/en/join-us/our-job-offers/LORP03772",
-      "https://www.lvmh.com/en/join-us/our-job-offers/LORP03741",
-      "https://www.lvmh.com/en/join-us/our-job-offers/LORP03664",
-      "https://www.ysl.com/en-bg/rive-droite/calendar/yearly",
-      "https://www.gucci.com/us/en/st/stories/brand-story",
-      "https://www.gucci.com/us/en/st/stories/inspirations-and-codes/",
-      "https://www.gucci.com/us/en/st/stories/people-",
-      "https://www.gucci.com/us/en/st/stories/arti-",
-      "https://www.gucci.com/us/en/st/stories/gucci-sustainable-fashion",
-      "https://www.gucci.com/us/en/st/stories/advertising-ca",
-      "https://www.gucci.com/us/en/st/stories/inspirations-and-co",
-      "https://www.gucci.com/us/en/st/stories/inspirations-and-code",
-      "https://www.gucci.com/us/en/st/stories/inspirations-and-codes?page=1",
-      "https://www.gucci.com/us/en/st/stories/fashion-themes?page=1",
-      "https://www.gucci.com/us/en/st/stories/inspirations-and-codes_1",
-      "https://www.gucci.com/documents/USPrivacyRightsRequests2025.pdf",
-      "https://www.gucci.com/documents/FrankensteinMagazinexGuccimx.pdf?srsltid=AfmBOooD491jF89yrZPHcAnixKNEDzCtquA3KoZrsq_gZlTnOr2oyPV0",
+      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-03-05-prada-group-2025-fy-results.html",
+      "https://www.pradagroup.com/en/news-media/press-releases-documents/2026/26-04-01-miumiu-leathergoods-campaign-26.html",
+      "https://www.pradagroup.com/en/news-media/media-library.html",
+      "https://www.lvmh.com/en/news-lvmh/lvmh-unveils-les-journees-particulieres-2026-program-65-venues-open-across-11-countries-and-exclusive-experiences",
+      "https://www.lvmh.com/en/news-lvmh/dior-autumn-winter-2026-2027-show-the-craft-of-artifice",
+      "https://www.kering.com/api/download-file/?path=KERING_BDC_2026_EN_12b2ea9527.pdf",
+      "https://www.kering.com/api/download-file/?path=Kering_Press_Release_2026_First_Quarter_Revenue_04_14_26_5c1c87ab5f.pdf",
+      "https://www.kering.com/api/download-file/?path=Kering_Press_release_Segment_reporting_EN_16_03_2026_f0765535e4.pdf",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/2026/Gennaio/Inglese/MIU-MIU-PRELUDE-PR.pdf",
+      "https://www.pradagroup.com/content/dam/pradagroup/documents/investors/Q1-2026/Prada-Group-Q1-26-PR.pdf",
+      "https://www.kering.com/api/download-file/?path=Kering_ESG_Presentation_September_2025_faabf7d898.pdf",
+      "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
+      "https://www.chanel.com/us/fashion/",
+      "https://www.chanel.com/us/fashion/collection/fall-winter-pre-collection-2026/",
+      "https://www.chanel.com/us/fashion/p/26B-COMMERCIAL-014/look-14/",
+      "https://www.chanel.com/us/fashion/ready-to-wear/l/1x1x9x8/dresses/",
+      "https://www.chanel.com/us/fashion/fall-winter-2026/l/FshCollection26K/the-looks",
+      "https://www.chanel.com/us/fashion/p/26K-PODIUM-010/look-10/",
+      "https://www.chanel.com/us/fashion/p/26A-PODIUM-014/look-14/",
+      "https://www.versace.com/us/en/stories/?hashtag=metgala",
+      "https://www.burberryplc.com/news",
+      "https://www.chanel.com/us/fashion/p/P83541V76004UC911/long-dress-cotton-mixed-fibers/",
+      "https://www.burberryplc.com/news/corporate/2026/burberry-announces-chair-succession",
+      "https://www.chanel.com/puls-img/1779118002743-fy25-results-press-release-en-final.pdf",
+      "https://www.burberryplc.com/content/dam/burberryplc/corporate/documents/investors/results-reports/2026/prelims/Burberry%20Preliminary%20Results%20Transcript.pdf.downloadasset.pdf",
+      "https://www.burberryplc.com/content/dam/burberryplc/corporate/oar/oar-2025-2026/annual-report-2025-26.pdf.downloadasset.pdf",
+      "https://www.burberryplc.com/content/dam/burberryplc/corporate/documents/investors/results-reports/2025/interims-november-2025/Burberry%20FY26%20Interim%20Results%20Transcript.pdf.downloadasset.pdf",
+      "https://www.coach.com/content/courage-to-be-real",
+      "https://www.tapestry.com/newsroom/",
+      "https://www.coach.com/shop/shop-the-campaign?startFrom=2",
+      "https://www.coach.com/shop/fall-2026",
+      "https://www.coach.com/shop/shop-the-campaign?page=2&startFrom=2&wbraid=CloKCQjw5vLVBhD7ARJJAH46dRuBd0-wrN4iJCmUa07WqWhhF-khO3uen6vGzDykzvDgSCeCjsTy802eXB1bzkAswGwLrNo-Upt-LKAl4uBWFaB-c6H7YRoC5ok",
+      "https://www.coach.com/shop/shop-the-campaign?page=3&startFrom=3",
+      "https://www.coach.com/content/promo?msockid=16c892afcff663b30ce58498ce99624c",
+      "https://investors.tapestry.com/press-releases",
+      "https://www.coach.com/shop/new/featured/fall-collection",
+      "https://www.zimmermann.com/uk/cruise-rtw-2027",
+      "https://investors.tapestry.com/news-releases/news-release-details/tapestry-inc-reports-fiscal-2026-fourth-quarter-and-full-year",
+      "https://japan.coach.com/shop/runwaylookbook/lookbook_fall2026",
+      "https://www.monclergroup.com/v3/assets/blt61bda6b71f29a239/blt799613580da77e09/69e79d8d775d987634d4442f/Moncler-Group-Press-Release-Q1-2026.pdf",
+      "https://www.monclergroup.com/v3/assets/blt61bda6b71f29a239/blt48f3ab2962e62ae4/69973d944147a5b95c8024f1/Moncler-Group-Press-Release-FY-2025.pdf",
+      "https://www.monclergroup.com/v3/assets/blt61bda6b71f29a239/blt8a2645a0ef1b276c/69e79bd9e3673125916076b8/Moncler-Group-Press-Release-Q1-2026.pdf",
+      "https://assets.tapestry.com/tapestrycorp/assets/docs/2025/TPR_CR_REPORT_FY2025_FINAL.pdf",
+      "https://www.monclergroup.com/v3/assets/blt61bda6b71f29a239/bltf918207c92bab566/690b64c396cc598759a0dd60/Moncler-Group-Press-Release-9M-2025.pdf",
+      "https://www.pradagroup.com/en/news-media/news-section-archive.html",
       "https://www.pradagroup.com/en/sustainability/news-csr.html",
       "https://www.pradagroup.com/en/perspectives/special-projects.html",
       "https://www.gucci.com/us/en/st/stories",
@@ -1814,9 +1822,8 @@
       "https://www.lvmh.com/en/news-lvmh/",
       "https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/summer-2027-show",
       "https://www.dior.com/en_us/fashion/womens-fashion/haute-couture-shows/fall-winter-2026-2027-haute-couture-show",
-      "https://www.chanel.com/us/fashion/",
+      "https://www.chanel.com/us/fashion/collection/chanel-coco-neige-2026-highlights/",
       "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
-      "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
       "https://us.louisvuitton.com/eng-us/magazine",
       "https://www.fendi.com/us-en/inside-fendi",
       "https://www.fendi.com/us-en/cm/fashion-shows/fendi-couture-fall-winter-2026-2027-collection",
@@ -1827,7 +1834,6 @@
       "https://www.miumiu.com/us/en/miumiu-club.html",
       "https://www.miumiu.com/us/en/miumiu-club/special-projects/new-balance-x-miu-miu-with-coco-gauff-2026.html",
       "https://www.miumiu.com/us/en/miumiu-club/special-projects/miu-miu-tales-and-tellers-shanghai-2026.html",
-      "https://www.kering.com/en/news/romain-spitzer-appointed-chief-executive-officer-of-bottega-veneta/",
       "https://finance.hermes.com/en/press-releases-and-news/",
       "https://armanivalues.com/news-archive/",
       "https://www.versace.com/us/en/stories/",
@@ -1840,29 +1846,26 @@
       "https://press.givenchy.com/givenchy-by-sarah-burton-womens-ready-to-wear-fall-winter-2026-collection-502267/?lang=eng",
       "https://press.givenchy.com/stronggivenchy-winter-2026-womens-campaign-by-sarah-burtonstrong-492814/?lang=eng",
       "https://museo.ferragamo.com/en/news",
-      "https://www.burberryplc.com/news",
       "https://www.monclergroup.com/en/media/press-releases?sub_category_document_type=moncler",
       "https://us.maxmara.com/mm-world",
       "https://us.maxmara.com/editorial/runway-fall-winter",
       "https://www.etro.com/it-it/advertising-campaign.html",
       "https://www.etro.com/it-it/donna/collezione-speciale/collezione-sfilata/",
       "https://www.marni.com/wx/cosmos-of-marni/",
-      "https://www.marni.com/wx/marni-fw24-campaign.html",
       "https://www.marni.com/wx/erykah-badu-collection.html",
+      "https://www.marni.com/wx/marni-fw24-campaign.html",
       "https://www.driesvannoten.com/pages/projects",
       "https://www.driesvannoten.com/pages/stories-raqib-shaw",
       "https://www.driesvannoten.com/pages/summer-stories",
       "https://alanui.it/en-it",
-      "https://alanui.it/en-it/collections/womens-clothing-view-all",
       "https://alanui.it/en-it/collections/mens-clothing-view-all",
+      "https://alanui.it/en-it/collections/womens-clothing-view-all",
       "https://www.zimmermann.com/us/collections",
       "https://www.zimmermann.com/us/immerse",
       "https://www.zimmermann.com/us/runway-spring-rtw-2027",
       "https://www.zimmermann.com/us/collections-archive",
       "https://us.loropiana.com/en/cm/campaigns/narratives",
-      "https://corporate.ralphlauren.com/s/RalphLauren_Corporate/newsroom",
-      "https://www.coach.com/content/courage-to-be-real",
-      "https://www.tapestry.com/newsroom/"
+      "https://corporate.ralphlauren.com/s/RalphLauren_Corporate/newsroom"
     ],
     "updates": [
       {

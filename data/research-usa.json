@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-13T16:46:03.750Z",
+  "checkedAt": "2026-10-14T17:00:42.352Z",
   "coverage": {
     "watchlist": [
       "Prada",
@@ -192,11 +192,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
+            "url": "https://www.chanel.com/us/fashion/collection/chanel-coco-neige-2026-highlights/",
             "status": "read"
           },
           {
-            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
+            "url": "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
             "status": "read"
           }
         ]
@@ -284,11 +284,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.ysl.com/en-us/rive-droite/calendar/brandon-morris",
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
             "status": "unusable"
           },
           {
-            "url": "https://www.ysl.com/en-us/rive-droite/calendar/jacques-villegle",
+            "url": "https://www.ysl.com/en-us/rive-droite/calendar/brandon-morris",
             "status": "unusable"
           }
         ]
@@ -352,8 +352,8 @@
       {
         "brand": "Bottega Veneta",
         "status": "editorial_pages_read",
-        "pagesRead": 2,
-        "pagesWithPublicationMetadata": 1,
+        "pagesRead": 1,
+        "pagesWithPublicationMetadata": 0,
         "receipts": [
           {
             "url": "https://www.bottegaveneta.com/it-it/inside-bottega/storie",
@@ -361,10 +361,6 @@
           },
           {
             "url": "https://www.kering.com/en/press/",
-            "status": "read"
-          },
-          {
-            "url": "https://www.kering.com/en/news/romain-spitzer-appointed-chief-executive-officer-of-bottega-veneta/",
             "status": "read"
           }
         ]
@@ -560,11 +556,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.marni.com/wx/marni-fw24-campaign.html",
+            "url": "https://www.marni.com/wx/erykah-badu-collection.html",
             "status": "read"
           },
           {
-            "url": "https://www.marni.com/wx/erykah-badu-collection.html",
+            "url": "https://www.marni.com/wx/marni-fw24-campaign.html",
             "status": "read"
           }
         ]
@@ -616,11 +612,11 @@
             "status": "read"
           },
           {
-            "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
+            "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
             "status": "read"
           },
           {
-            "url": "https://alanui.it/en-it/collections/mens-clothing-view-all",
+            "url": "https://alanui.it/en-it/collections/womens-clothing-view-all",
             "status": "read"
           }
         ]
@@ -747,8 +743,8 @@
   },
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 34086,
-    "outputTokens": 1375,
+    "inputTokens": 32005,
+    "outputTokens": 645,
     "searchCalls": 3
   }
 }
