@@ -1,15 +1,14 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-13T08:47:31.780Z",
-  "result": "published",
+  "checkedAt": "2026-10-14T09:01:00.000Z",
+  "result": "partial",
   "usage": {
     "model": "gpt-5.5",
-    "inputTokens": 41838,
-    "outputTokens": 2109,
-    "searchCalls": 6
+    "inputTokens": 36539,
+    "outputTokens": 1465,
+    "searchCalls": 4
   },
-  "localDate": "2026-10-13",
-  "editionId": "2026-10-13-21",
-  "consultedOfficialSources": 33,
-  "message": "Nuova edizione verificata e pubblicata."
+  "localDate": "2026-10-14",
+  "consultedOfficialSources": 99,
+  "message": "Nella finestra 2026-10-12 — 2026-10-14 non ho trovato nuove pubblicazioni ufficiali verificabili, con data di pubblicazione esplicita e pertinente a campagne, collezioni, sfilate, aperture, collaborazioni, craft, design o cultura visiva dei brand della watchlist. Le piste emerse erano fuori finestra, già note, finanziarie/corporate, pagine prodotto/evergreen o prive di data di pubblicazione verificabile."
 }

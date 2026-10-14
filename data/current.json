@@ -245,18 +245,18 @@
     ]
   },
   "dailyNote": {
-    "date": "2026-10-13",
-    "createdAt": "2026-10-13T08:46:33.353Z",
-    "text": "Lascia che oggi una prova imperfetta ti insegni qualcosa: scegli un materiale, ascoltalo con pazienza e concediti pause leggere tra un’intuizione e l’altra."
+    "date": "2026-10-14",
+    "createdAt": "2026-10-14T09:00:09.323Z",
+    "text": "Oggi lascia spazio a un dettaglio piccolo: una piega, un filo, un colore inatteso. Il tuo sguardo cresce anche quando osservi senza dover concludere."
   },
-  "checkedAt": "2026-10-13T08:47:31.773Z",
-  "checkedSourceCount": 109,
+  "checkedAt": "2026-10-14T09:00:59.999Z",
+  "checkedSourceCount": 99,
   "freshnessPolicy": "rolling-48h-v2",
   "researchWindow": {
-    "since": "2026-10-11T08:46:33.353Z",
-    "until": "2026-10-13T08:46:33.353Z",
-    "fromDate": "2026-10-11",
-    "toDate": "2026-10-13",
+    "since": "2026-10-12T09:00:09.323Z",
+    "until": "2026-10-14T09:00:09.323Z",
+    "fromDate": "2026-10-12",
+    "toDate": "2026-10-14",
     "timezone": "Europe/Rome"
   },
   "lastSuccessfulSearchAt": "2026-09-30T08:41:20.424Z",
@@ -408,11 +408,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
+            "url": "https://www.gucci.com/us/en/st/stories/people-events",
             "status": "read"
           },
           {
-            "url": "https://www.gucci.com/us/en/st/stories/people-events",
+            "url": "https://www.gucci.com/us/en/st/stories/advertising-campaign",
             "status": "read"
           }
         ]
@@ -452,11 +452,11 @@
             "status": "read"
           },
           {
-            "url": "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
+            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
             "status": "read"
           },
           {
-            "url": "https://www.chanel.com/us/fashion/collection/fall-winter-2026/",
+            "url": "https://www.chanel.com/us/fashion/collection/spring-summer-2027/",
             "status": "read"
           }
         ]
@@ -512,7 +512,7 @@
       {
         "brand": "Valentino",
         "status": "editorial_pages_read",
-        "pagesRead": 2,
+        "pagesRead": 3,
         "pagesWithPublicationMetadata": 0,
         "receipts": [
           {
@@ -520,12 +520,12 @@
             "status": "read"
           },
           {
-            "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
+            "url": "https://www.valentino.com/v-universe/valentino-diary/news/jolin-global-brand-ambassador-fall-winter-2026-27-selection",
             "status": "read"
           },
           {
-            "url": "https://www.valentino.com/v-universe/valentino-diary/news/clairo-interferenze-2026-27",
-            "status": "unusable"
+            "url": "https://www.valentino.com/v-universe/valentino-diary/news/interferenze-2026-27-campaign",
+            "status": "read"
           }
         ]
       },
@@ -700,11 +700,11 @@
             "status": "read"
           },
           {
-            "url": "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
+            "url": "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
             "status": "read"
           },
           {
-            "url": "https://world.dolcegabbana.com/fashion-shows/women-spring-summer-2027-fashion-show",
+            "url": "https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-fashion-beauty-2026",
             "status": "read"
           }
         ]
@@ -953,7 +953,7 @@
           },
           {
             "url": "https://www.lvmh.com/en/undefined/loro-piana-presents-springsummer-2027-collection-at-palazzo-di-brera",
-            "status": "http_404"
+            "status": "timeout"
           }
         ]
       },
@@ -1005,7 +1005,7 @@
     "method": "official-editorial-scan-v2",
     "partial": true
   },
-  "checkStatus": "published",
+  "checkStatus": "partial",
   "newYorkDesk": {
     "checkedAt": "2026-10-13T16:46:03.752Z",
     "updatedAt": "2026-10-13T16:46:03.752Z",
